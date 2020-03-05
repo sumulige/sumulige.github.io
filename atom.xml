@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.sumulige.com/"/>
-  <updated>2020-03-05T05:39:31.821Z</updated>
+  <updated>2020-03-05T09:14:15.469Z</updated>
   <id>http://www.sumulige.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>newpost</title>
+    <link href="http://www.sumulige.com/2020/03/05/newpost/"/>
+    <id>http://www.sumulige.com/2020/03/05/newpost/</id>
+    <published>2020-03-05T09:14:15.469Z</published>
+    <updated>2020-03-05T09:14:15.469Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;测试&quot;&gt;&lt;a href=&quot;#测试&quot; class=&quot;headerlink&quot; title=&quot;测试&quot;&gt;&lt;/a&gt;测试&lt;/h1&gt;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
