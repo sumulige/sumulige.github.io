@@ -1,0 +1,140 @@
+<!DOCTYPE html><html lang="[&quot;zh-CN&quot;,&quot;zh-TW&quot;,&quot;en&quot;,&quot;default&quot;]"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content=""><title>java学习笔记-集合（五） | sumulige</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.4.0/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><meta name="generator" content="Hexo 4.2.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">java学习笔记-集合（五）</h1><a id="logo" href="/.">sumulige</a><p class="description"></p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/photograph"><i class="fa fa-photo"> photograph</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">java学习笔记-集合（五）</h1><div class="post-meta">Mar 6, 2020<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span></div><a class="disqus-comment-count" href="/2020/03/06/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E9%9B%86%E5%90%88%EF%BC%88%E4%BA%94%EF%BC%89/#vcomment"><span class="valine-comment-count" data-xid="/2020/03/06/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E9%9B%86%E5%90%88%EF%BC%88%E4%BA%94%EF%BC%89/"></span><span> 条评论</span></a><div class="post-content"><p>标签：javase 核心容器，面试必问。</p>
+<hr>
+<h2 id="List"><a href="#List" class="headerlink" title="List"></a>List</h2><h3 id="ArrayList"><a href="#ArrayList" class="headerlink" title="ArrayList"></a>ArrayList</h3><ul>
+<li>底层实现是数组，查询快，增删慢，线程不安全。</li>
+<li>我们知道，数组长度是有限的，而ArrayList是可以存放任意数量的对象，长度不受限制，那么它是怎么实现的呢?<br>1、本质上就是通过定义新的更大的数组，将旧数组中的内容拷贝到新数组，来实现扩容。<br>2、ArrayList的Object数组初始化长度为如果我们存储满了这个数组，需要存储第11个对象，就会定义新的长度更大的数组，并将原数组内容和新的元素一起加入到新数组中，源码如下：<br><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/06/15834265374205.jpg" alt=""></li>
+</ul>
+<h3 id="LinkedList"><a href="#LinkedList" class="headerlink" title="LinkedList"></a>LinkedList</h3><ul>
+<li>底层采用双向链表实现，增删块，查询慢，线程不安全<br><strong>双向链表也叫双链表，是链表的一种，它的每个数据节点中都有两个指针，分别指向前一个节点和后一个节点。 所以，从双向链表中的任意一个节点开始，都可以很方便地找到所有节点。</strong></li>
+</ul>
+<blockquote>
+<p>注意事项：entry在英文中表示“进入、词条、条目”的意思。在计算机英语中一般表示“项、条目”的含义。</p>
+</blockquote>
+<h2 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h2><h3 id="HashTable和Hashmap区别"><a href="#HashTable和Hashmap区别" class="headerlink" title="HashTable和Hashmap区别"></a>HashTable和Hashmap区别</h3><ul>
+<li>1、hashMap，线程不安全，效率高。允许k v为null</li>
+<li>2、hashTable，线程安全，效率低，不允许k v为null</li>
+</ul>
+<h3 id="HashMap底层实现"><a href="#HashMap底层实现" class="headerlink" title="HashMap底层实现"></a>HashMap底层实现</h3><ul>
+<li>底层实现是hash表</li>
+<li>数据结构中以数组和链表实现存储<br>1、数组：占用空间连续。寻址容易，查询速度快。但是，增删速度慢。<br>2、链表：占用空间不连续。寻址困难，查询速度慢。但是，增删速度快。</li>
+</ul>
+<blockquote>
+<p><strong>结合数组和链表的优点（增删快，查询块）—答案就是哈希表（哈希表的本质就是”数组”+”链表”）</strong></p>
+</blockquote>
+<h3 id="HashMap基本结构："><a href="#HashMap基本结构：" class="headerlink" title="HashMap基本结构："></a>HashMap基本结构：</h3><ul>
+<li>我们打开HashMap源码，发现有如下两个核心内容：<br><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/06/15834265532460.jpg" alt=""></li>
+</ul>
+<ul>
+<li>其中Entry[] table 就是hashmap核心的数组结构，也称之为”位桶数组”,其源码如下：<br><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/06/15834265670492.jpg" alt=""></li>
+</ul>
+<p>一个Entry对象存储了：<br> 1、hash：健对象的hash值<br> 2、key：健对象；value：值对象<br> 3、next：下一个节点的引用</p>
+<ul>
+<li>显然每一个entry对象都是一个单向链表结构，如下</li>
+</ul>
+<p><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/06/15834265822357.jpg" alt=""></p>
+<ul>
+<li>然后我们画出Entry[] 数组结构（也是HashMap结构）</li>
+</ul>
+<p><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/06/15834265956014.jpg" alt=""></p>
+<h3 id="HashMap存储数据过程put-key-value-："><a href="#HashMap存储数据过程put-key-value-：" class="headerlink" title="HashMap存储数据过程put(key , value)："></a>HashMap存储数据过程put(key , value)：</h3><ul>
+<li>核心是如何产生hash值，该值用来对应数组的存储位置。</li>
+</ul>
+<p><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/06/15834266082842.jpg" alt=""></p>
+<ul>
+<li><p>我们的目地是将”key-value”两个对象成对存放到HashMap的Entry[]数组中<br>1、获得key对象的hashcode<br>  调用key对象的hashcode(),生成hashcode<br>2、根据hashcode计算hash值（要求[0,数组长度-1)）<br>  hashcode是一个整数，我们需要将他转化为[0,数组长度-1)，要求转化后hash值尽量均匀的分布在[0,数组长度-1)这个区间，避免hash冲突。</p>
+<ul>
+<li><p>i. 一种极端简单和低下的算法是：<br>1、hash值 = hashcode/hashcode;<br>2、也就是说，hash值总是1。意味着，键值对对象都会存储到数组索引1位置，这样就形成一个非常长的链表。相当于每存储一个对象都会发生“hash冲突”，HashMap也退化成了一个“链表”。</p>
+</li>
+<li><p>ii. 一种简单和常用的算法是(相除取余算法)：<br>1、hash值 = hashcode%数组长度<br>2、这种算法可以让hash值均匀的分布在[0,数组长度-1]的区间。 早期的HashTable就是采用这种算法。但是，这种算法由于使用了“除法”，效率低下。JDK后来改进了算法。首先约定数组长度必须为2的整数幂，这样采用位运算即可实现取余的效果：hash值 = hashcode&amp;(数组长度-1)。</p>
+</li>
+<li><p>iii. 如下为我们自己测试简单的hash算法：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> h = <span class="number">25860399</span>;</span><br><span class="line">        <span class="keyword">int</span> length = <span class="number">16</span>;<span class="comment">//length为2的整数次幂,则h&amp;(length-1)相当于对length取模</span></span><br><span class="line">        myHash(h, length);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> h  任意整数</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> length 长度必须为2的整数幂</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span>  <span class="keyword">int</span> <span class="title">myHash</span><span class="params">(<span class="keyword">int</span> h,<span class="keyword">int</span> length)</span></span>&#123;</span><br><span class="line">        System.out.println(h&amp;(length-<span class="number">1</span>));</span><br><span class="line">        <span class="comment">//length为2的整数幂情况下，和取余的值一样</span></span><br><span class="line">        System.out.println(h%length);<span class="comment">//取余数</span></span><br><span class="line">        <span class="keyword">return</span> h&amp;(length-<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>运行如上程序，我们就能发现直接取余(h%length)和位运算(h&amp;(length-1))结果是一致的。事实上，为了获得更好的散列效果，JDK对hashcode进行了两次散列处理(核心目标就是为了分布更散更均匀)，源码如下：</p>
+</li>
+</ul>
+<p><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/06/15834266386341.jpg" alt=""></p>
+</li>
+</ul>
+<ul>
+<li>3、生成Entry对象<br>  如上所述，一个Entry对象包括4部分：hash值、key对象、value对象、next（指向下一个Entry对象的引用）</li>
+<li>4、将Entry对象放到table数组中<br>  如果本Entry对象对应的数组索引位置还没有放Entry对象，泽直接将Entry对象放入数组；如果对应索引位置已经有Entry对象，则将已有的Entry对象的next指向本Entry对象，形成链表。</li>
+</ul>
+<p>总结如下过程：</p>
+<p><strong>当添加一个元素（key,value）时，首先计算key的hash值，依此确定插入数组中的位置，但是已经存在统一hash值的元素已经被放入数组同一位置了，这时就添加到同一hash值元素的后面，他们在数组的同一位置就形成了链表，同一个链表上的hash值是相同的，所以说数组存放的是链表。JDK8中，当链表长度大于8时，链表转化为红黑树，这样大大提高了查找效率。</strong></p>
+<ul>
+<li>HashMap取数据过程get(key)<br>1、我们需要通过key对象获取”健值对”对象，进而返回value对象。明白了存储数据过程，取数据比较简单了。<br>2、获得key的hashcode，通过hash散列算法得到hash值，进而定位到数组的位置。<br>3、在链表上挨个比较key对象。调用equals()方法，将key对象和链表上的所有节点的key对象进行比较，直到碰到返回true节点对象为止。<br>4、返回equals()为true的节点对象value对象<br>明白了存取cunqu数据的过程，我们再来看一下hashcode()和equals()的关系<br> <strong>Java中规定，两个内容相同(equals()为true)的对象必须具有相等的hashCode。因为如果equals()为true而两个对象的hashcode不同;那在整个存储过程中就发生了悖论。</strong></li>
+</ul>
+<h3 id="扩容问题："><a href="#扩容问题：" class="headerlink" title="扩容问题："></a>扩容问题：</h3><p>hashmap的位桶数组，初始大小为1&lt;&lt;4(16)。实际使用时，虽然大小可变。如果位桶数组中的元素达到（0.75* 数组length）就重新调整数组大小变为原来的两倍大小。</p>
+<blockquote>
+<p><strong>扩容很耗时。扩容的本质是定义新的更大数组，并将旧数组内容内容挨个拷贝到新数组中。</strong></p>
+</blockquote>
+<h3 id="JDk8将链表在大于8的情况下变为红黑树（红黑二叉树）"><a href="#JDk8将链表在大于8的情况下变为红黑树（红黑二叉树）" class="headerlink" title="JDk8将链表在大于8的情况下变为红黑树（红黑二叉树）"></a>JDk8将链表在大于8的情况下变为红黑树（红黑二叉树）</h3><p>JDK8中，HashMap在存储一个元素时，当对应链表长度大于8时，链表就转换为红黑树，这样又大大提高了查找的效率。</p>
+<h3 id="TreeMap的使用和底层实现"><a href="#TreeMap的使用和底层实现" class="headerlink" title="TreeMap的使用和底层实现"></a>TreeMap的使用和底层实现</h3><ul>
+<li>TreeMap是红黑二叉树的典型实现。我们打开TreeMap的源码，发现里面有一行核心代码：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">transient</span> Entry&lt;K,V&gt; root = <span class="keyword">null</span>;</span><br></pre></td></tr></table></figure></li>
+<li>root用来存储整个树的根节点。我们继续跟踪Entry(是TreeMap的内部类)的代码：<br><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/06/15834266793424.jpg" alt=""></li>
+</ul>
+<ul>
+<li>可以看到里面存储了本身数据、左节点、右节点、父节点、以及节点颜色。 TreeMap的put()/remove()方法大量使用了红黑树的理论。本书限于篇幅，不再展开。需要了解更深入的，可以参考专门的数据结构书籍。<br>1、TreeMap和HashMap实现了同样的接口Map，因此，用法对于调用者来说没有区别。<br>2、HashMap效率高于TreeMap;<br>3、在需要排序的Map时才选用TreeMap。</li>
+</ul>
+<h3 id="Set接口"><a href="#Set接口" class="headerlink" title="Set接口"></a>Set接口</h3><ul>
+<li><p>Set接口继承自Collection，Set接口中没有新增方法，方法和Collection保持完全一致。我们在前面通过List学习的方法，在Set中仍然适用。因此，学习Set的使用将没有任何难度。</p>
+</li>
+<li><p>Set容器特点：无序、不可重复。无序指Set中的元素没有索引，我们只能遍历查找;不可重复指不允许加入重复的元素。更确切地讲，新元素如果和Set中某个元素通过equals()方法对比为true，则不能加入;甚至，Set中也只能放入一个null元素，不能多个。</p>
+</li>
+<li><p>Set常用的实现类有：HashSet、TreeSet等，我们一般使用HashSet。</p>
+</li>
+</ul>
+<h3 id="HashSet基本使用"><a href="#HashSet基本使用" class="headerlink" title="HashSet基本使用"></a>HashSet基本使用</h3><p>重点体会“设置是无序，不可重复”的核心要点。</p>
+<h3 id="HashSet底层实现"><a href="#HashSet底层实现" class="headerlink" title="HashSet底层实现"></a>HashSet底层实现</h3><ul>
+<li>HashSet是采用哈希算法实现，底层实际是用HashMap实现的(HashSet本质就是一个简化版的HashMap)，因此，查询效率和增删效率都比较高。我们来看一下HashSet的源码：<br><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/06/15834266950971.jpg" alt=""></li>
+</ul>
+<ul>
+<li><p>我们发现里面有个map属性，这就是HashSet的核心秘密。我们再看add()方法，发现增加一个元素说白了就是在map中增加一个键值对，键对象就是这个元素，值对象是名为PRESENT的Object对象。说白了，就是“往set中加入元素，本质就是把这个元素作为key加入到了内部的map中”。</p>
+</li>
+<li><p>由于map中key都是不可重复的，因此，Set天然具有“不可重复”的特性。</p>
+</li>
+</ul>
+<h3 id="TreeSet使用和底层实现"><a href="#TreeSet使用和底层实现" class="headerlink" title="TreeSet使用和底层实现"></a>TreeSet使用和底层实现</h3><ul>
+<li><p>TreeSet底层实际是TreeMap实现的，内部维持了一个简化版的Treemap,通过key来存储Set元素。TreeSet内部实现元素排序，需要实现Comparable接口。这样，才能根据compareTo()方法比较对象之间的大小，才能进行内部类排序。</p>
+</li>
+<li><p>使用TreeSet要点：<br>(1) 由于是二叉树，需要对元素做内部排序。 如果要放入TreeSet中的类没有实现Comparable接口，则会抛出异常：java.lang.ClassCastException。<br>(2) TreeSet中不能放入null元素。</p>
+</li>
+</ul>
+<h3 id="使用Iterator迭代器遍历容器元素-List-Set-Map-–如果遇到遍历容器时，判断删除元素的情况，使用迭代器遍历"><a href="#使用Iterator迭代器遍历容器元素-List-Set-Map-–如果遇到遍历容器时，判断删除元素的情况，使用迭代器遍历" class="headerlink" title="使用Iterator迭代器遍历容器元素(List/Set/Map)–如果遇到遍历容器时，判断删除元素的情况，使用迭代器遍历!"></a>使用Iterator迭代器遍历容器元素(List/Set/Map)–如果遇到遍历容器时，判断删除元素的情况，使用迭代器遍历!</h3><ul>
+<li>迭代器遍历List<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestIterator</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        List&lt;String&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i&lt;<span class="number">5</span>;i++)&#123;</span><br><span class="line">            list.add(<span class="string">"ad"</span>+i);</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(list);</span><br><span class="line">        <span class="comment">//使用迭代器进行遍历</span></span><br><span class="line">        Iterator&lt;String&gt; it = list.iterator();</span><br><span class="line">        <span class="keyword">while</span>(it.hahNext())&#123;</span><br><span class="line">            String next = it.next();</span><br><span class="line">            <span class="keyword">if</span>(next.endWith(<span class="string">"3"</span>))&#123;</span><br><span class="line">                list.remove()</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(list);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Map&lt;Integer, Man&gt; maps = <span class="keyword">new</span> HashMap&lt;Integer, Man&gt;();</span><br><span class="line">Set&lt;Integer&gt;  keySet =  maps.keySet();</span><br><span class="line"><span class="keyword">for</span>(Integer id : keySet)&#123;</span><br><span class="line">System.out.println(maps.get(id).name);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Set&lt;Entry&lt;Integer, Man&gt;&gt;  ss = maps.entrySet();</span><br><span class="line"><span class="keyword">for</span> (Iterator iterator = ss.iterator(); iterator.hasNext();) &#123;</span><br><span class="line">    Entry e = (Entry) iterator.next(); </span><br><span class="line">    System.out.println(e.getKey()+<span class="string">"--"</span>+e.getValue());</span><br></pre></td></tr></table></figure>
+
+<h3 id="如下情况，可能需要我们重写equals-hashCode方法："><a href="#如下情况，可能需要我们重写equals-hashCode方法：" class="headerlink" title="如下情况，可能需要我们重写equals/hashCode方法："></a>如下情况，可能需要我们重写equals/hashCode方法：</h3><p>1) 要将我们自定义的对象放入HashSet中处理。</p>
+<p>2) 要将我们自定义的对象作为HashMap的key处理。</p>
+<p>3) 放入Collection容器中的自定义对象后，可能会调用remove、contains等方法时。</p>
+<h3 id="JDK1-5以后增加了泛型。泛型的好处："><a href="#JDK1-5以后增加了泛型。泛型的好处：" class="headerlink" title="JDK1.5以后增加了泛型。泛型的好处："></a>JDK1.5以后增加了泛型。泛型的好处：</h3><p>1) 向集合添加数据时保证数据安全。</p>
+<p>2) 遍历集合元素时不需要强制转换。</p>
+</div><script type="text/javascript" src="/js/share.js?v=0.0.0" async></script><a class="article-share-link" data-url="http://www.sumulige.com/2020/03/06/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E9%9B%86%E5%90%88%EF%BC%88%E4%BA%94%EF%BC%89/" data-id="ck7f67fdv000j8jtl7el02olv" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAEOCAAAAABd2qZ5AAAD60lEQVR42u3ay27iQBAF0Pz/TxNplhGYe6vaJNIcrxDY7fZhUa7H11d8PP4d+efk11fnXK9zfVVyxwMHDhw4cOAIHvXV8WqjCcT1mtcE+coJa74fHDhw4MBxiiMPgcltrh84CYqP4MgDds6NAwcOHDg+ydFizQJqvs7ZBBIHDhw4cPwWR5uG7SuXyfrt34kDBw4cOO7mSIqDp7o2SXjeJIofqpXiwIEDB45JtBoONPy1z78834EDBw4c/w3HozxOhcm8pNiOUzwWBw4cOHDg2HO0jZx8TGGfJs1WmKWaw74WDhw4cOC45Jg1e2bDB3kQPdXWKl4UcODAgQPHUY48sM3aP7M0b1PHy/eMAwcOHDjOcrTBcpZWJYXCTQ9oX7LEgQMHDhx7jjYU5Uldm7zN9jNrbkVPhAMHDhw4So424LVAs7GDvLS3GXp4chUOHDhw4LiBY9bIydOqfJ1Z6tW+ZeDAgQMHjjs4NsNq+dZnIw5tSJ6FWBw4cODAcZbjVNo2S6vadtepv+FNcRAHDhw4cIw4zgaqJKFqV2jpZ0lmPZGBAwcOHDhe3GuWCLUjDm3Zrh2e2JQRn7x34MCBAweOBcesLdSG0nad/Jx9wwkHDhw4cJzlSBKhTVuoLsPF6VnbHotYceDAgQPHIY5Z6JoNJbShcdZkapmedOFw4MCBA8eIYzO+sN9KMcR2tvx3fS0OHDhw4FhwnLpZXuZL1m9D++ZF4ZYuFg4cOHDgKIuDScjcFwfbqzZ7xoEDBw4cZzmSB2ibOu2DtXeZBeA3Z+LAgQMHjkMcbXBqk658ZmBT45wlijhw4MCB4yzHLDQW5bY4SZuVDvNfhyVCHDhw4MBRctRJTjnEMBt3yB9v8ydF7x04cODAgWMymRYtl4e6nHUWgE+F5OjtAwcOHDhwjPa5WToqtx1tQbUJW/5CgAMHDhw49hybIl0+iNCS5Ulju36U0eLAgQMHjgVHEY2DNCwPw23wnjXDVq0yHDhw4MAx4miTt03hLz8nuWo2u/Hm7jhw4MCB4xDHrNiXb7pNw1qOPPy/uRYHDhw4cBzimI0X5KW6NoTnhcJNAREHDhw4cNzBkSc8eTCuq5Ll1tvG2KrhhAMHDhw4So5HedRBKw7Ys3A7W//l3nDgwIEDx5pj0/jJH2w24pZDtwnhLDzjwIEDB46cYzOy1hYNZ6nX5oUg+R4HDhw4cNzB0dYUN+W/JKi3d9+P3+HAgQMHjs9zzNKkWeI3A2qZVoEWBw4cOHAc4piV+WZBtG0sbVBw4MCBA8dZjrzQdkdfq20gJQ98vZ9jtVIcOHDgwPHBgYZPbnfTdhrWL3HgwIEDx8/vvwGtcfeq/728fQAAAABJRU5ErkJggg==">分享</a><div class="tags"><a href="/tags/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">java学习笔记</a></div><div class="post-nav"><a class="pre" href="/2020/03/06/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-IO%EF%BC%88%E5%85%AD%EF%BC%89/">java学习笔记-IO（六）</a><a class="next" href="/2020/03/06/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E6%B3%9B%E5%9E%8B%EF%BC%88%E4%B9%9D%EF%BC%89/">java学习笔记-泛型（九）</a></div><div id="vcomment"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script><script>var notify = 'true' ? true : false;
+var verify = 'true' ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'ivpEhNzW7MXaOpXrMfU90jjq-gzGzoHsz',
+  appKey:'65olvYK78WGdFMmAWd49Bo5A',
+  placeholder:'Just so so',
+  avatar:'mm',
+  guest_info:guest_info,
+  pageSize:'10'
+})</script></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><div class="search-form"><input id="local-search-input" placeholder="Search" type="text" name="q" results="0"/><div id="local-search-result"></div></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/hazel/" style="font-size: 15px;">hazel</a> <a href="/tags/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" style="font-size: 15px;">java学习笔记</a> <a href="/tags/java%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E5%8F%8A%E7%AD%94%E6%A1%88/" style="font-size: 15px;">java常见面试题及答案</a> <a href="/tags/vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" style="font-size: 15px;">vue学习笔记</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2020/03/06/hazel%E8%83%BD%E4%B8%BA%E6%88%91%E4%BB%AC%E5%81%9A%E4%BB%80%E4%B9%88/">hazel能为我们做什么</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/03/06/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%8C%E5%8F%89%E6%A0%91%E3%80%81%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%A0%91(AVL)%E3%80%81%E7%BA%A2%E9%BB%91%E4%BA%8C%E5%8F%89%E6%A0%91%EF%BC%88%E5%8D%81%EF%BC%89/">java学习笔记-二叉树、平衡二叉树(AVL)、红黑二叉树（十）</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/03/06/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2%EF%BC%88%E4%B8%80%EF%BC%89/">java学习笔记-写在前面（一）</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/03/06/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2%EF%BC%88%E4%BA%8C%EF%BC%89/">java学习笔记-写在前面（二）</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/03/06/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%B8%B8%E7%94%A8%E7%B1%BB%EF%BC%88%E5%9B%9B%EF%BC%89/">java学习笔记-常用类（四）</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/03/06/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%EF%BC%88%E4%B8%83%EF%BC%89/">java学习笔记-基础算法（七）</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/03/06/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%A4%9A%E7%BA%BF%E7%A8%8B%EF%BC%88%E5%8D%81%E4%B8%80%EF%BC%89/">java学习笔记-多线程（十一）</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/03/06/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E6%95%B0%E7%BB%84%EF%BC%88%E4%B8%89%EF%BC%89/">java学习笔记-数组（三）</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/03/06/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%EF%BC%88%E5%85%AB%EF%BC%89/">java学习笔记-网络编程（八）</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/03/06/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-IO%EF%BC%88%E5%85%AD%EF%BC%89/">java学习笔记-IO（六）</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2020 <a href="/." rel="nofollow">sumulige.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><script type="text/javascript" src="/js/search.js?v=0.0.0"></script><script>var search_path = 'search.xml';
+if (search_path.length == 0) {
+   search_path = 'search.xml';
+}
+var path = '/' + search_path;
+searchFunc(path, 'local-search-input', 'local-search-result');
+</script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
