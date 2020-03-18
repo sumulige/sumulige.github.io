@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.sumulige.com/"/>
-  <updated>2020-03-17T16:16:27.673Z</updated>
+  <updated>2020-03-18T18:24:37.426Z</updated>
   <id>http://www.sumulige.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Qnap 威联通安装 rtorrent-pro Transmission-2.94 和 qBittorrent v4.2.1 下载 PT BT</title>
+    <link href="http://www.sumulige.com/2020/03/18/Qnap%20%E5%A8%81%E8%81%94%E9%80%9A%E5%AE%89%E8%A3%85%20rtorrent-pro%20Transmission-2.94%20%E5%92%8C%20qBittorrent%20v4.2.1%20%E4%B8%8B%E8%BD%BD%20PT%20BT/"/>
+    <id>http://www.sumulige.com/2020/03/18/Qnap%20%E5%A8%81%E8%81%94%E9%80%9A%E5%AE%89%E8%A3%85%20rtorrent-pro%20Transmission-2.94%20%E5%92%8C%20qBittorrent%20v4.2.1%20%E4%B8%8B%E8%BD%BD%20PT%20BT/</id>
+    <published>2020-03-17T18:22:22.000Z</published>
+    <updated>2020-03-18T18:24:37.426Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="官方下载地址：免费"><a href="#官方下载地址：免费" class="headerlink" title="官方下载地址：免费"></a>官方下载地址：免费</h2><p><strong>win/mac/linux:</strong><br><a href="https://www.qbittorrent.org/download.php" target="_blank" rel="noopener">qBittorrent</a><br><a href="https://transmissionbt.com/download/" target="_blank" rel="noopener">Transmission</a></p><p>威联通的.qpkg文件可以在第三方商店下载,我的机器是TS-435Bmi。我选择的是TS-NASX86_64<br><a href="https://www.qnapclub.eu/nl/qpkg/358" target="_blank" rel="noopener">qBittorrent.qpkg</a><br><a href="https://www.qnapclub.eu/nl/qpkg/208" target="_blank" rel="noopener">Transmission.qpkg</a></p><p><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/19/15845468201410.jpg" alt="-w1196"></p><p><strong>收费</strong>这个需要自己注册一个账号，以前作者是免费的，现在开启收费。刚开始收费10欧，如今收费是15欧，也不贵真的好棒。<br><a href="https://qnapclub.eu/en/qpkg/376" target="_blank" rel="noopener">rtorrent-pro</a> </p><p><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/19/15845468846189.jpg" alt="-w1205"></p><blockquote><p>这里为了大家方便我安装的时候下载好了顺便上传到百度网盘，大家需要的可以下载。<strong>注意是三个都打包好了也包括此款付费产品</strong></p></blockquote><p><a href="https://pan.baidu.com/s/1GJkMhd1HJJLznxC0-aH5mA" target="_blank" rel="noopener">百度网盘</a>  提取密码:9nmw</p><h2 id="我们在-QNAP-自带的-APP-Center-手动安装，每个都一样的。"><a href="#我们在-QNAP-自带的-APP-Center-手动安装，每个都一样的。" class="headerlink" title="我们在 QNAP 自带的 APP Center 手动安装，每个都一样的。"></a>我们在 QNAP 自带的 APP Center 手动安装，每个都一样的。</h2><p><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/19/15845489356507.jpg" alt="-w1214"></p><p>确认安装之后开始安装，进度条显示完成时，我们来到对应的app快捷方式打开应用程序。<br><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/19/15845490266032.jpg" alt="-w1217"></p><p>剩下的都如同上面先都安装上，下面我们去一起配置。</p><p><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/19/15845495759710.jpg" alt="-w1255"></p><h2 id="安装与配置"><a href="#安装与配置" class="headerlink" title="安装与配置"></a>安装与配置</h2><h2 id="rtorrent-pro"><a href="#rtorrent-pro" class="headerlink" title="rtorrent-pro"></a>rtorrent-pro</h2><p>打开后输入用户名rtorrent 密码admin<br><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/19/15845511393268.jpg" alt="-w1138"></p><p>我们点击登录来到<br><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/19/15845513043161.jpg" alt="-w1032"></p><p>全英文的界面，点击setting并将页面拉到最低端，点击箭头地方我们去修改一下用户名和密码。<br><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/19/15845514441790.jpg" alt="-w1029"></p><p>填写自己的用户名密码之后，点击右边按钮。</p><p><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/19/15845515600112.jpg" alt="-w1036"></p><p>完成后，回到主页面。、<br><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/19/15845517061938.jpg" alt="-w1033"></p><p>点击下图进入页面</p><p><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/19/15845517554329.jpg" alt="-w1032"></p><p>很漂亮的界面有没有</p><p><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/19/15845518297121.jpg" alt="-w1028"></p><p>我们开始配置<br>修改如下红框地方为图示<br><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/19/15845520935338.jpg" alt="-w1033"></p><p>传输端口42000需要做转发</p><p><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/19/15845522623861.jpg" alt="-w1034"></p><p>我们开始配置这些，其它的暂时默认。</p><h3 id="最重要的功能获取RSS订阅"><a href="#最重要的功能获取RSS订阅" class="headerlink" title="最重要的功能获取RSS订阅"></a>最重要的功能获取RSS订阅</h3><p>先登录自己的站点，找到订阅图标<br><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/19/15845524640529.jpg" alt="-w144"></p><p>“显示收藏”项选择”仅收藏“<br>每页条数选择50 最后点击生成连接</p><p><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/19/15845528141011.jpg" alt="-w943"></p><h3 id="开始配置-rtorrent-pro-RSS-订阅"><a href="#开始配置-rtorrent-pro-RSS-订阅" class="headerlink" title="开始配置 rtorrent-pro RSS 订阅"></a>开始配置 rtorrent-pro RSS 订阅</h3><p>回到客户端，我们去订阅。</p><p><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/19/15845530840468.jpg" alt="-w1029"></p><p>左下角这个位置我们就可以看到订阅的内容</p><p><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/19/15845551361373.jpg" alt="-w1033"></p><p>这时候我们还不能实现自动下载的功能，我还要给订阅设置一个规则。</p><p><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/19/15845533993886.jpg" alt="-w1033"></p><p><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/19/15845552148569.jpg" alt="-w1033"></p><p>我们马上去站点随便收藏一个，测试一下。<br>发现收藏并没有什么反应<br>于是发现问题是默认的RSS刷新时间是30分钟，我们去修改一下刷新时间为5分钟，这里不建议修改默认值，只是为了测试。</p><p><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/19/15845552679505.jpg" alt="-w1029"></p><p>漫长的三分钟等待：不知道为啥我的速度不是很快，有知道的亲帮我留言一下，看哪里设置的不对。</p><p><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/19/15845550451363.jpg" alt="-w1028"></p><p>记得最后把订阅改回来</p><p><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/19/15845555943992.jpg" alt="-w1028"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;官方下载地址：免费&quot;&gt;&lt;a href=&quot;#官方下载地址：免费&quot; class=&quot;headerlink&quot; title=&quot;官方下载地址：免费&quot;&gt;&lt;/a&gt;官方下载地址：免费&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;win/mac/linux:&lt;/strong&gt;&lt;br&gt;&lt;a href
+      
+    
+    </summary>
+    
+    
+    
+      <category term="软件" scheme="http://www.sumulige.com/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>优秀的博客推荐</title>
@@ -96,31 +120,6 @@
   </entry>
   
   <entry>
-    <title>java常见面试题及答案（二）</title>
-    <link href="http://www.sumulige.com/2020/03/06/java%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E5%8F%8A%E7%AD%94%E6%A1%88%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
-    <id>http://www.sumulige.com/2020/03/06/java%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E5%8F%8A%E7%AD%94%E6%A1%88%EF%BC%88%E4%BA%8C%EF%BC%89/</id>
-    <published>2020-03-05T18:12:41.000Z</published>
-    <updated>2020-03-05T18:34:24.916Z</updated>
-    
-    <content type="html"><![CDATA[<p>1、jvm分区<br><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/06/15834259261258.jpg" alt=""></p><h2 id="2、mysql-使用的引擎"><a href="#2、mysql-使用的引擎" class="headerlink" title="2、mysql 使用的引擎?"></a>2、mysql 使用的引擎?</h2><p>1)MyIsam 不支持事务，适用于选择密集型，插入密集型，mysql 默认的引擎<br>2)innodb 使用于更新密集型，支持事务，自动灾难恢复，行级锁，外键约束 3)memory 出发点是速度 采用的逻辑存储介质是内存<br>4)merge 一组 myisam 表的组合</p><h2 id="3、并行和并发"><a href="#3、并行和并发" class="headerlink" title="3、并行和并发"></a>3、并行和并发</h2><p><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/06/15834259759910.jpg" alt=""></p><p>并行线程同时被（多个线程）cpu执行，并发是线程被（一个cpu）轮流切换着执行</p><h2 id="4、线程池ThreadPoolExcutor"><a href="#4、线程池ThreadPoolExcutor" class="headerlink" title="4、线程池ThreadPoolExcutor"></a>4、线程池ThreadPoolExcutor</h2><ul><li>corepoolsize 默认情况下，创建线程池后，此时线程池中默认是0，当任务执行来之后，就会创建一个任务去执行任务，当线程池中任务达到corepoolsize后，就把任务存放在任务缓存队列中</li><li>maximumpoolsize线程池中最多创建的线程数</li><li>keeplivetime：线程中没有任务执行时，最多保存多久终止，默认情况下，当线程池中线程数&gt;corepoolsize时，keeplivetime起作用，直到线程数不大于corepoolsize</li><li>workqueue阻塞队列，用来存放被执行任务</li><li>threadFactory线程工厂，用来创建线程线程</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;1、jvm分区&lt;br&gt;&lt;img src=&quot;https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/06/15834259261258.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;2、my
-      
-    
-    </summary>
-    
-    
-    
-      <category term="java常见面试题及答案" scheme="http://www.sumulige.com/tags/java%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E5%8F%8A%E7%AD%94%E6%A1%88/"/>
-    
-  </entry>
-  
-  <entry>
     <title>vue学习笔记-初识（一）</title>
     <link href="http://www.sumulige.com/2020/03/06/vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%88%9D%E8%AF%86%EF%BC%88%E4%B8%80%EF%BC%89/"/>
     <id>http://www.sumulige.com/2020/03/06/vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%88%9D%E8%AF%86%EF%BC%88%E4%B8%80%EF%BC%89/</id>
@@ -142,6 +141,31 @@
     
     
       <category term="vue学习笔记" scheme="http://www.sumulige.com/tags/vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java常见面试题及答案（二）</title>
+    <link href="http://www.sumulige.com/2020/03/06/java%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E5%8F%8A%E7%AD%94%E6%A1%88%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
+    <id>http://www.sumulige.com/2020/03/06/java%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E5%8F%8A%E7%AD%94%E6%A1%88%EF%BC%88%E4%BA%8C%EF%BC%89/</id>
+    <published>2020-03-05T18:12:41.000Z</published>
+    <updated>2020-03-05T18:34:24.916Z</updated>
+    
+    <content type="html"><![CDATA[<p>1、jvm分区<br><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/06/15834259261258.jpg" alt=""></p><h2 id="2、mysql-使用的引擎"><a href="#2、mysql-使用的引擎" class="headerlink" title="2、mysql 使用的引擎?"></a>2、mysql 使用的引擎?</h2><p>1)MyIsam 不支持事务，适用于选择密集型，插入密集型，mysql 默认的引擎<br>2)innodb 使用于更新密集型，支持事务，自动灾难恢复，行级锁，外键约束 3)memory 出发点是速度 采用的逻辑存储介质是内存<br>4)merge 一组 myisam 表的组合</p><h2 id="3、并行和并发"><a href="#3、并行和并发" class="headerlink" title="3、并行和并发"></a>3、并行和并发</h2><p><img src="https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/06/15834259759910.jpg" alt=""></p><p>并行线程同时被（多个线程）cpu执行，并发是线程被（一个cpu）轮流切换着执行</p><h2 id="4、线程池ThreadPoolExcutor"><a href="#4、线程池ThreadPoolExcutor" class="headerlink" title="4、线程池ThreadPoolExcutor"></a>4、线程池ThreadPoolExcutor</h2><ul><li>corepoolsize 默认情况下，创建线程池后，此时线程池中默认是0，当任务执行来之后，就会创建一个任务去执行任务，当线程池中任务达到corepoolsize后，就把任务存放在任务缓存队列中</li><li>maximumpoolsize线程池中最多创建的线程数</li><li>keeplivetime：线程中没有任务执行时，最多保存多久终止，默认情况下，当线程池中线程数&gt;corepoolsize时，keeplivetime起作用，直到线程数不大于corepoolsize</li><li>workqueue阻塞队列，用来存放被执行任务</li><li>threadFactory线程工厂，用来创建线程线程</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;1、jvm分区&lt;br&gt;&lt;img src=&quot;https://sumulige-1257145452.cos.ap-beijing.myqcloud.com/MWeb/2020/03/06/15834259261258.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;2、my
+      
+    
+    </summary>
+    
+    
+    
+      <category term="java常见面试题及答案" scheme="http://www.sumulige.com/tags/java%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E5%8F%8A%E7%AD%94%E6%A1%88/"/>
     
   </entry>
   
