@@ -80,25 +80,6 @@
     
     
     <entry>
-      <title>vue学习笔记-初识（一）</title>
-      <link href="/2020/03/06/vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%88%9D%E8%AF%86%EF%BC%88%E4%B8%80%EF%BC%89/"/>
-      <url>/2020/03/06/vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%88%9D%E8%AF%86%EF%BC%88%E4%B8%80%EF%BC%89/</url>
-      
-        <content type="html"><![CDATA[<h3 id="vue-渐进式框架"><a href="#vue-渐进式框架" class="headerlink" title="vue 渐进式框架"></a>vue 渐进式框架</h3><p>慢慢嵌入项目当中</p><h3 id="vue高级功能"><a href="#vue高级功能" class="headerlink" title="vue高级功能"></a>vue高级功能</h3><ul><li>解耦视图和数据</li><li>可复用组件</li><li>前端路由</li><li>状态管理</li><li>虚拟DOM</li></ul><h3 id="编程范式？"><a href="#编程范式？" class="headerlink" title="编程范式？"></a>编程范式？</h3><h3 id="vue-js安装"><a href="#vue-js安装" class="headerlink" title="vue.js安装"></a>vue.js安装</h3><ul><li><p>cdn引入</p></li><li><p>npm安装</p></li></ul><h3 id="mvvm"><a href="#mvvm" class="headerlink" title="mvvm"></a>mvvm</h3><p>view vue modle</p><h3 id="tab键"><a href="#tab键" class="headerlink" title="tab键"></a>tab键</h3><p>例如div#app+tab=<div id="app"></div></p><h3 id="语法糖"><a href="#语法糖" class="headerlink" title="语法糖"></a>语法糖</h3><p>‘v-on:click=”a”‘=@click</p><h3 id="快速写出console-log"><a href="#快速写出console-log" class="headerlink" title="快速写出console.log()"></a>快速写出console.log()</h3><p>‘add被执行’.log+enter=console.log(‘add被执行’)</p><h3 id="v-once"><a href="#v-once" class="headerlink" title="v-once"></a>v-once</h3><p>表示不随绑定数据改变而改变</p><h3 id="v-html"><a href="#v-html" class="headerlink" title="v-html"></a>v-html</h3><p>用来返回解析html <h3 v-html="url"></h3></p><h3 id="wangxinwen-不如双括号语法好-前者会覆盖掉，wangxinwen-后者不会"><a href="#wangxinwen-不如双括号语法好-前者会覆盖掉，wangxinwen-后者不会" class="headerlink" title="wangxinwen 不如双括号语法好 前者会覆盖掉，wangxinwen 后者不会"></a><h2 v-text="message">wangxinwen </h2>不如双括号语法好 前者会覆盖掉，wangxinwen 后者不会</h3><h3 id="v-cloak-斗篷"><a href="#v-cloak-斗篷" class="headerlink" title="v-cloak(斗篷)"></a>v-cloak(斗篷)</h3><h3 id="v-bind"><a href="#v-bind" class="headerlink" title="v-bind"></a>v-bind</h3><ul><li>动态绑定a标签</li><li>动态绑定img的src路径<h3 id="方法和函数的区别"><a href="#方法和函数的区别" class="headerlink" title="方法和函数的区别"></a>方法和函数的区别</h3>开发时候什么时候称之为函数 什么时候称之为方法</li></ul><p>方法1.一般定义在类里 和实例挂钩<br>函数 function</p><h3 id="版本区别"><a href="#版本区别" class="headerlink" title="版本区别"></a>版本区别</h3><p>开发完成 打一个tag tag的版本就是发布的版本<br>release已经测试过</p><h3 id="mounted"><a href="#mounted" class="headerlink" title="mounted"></a>mounted</h3><p>mounted安装好的</p><h3 id="插值操作"><a href="#插值操作" class="headerlink" title="插值操作"></a>插值操作</h3><p>｛｛｝｝mustache 语法双大括号 单词翻译叫胡须</p><hr><p><a href="https://github.com/sumulige/VueStudy" target="_blank" rel="noopener">github项目所在地</a></p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> vue学习笔记 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>java常见面试题及答案（二）</title>
       <link href="/2020/03/06/java%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E5%8F%8A%E7%AD%94%E6%A1%88%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
       <url>/2020/03/06/java%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E5%8F%8A%E7%AD%94%E6%A1%88%EF%BC%88%E4%BA%8C%EF%BC%89/</url>
@@ -110,6 +91,25 @@
         <tags>
             
             <tag> java常见面试题及答案 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>vue学习笔记-初识（一）</title>
+      <link href="/2020/03/06/vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%88%9D%E8%AF%86%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+      <url>/2020/03/06/vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%88%9D%E8%AF%86%EF%BC%88%E4%B8%80%EF%BC%89/</url>
+      
+        <content type="html"><![CDATA[<h3 id="vue-渐进式框架"><a href="#vue-渐进式框架" class="headerlink" title="vue 渐进式框架"></a>vue 渐进式框架</h3><p>慢慢嵌入项目当中</p><h3 id="vue高级功能"><a href="#vue高级功能" class="headerlink" title="vue高级功能"></a>vue高级功能</h3><ul><li>解耦视图和数据</li><li>可复用组件</li><li>前端路由</li><li>状态管理</li><li>虚拟DOM</li></ul><h3 id="编程范式？"><a href="#编程范式？" class="headerlink" title="编程范式？"></a>编程范式？</h3><h3 id="vue-js安装"><a href="#vue-js安装" class="headerlink" title="vue.js安装"></a>vue.js安装</h3><ul><li><p>cdn引入</p></li><li><p>npm安装</p></li></ul><h3 id="mvvm"><a href="#mvvm" class="headerlink" title="mvvm"></a>mvvm</h3><p>view vue modle</p><h3 id="tab键"><a href="#tab键" class="headerlink" title="tab键"></a>tab键</h3><p>例如div#app+tab=<div id="app"></div></p><h3 id="语法糖"><a href="#语法糖" class="headerlink" title="语法糖"></a>语法糖</h3><p>‘v-on:click=”a”‘=@click</p><h3 id="快速写出console-log"><a href="#快速写出console-log" class="headerlink" title="快速写出console.log()"></a>快速写出console.log()</h3><p>‘add被执行’.log+enter=console.log(‘add被执行’)</p><h3 id="v-once"><a href="#v-once" class="headerlink" title="v-once"></a>v-once</h3><p>表示不随绑定数据改变而改变</p><h3 id="v-html"><a href="#v-html" class="headerlink" title="v-html"></a>v-html</h3><p>用来返回解析html <h3 v-html="url"></h3></p><h3 id="wangxinwen-不如双括号语法好-前者会覆盖掉，wangxinwen-后者不会"><a href="#wangxinwen-不如双括号语法好-前者会覆盖掉，wangxinwen-后者不会" class="headerlink" title="wangxinwen 不如双括号语法好 前者会覆盖掉，wangxinwen 后者不会"></a><h2 v-text="message">wangxinwen </h2>不如双括号语法好 前者会覆盖掉，wangxinwen 后者不会</h3><h3 id="v-cloak-斗篷"><a href="#v-cloak-斗篷" class="headerlink" title="v-cloak(斗篷)"></a>v-cloak(斗篷)</h3><h3 id="v-bind"><a href="#v-bind" class="headerlink" title="v-bind"></a>v-bind</h3><ul><li>动态绑定a标签</li><li>动态绑定img的src路径<h3 id="方法和函数的区别"><a href="#方法和函数的区别" class="headerlink" title="方法和函数的区别"></a>方法和函数的区别</h3>开发时候什么时候称之为函数 什么时候称之为方法</li></ul><p>方法1.一般定义在类里 和实例挂钩<br>函数 function</p><h3 id="版本区别"><a href="#版本区别" class="headerlink" title="版本区别"></a>版本区别</h3><p>开发完成 打一个tag tag的版本就是发布的版本<br>release已经测试过</p><h3 id="mounted"><a href="#mounted" class="headerlink" title="mounted"></a>mounted</h3><p>mounted安装好的</p><h3 id="插值操作"><a href="#插值操作" class="headerlink" title="插值操作"></a>插值操作</h3><p>｛｛｝｝mustache 语法双大括号 单词翻译叫胡须</p><hr><p><a href="https://github.com/sumulige/VueStudy" target="_blank" rel="noopener">github项目所在地</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> vue学习笔记 </tag>
             
         </tags>
       
