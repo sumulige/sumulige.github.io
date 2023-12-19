@@ -2,7 +2,7 @@ baseURL: https://www.sumulige.github.io
 # baseURL: https://www.sulvblog.cn  # 绑定的域名
 languageCode: zh-cn # en-us
 title: sumulige
-theme: hugo-PaperMod # 主题名字，和themes文件夹下的一致
+theme: PaperMod # 主题名字，和themes文件夹下的一致
 
 enableInlineShortcodes: true #允许内联短码
 enableEmoji: true # 允许使用 Emoji 表情，建议 true
