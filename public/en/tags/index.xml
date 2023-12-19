@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Tags on sumulige</title>
+        <link>https://www.sumulige.github.io/en/tags/</link>
+        <description>Recent content in Tags on sumulige</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Tue, 19 Dec 2023 02:16:13 +0800</lastBuildDate>
+        <atom:link href="https://www.sumulige.github.io/en/tags/index.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title>环法</title>
+            <link>https://www.sumulige.github.io/en/tags/%E7%8E%AF%E6%B3%95/</link>
+            <pubDate>Tue, 19 Dec 2023 02:16:13 +0800</pubDate>
+            <guid>https://www.sumulige.github.io/en/tags/%E7%8E%AF%E6%B3%95/</guid>
+            <description></description>
+        </item>
+    </channel>
+</rss>

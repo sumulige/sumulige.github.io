@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>🏖照片 on sumulige</title>
+        <link>https://www.sumulige.github.io/en/posts/photo/</link>
+        <description>Recent content in 🏖照片 on sumulige</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <atom:link href="https://www.sumulige.github.io/en/posts/photo/index.xml" rel="self"
+                   type="application/rss+xml"/>
+    </channel>
+</rss>

@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://www.sumulige.github.io/sitemap.xml
