@@ -1,11 +1,10 @@
 ---
-created: 2023-12-24 T00:12:04 (UTC +08:00)
-tags:
-  - base64
-source: https://www.v2ex.com/t/1002933#reply0
-Author:
+title: "关于前端上传 base 64 格式的图片到 java 后端，后端需要 for 循环 byte 类型的数据，对于小于 0 的 byte 值要加 256"
+date: 2023-12-24 T00:12:04 (UTC +08:00)
+hidemeta: true
+tags: ["base64"]
+categories: ["前端","问题"]
 ---
-
 
 > ## Excerpt
 > 程序员 - @wuyiccc - 这几天看了好几个关于前端上传 base 64 格式的图片到 java 后端，后端需要 for 循环 byte 类型的数据，对于小于 0 的 byte 值要加 256 ，这一点没看懂，java byte
