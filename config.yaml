@@ -1,5 +1,5 @@
 # baseURL: https://www.sumulige.github.io
-baseURL: https://www.sumulige.com  # 绑定的域名
+baseURL: http://www.sumulige.com  # 绑定的域名
 languageCode: zh-cn # en-us
 title: sumulige
 theme: PaperMod # 主题名字，和themes文件夹下的一致
