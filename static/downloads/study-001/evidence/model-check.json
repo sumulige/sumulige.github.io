@@ -1,0 +1,516 @@
+{
+  "format": "coach-workflow-formal-check/v1",
+  "created_utc": "2026-10-23T03:24:20.642173+00:00",
+  "model_file": "analysis/model.json",
+  "method": "Exhaustive marking enumeration and reverse reachability; Definition 7 properties",
+  "scope": "Formal properties of a declared research abstraction, not coaching validity",
+  "cases": [
+    {
+      "case": "candidate",
+      "expected": "PASS",
+      "matches_expectation": true,
+      "status": "PASS",
+      "complete_enumeration": true,
+      "state_limit": 10000,
+      "state_count": 8,
+      "edge_count": 9,
+      "structure": {
+        "start_has_no_incoming_arcs": true,
+        "finish_has_no_outgoing_arcs": true,
+        "nodes_outside_start_finish_paths": [],
+        "is_workflow_net": true
+      },
+      "checks": {
+        "option_to_complete": true,
+        "proper_completion": true,
+        "no_dead_transitions": true
+      },
+      "dead_transitions": [],
+      "final_reachable": true,
+      "cannot_finish_states": [],
+      "proper_completion_counterexample": null,
+      "completion_path": {
+        "states": [
+          "m0",
+          "m1",
+          "m2",
+          "m4",
+          "m5",
+          "m6",
+          "m7"
+        ],
+        "actions": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t6"
+        ]
+      },
+      "nonterminating_cycle": {
+        "states": [
+          "m5",
+          "m6",
+          "m5"
+        ],
+        "actions": [
+          "t4",
+          "t5"
+        ]
+      },
+      "declared_invariant_preserved_by_each_transition": true,
+      "observed_max_tokens_per_place": {
+        "p0": 1,
+        "p1": 1,
+        "p2": 1,
+        "p3": 1,
+        "p4": 1,
+        "p5": 1,
+        "p6": 1,
+        "p7": 1
+      },
+      "states": [
+        {
+          "id": "m0",
+          "tokens": {
+            "p0": 1
+          }
+        },
+        {
+          "id": "m1",
+          "tokens": {
+            "p1": 1,
+            "p2": 1
+          }
+        },
+        {
+          "id": "m2",
+          "tokens": {
+            "p2": 1,
+            "p3": 1
+          }
+        },
+        {
+          "id": "m3",
+          "tokens": {
+            "p1": 1,
+            "p4": 1
+          }
+        },
+        {
+          "id": "m4",
+          "tokens": {
+            "p3": 1,
+            "p4": 1
+          }
+        },
+        {
+          "id": "m5",
+          "tokens": {
+            "p5": 1
+          }
+        },
+        {
+          "id": "m6",
+          "tokens": {
+            "p6": 1
+          }
+        },
+        {
+          "id": "m7",
+          "tokens": {
+            "p7": 1
+          }
+        }
+      ],
+      "edges": [
+        {
+          "from": "m0",
+          "action": "t0",
+          "to": "m1"
+        },
+        {
+          "from": "m1",
+          "action": "t1",
+          "to": "m2"
+        },
+        {
+          "from": "m1",
+          "action": "t2",
+          "to": "m3"
+        },
+        {
+          "from": "m2",
+          "action": "t2",
+          "to": "m4"
+        },
+        {
+          "from": "m3",
+          "action": "t1",
+          "to": "m4"
+        },
+        {
+          "from": "m4",
+          "action": "t3",
+          "to": "m5"
+        },
+        {
+          "from": "m5",
+          "action": "t4",
+          "to": "m6"
+        },
+        {
+          "from": "m6",
+          "action": "t5",
+          "to": "m5"
+        },
+        {
+          "from": "m6",
+          "action": "t6",
+          "to": "m7"
+        }
+      ]
+    },
+    {
+      "case": "counterexample_A",
+      "expected": "FAIL",
+      "matches_expectation": true,
+      "status": "FAIL",
+      "complete_enumeration": true,
+      "state_limit": 10000,
+      "state_count": 8,
+      "edge_count": 9,
+      "structure": {
+        "start_has_no_incoming_arcs": true,
+        "finish_has_no_outgoing_arcs": true,
+        "nodes_outside_start_finish_paths": [],
+        "is_workflow_net": true
+      },
+      "checks": {
+        "option_to_complete": false,
+        "proper_completion": false,
+        "no_dead_transitions": true
+      },
+      "dead_transitions": [],
+      "final_reachable": false,
+      "cannot_finish_states": [
+        "m0",
+        "m1",
+        "m2",
+        "m3",
+        "m4",
+        "m5",
+        "m6",
+        "m7"
+      ],
+      "proper_completion_counterexample": {
+        "states": [
+          "m0",
+          "m1",
+          "m2",
+          "m4",
+          "m5",
+          "m6",
+          "m7"
+        ],
+        "actions": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t6"
+        ]
+      },
+      "completion_path": null,
+      "nonterminating_cycle": {
+        "states": [
+          "m5",
+          "m6",
+          "m5"
+        ],
+        "actions": [
+          "t4",
+          "t5"
+        ]
+      },
+      "declared_invariant_preserved_by_each_transition": false,
+      "observed_max_tokens_per_place": {
+        "p0": 1,
+        "p1": 1,
+        "p2": 1,
+        "p3": 1,
+        "p4": 1,
+        "p5": 1,
+        "p6": 1,
+        "p7": 1
+      },
+      "states": [
+        {
+          "id": "m0",
+          "tokens": {
+            "p0": 1
+          }
+        },
+        {
+          "id": "m1",
+          "tokens": {
+            "p1": 1,
+            "p2": 1
+          }
+        },
+        {
+          "id": "m2",
+          "tokens": {
+            "p2": 1,
+            "p3": 1
+          }
+        },
+        {
+          "id": "m3",
+          "tokens": {
+            "p1": 1,
+            "p4": 1
+          }
+        },
+        {
+          "id": "m4",
+          "tokens": {
+            "p3": 1,
+            "p4": 1
+          }
+        },
+        {
+          "id": "m5",
+          "tokens": {
+            "p4": 1,
+            "p5": 1
+          }
+        },
+        {
+          "id": "m6",
+          "tokens": {
+            "p4": 1,
+            "p6": 1
+          }
+        },
+        {
+          "id": "m7",
+          "tokens": {
+            "p4": 1,
+            "p7": 1
+          }
+        }
+      ],
+      "edges": [
+        {
+          "from": "m0",
+          "action": "t0",
+          "to": "m1"
+        },
+        {
+          "from": "m1",
+          "action": "t1",
+          "to": "m2"
+        },
+        {
+          "from": "m1",
+          "action": "t2",
+          "to": "m3"
+        },
+        {
+          "from": "m2",
+          "action": "t2",
+          "to": "m4"
+        },
+        {
+          "from": "m3",
+          "action": "t1",
+          "to": "m4"
+        },
+        {
+          "from": "m4",
+          "action": "t3",
+          "to": "m5"
+        },
+        {
+          "from": "m5",
+          "action": "t4",
+          "to": "m6"
+        },
+        {
+          "from": "m6",
+          "action": "t5",
+          "to": "m5"
+        },
+        {
+          "from": "m6",
+          "action": "t6",
+          "to": "m7"
+        }
+      ]
+    },
+    {
+      "case": "counterexample_B",
+      "expected": "FAIL",
+      "matches_expectation": true,
+      "status": "FAIL",
+      "complete_enumeration": true,
+      "state_limit": 10000,
+      "state_count": 7,
+      "edge_count": 8,
+      "structure": {
+        "start_has_no_incoming_arcs": true,
+        "finish_has_no_outgoing_arcs": true,
+        "nodes_outside_start_finish_paths": [
+          "p0",
+          "p1",
+          "p2",
+          "p3",
+          "p4",
+          "p5",
+          "p6",
+          "p7",
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ],
+        "is_workflow_net": false
+      },
+      "checks": {
+        "option_to_complete": false,
+        "proper_completion": true,
+        "no_dead_transitions": true
+      },
+      "dead_transitions": [],
+      "final_reachable": false,
+      "cannot_finish_states": [
+        "m0",
+        "m1",
+        "m2",
+        "m3",
+        "m4",
+        "m5",
+        "m6"
+      ],
+      "proper_completion_counterexample": null,
+      "completion_path": null,
+      "nonterminating_cycle": {
+        "states": [
+          "m5",
+          "m6",
+          "m5"
+        ],
+        "actions": [
+          "t4",
+          "t5"
+        ]
+      },
+      "declared_invariant_preserved_by_each_transition": true,
+      "observed_max_tokens_per_place": {
+        "p0": 1,
+        "p1": 1,
+        "p2": 1,
+        "p3": 1,
+        "p4": 1,
+        "p5": 1,
+        "p6": 1,
+        "p7": 0
+      },
+      "states": [
+        {
+          "id": "m0",
+          "tokens": {
+            "p0": 1
+          }
+        },
+        {
+          "id": "m1",
+          "tokens": {
+            "p1": 1,
+            "p2": 1
+          }
+        },
+        {
+          "id": "m2",
+          "tokens": {
+            "p2": 1,
+            "p3": 1
+          }
+        },
+        {
+          "id": "m3",
+          "tokens": {
+            "p1": 1,
+            "p4": 1
+          }
+        },
+        {
+          "id": "m4",
+          "tokens": {
+            "p3": 1,
+            "p4": 1
+          }
+        },
+        {
+          "id": "m5",
+          "tokens": {
+            "p5": 1
+          }
+        },
+        {
+          "id": "m6",
+          "tokens": {
+            "p6": 1
+          }
+        }
+      ],
+      "edges": [
+        {
+          "from": "m0",
+          "action": "t0",
+          "to": "m1"
+        },
+        {
+          "from": "m1",
+          "action": "t1",
+          "to": "m2"
+        },
+        {
+          "from": "m1",
+          "action": "t2",
+          "to": "m3"
+        },
+        {
+          "from": "m2",
+          "action": "t2",
+          "to": "m4"
+        },
+        {
+          "from": "m3",
+          "action": "t1",
+          "to": "m4"
+        },
+        {
+          "from": "m4",
+          "action": "t3",
+          "to": "m5"
+        },
+        {
+          "from": "m5",
+          "action": "t4",
+          "to": "m6"
+        },
+        {
+          "from": "m6",
+          "action": "t5",
+          "to": "m5"
+        }
+      ]
+    }
+  ]
+}

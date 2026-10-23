@@ -1,0 +1,21 @@
+{
+  "name": "公开越野滑雪个案的粗粒度流程候选 0.1",
+  "kind": "ordinary_single_case_workflow_net",
+  "places": ["p0", "p1", "p2", "p3", "p4", "p5", "p6", "p7"],
+  "start": "p0",
+  "finish": "p7",
+  "invariant_weights": [2, 1, 1, 1, 1, 2, 2, 2],
+  "transitions": [
+    {"id": "t0", "label": "启动复核", "inputs": ["p0"], "outputs": ["p1", "p2"]},
+    {"id": "t1", "label": "整理初步安排", "inputs": ["p1"], "outputs": ["p3"]},
+    {"id": "t2", "label": "整理因素分析", "inputs": ["p2"], "outputs": ["p4"]},
+    {"id": "t3", "label": "形成组合方案", "inputs": ["p3", "p4"], "outputs": ["p5"]},
+    {"id": "t4", "label": "执行并取得反馈", "inputs": ["p5"], "outputs": ["p6"]},
+    {"id": "t5", "label": "再次调整", "inputs": ["p6"], "outputs": ["p5"]},
+    {"id": "t6", "label": "归档本次观察", "inputs": ["p6"], "outputs": ["p7"]}
+  ],
+  "predeclared_counterexamples": [
+    {"id": "A", "mutation": "retain_p4_after_t3", "expected": "FAIL"},
+    {"id": "B", "mutation": "remove_t6", "expected": "FAIL"}
+  ]
+}
