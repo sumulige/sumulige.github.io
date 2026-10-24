@@ -59,7 +59,7 @@
   }
   function home() {
     const entries = articles().filter(a => a.id !== "series-guide");
-    return `<div class="page home-page"><section class="home-intro"><div><h1>sumulige<span class="blue">。</span></h1><p>研究与写作</p></div></section><section class="series-intro"><span class="eyebrow">研究 001 · 七篇系列</span><h2>精英耐力教练工作流</h2><p>从专业职责与公开案例，走向可以检查的模型。</p><a class="button" href="#/article/series-guide">阅读指南 ${icon("arrow")}</a></section><section class="recent-section"><div class="section-heading"><h2>文章</h2><a href="#/articles">全部 ${icon('arrow')}</a></div>${entries.length ? `<div class="article-list">${entries.map(a=>articleRow(a)).join('')}</div>` : '<div class="empty-state"><h2>内容整理中</h2></div>'}</section>${footer()}</div>`;
+    return `<div class="page home-page"><section class="home-intro"><div><h1>sumulige<span class="blue">。</span></h1><p>研究与写作</p></div></section><section class="series-intro"><span class="eyebrow">训练数据与决策 · 107篇</span><h2>从记录到判断</h2><p>测量、模型与决策，各自需要什么证据。</p><a class="button" href="${topicLink('训练数据与决策')}">阅读文章 ${icon("arrow")}</a></section><section class="recent-section"><div class="section-heading"><h2>文章</h2><a href="#/articles">全部 ${icon('arrow')}</a></div>${entries.length ? `<div class="article-list">${entries.slice(0, 8).map(a=>articleRow(a)).join('')}</div>` : '<div class="empty-state"><h2>内容整理中</h2></div>'}</section>${footer()}</div>`;
   }
   function filterArticles(params) {
     const q = (params.get('q') || '').trim().toLocaleLowerCase();
