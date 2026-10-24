@@ -19,25 +19,27 @@ PUBLIC_FILES = {
     '../evidence/learning-reproduction.json': 'evidence/learning-reproduction.json',
 }
 FILES = sorted(SOURCE.glob('0*.md'))
+P1_FILES = sorted((ROOT / 'source' / 'p1').glob('*/*.md'))
+P1_IDS = {p: 'p1-' + p.parent.name[:3] + '-' + p.stem for p in P1_FILES}
 IDS = {p.name: p.stem for p in FILES} | {'README.md': 'series-guide'}
 
 
 def render(path):
     text = path.read_text()
     lines = text.splitlines()
-    title = lines.pop(0).strip('*')
+    title = lines.pop(0).removeprefix('# ').strip('*')
     text = '\n'.join(lines)
     # Source uses whole-line bold section labels; promote only those labels.
     text = re.sub(r'^\*\*(\d+(?:\.\d+)*\.? .+?)\*\*$', r'## \1', text, flags=re.M)
     maths = []
     def hold(match):
-        display = match.group(1) is not None
-        tex = match.group(1) if display else match.group(2)
+        display = match.group(1) is not None or match.group(3) is not None
+        tex = next(value for value in match.groups() if value is not None)
         key = f'MATHPLACEHOLDER{len(maths)}END'
         tag = 'div' if display else 'span'
         maths.append((key, f'<{tag} class="math-source" data-display="{str(display).lower()}">{escape(tex.strip())}</{tag}>'))
         return '\n\n' + key + '\n\n' if display else key
-    text = re.sub(r'\\\[(.*?)\\\]|\\\((.*?)\\\)', hold, text, flags=re.S)
+    text = re.sub(r'\\\[(.*?)\\\]|\\\((.*?)\\\)|\$\$(.*?)\$\$|(?<!\\)\$([^$\n]+)\$', hold, text, flags=re.S)
     md = MarkdownIt('commonmark', {'html': False}).enable('table')
     tokens = md.parse(text)
     toc = []
@@ -46,9 +48,12 @@ def render(path):
             label = tokens[i+1].content
             number = re.match(r'\d+(?:\.\d+)*', label)
             anchor = 'section-' + (number.group() if number else str(len(toc)+1))
+            used = {item['id'] for item in toc}
+            while anchor in used:
+                anchor += '-next'
             token.attrSet('id', anchor)
             token.attrSet('tabindex', '-1')
-            toc.append({'id': anchor, 'text': label, 'level': 2})
+            toc.append({'id': anchor, 'text': label, 'level': int(token.tag[1:])})
         if token.type == 'th_open':
             token.attrSet('scope', 'col')
         for child in token.children or []:
@@ -57,6 +62,10 @@ def render(path):
                 if href.startswith(('https://', 'http://')):
                     child.attrSet('target', '_blank')
                     child.attrSet('rel', 'noopener noreferrer')
+                elif href.startswith('#/article/'):
+                    if href == '#/article/series-guide?section=publication':
+                        child.attrSet('class', 'unpublished-reference')
+                        child.attrSet('title', '内部研究附件未公开，查看发布范围')
                 elif href in IDS:
                     child.attrSet('href', '#/article/' + IDS[href])
                 elif href in PUBLIC_FILES:
@@ -72,17 +81,17 @@ def render(path):
     html = html.replace('<table>', '<div class="table-scroll" tabindex="0" role="region" aria-label="文章数据表"><table>').replace('</table>', '</table></div>')
     html = re.sub(r'<pre><code class="language-mermaid">(.*?)</code></pre>', r'<div class="diagram-scroll" tabindex="0" role="region" aria-label="流程图，可横向滚动"><pre class="mermaid">\1</pre></div>', html, flags=re.S)
     if path.name == 'README.md':
-        notice = '<section class="publication-note"><h2 id="publication" tabindex="-1">本次公开范围</h2><p>本站发布七篇系列文章及阅读指南。模型代码、模型输入、原始计算结果与复现结果可下载；聊天摘录、来源审计、阶段记录及其他内部研究附件未公开。文中指向这些附件的链接会返回本说明。</p><p>原稿中的“完整研究包”和内部记录数量描述原研究目录；本站下载包仅包含下列四个公开附件。公开副本将本机绝对路径改为相对路径，计算结果保持不变。</p><p><a href="downloads/study-001.zip" download>下载复现包（ZIP）</a></p><ul>'
+        notice = '<section class="publication-note"><h2 id="publication" tabindex="-1">本次公开范围</h2><p>本站发布七篇教练工作流系列文章、107篇训练数据与决策研究文章及本阅读指南。新增107篇公开正文及原有外部来源链接；其内部研究附件未公开，相关入口会返回本说明。原七篇系列的模型代码、模型输入、原始计算结果与复现结果可下载；聊天摘录、来源审计、阶段记录及其他内部研究附件未公开。文中指向这些附件的链接会返回本说明。</p><p>原稿中的“完整研究包”和内部记录数量描述原研究目录；本站下载包仅包含下列四个公开附件。公开副本将本机绝对路径改为相对路径，计算结果保持不变。</p><p><a href="downloads/study-001.zip" download>下载复现包（ZIP）</a></p><ul>'
         notice += ''.join(f'<li><a href="downloads/study-001/{name}" download>{name}</a></li>' for name in PUBLIC_FILES.values())
         notice += '</ul></section>'
         html = notice + html
         toc.insert(0, {'id': 'publication', 'text': '本次公开范围', 'level': 2})
-    return {'id': IDS[path.name], 'title': title, 'description': '', 'topic': '教练工作流研究',
+    return {'id': P1_IDS[path] if path in P1_IDS else IDS[path.name], 'title': title, 'description': '', 'topic': '训练数据与决策' if path in P1_IDS else '教练工作流研究',
             'minutes': max(1, math.ceil(len(text)/500)), 'body': html, 'toc': toc}
 
 
 def main():
-    articles = [render(p) for p in FILES] + [render(SOURCE/'README.md')]
+    articles = [render(p) for p in P1_FILES] + [render(p) for p in FILES] + [render(SOURCE/'README.md')]
     if (ROOT/'source/p0/manifest.json').exists():
         articles += build_articles()
     (OUT/'content.js').write_text('window.SITE_CONTENT = ' + json.dumps({'articles': articles, 'projects': [], 'books': []}, ensure_ascii=False) + ';\n')
@@ -98,7 +107,7 @@ def main():
     with zipfile.ZipFile(OUT/'downloads/study-001.zip', 'w', zipfile.ZIP_DEFLATED) as bundle:
         for name in PUBLIC_FILES.values():
             bundle.write(OUT/'downloads/study-001'/name, 'study-001/'+name)
-    print(f'Built {len(articles)} reading entries; existing series and explicit public attachments preserved.')
+    print(f'Built {len(articles)} reading entries, preserving all published series.')
 
 
 if __name__ == '__main__':
