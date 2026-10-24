@@ -1,0 +1,3 @@
+method,coverage_easy,coverage_hard,marginal,infinite_easy,infinite_hard
+pooled,0.8794691812,0.0847773692,0.8,0.0,0.0
+by_group,0.8501631625,0.9983650625,0.8649833525,6.4234e-05,0.991668906

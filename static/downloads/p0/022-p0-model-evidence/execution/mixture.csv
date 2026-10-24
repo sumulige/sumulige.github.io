@@ -1,0 +1,6 @@
+role,x1,x2,prediction_13,prediction_22
+training,0,0,0,0
+training,1,1,4,4
+training,2,2,8,8
+training,3,3,12,12
+new_mixture,1,0,1,2

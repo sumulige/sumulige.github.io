@@ -1,0 +1,326 @@
+{
+  "status": "PASS",
+  "started_utc": "2026-10-23T23:07:08.369150+00:00",
+  "environment": {
+    "python": "3.14.7",
+    "dependencies": "standard library"
+  },
+  "study_type": "constructed finite examples; no human or empirical data",
+  "planned": 7,
+  "completed": 7,
+  "failed": 0,
+  "cases": {
+    "C01": {
+      "constructed_true_effect": 0,
+      "later_vs_earlier": 4,
+      "assignments": 70,
+      "randomization_mean": 0.0,
+      "randomization_population_sd": 1.7320508075688772,
+      "range": [
+        -4.0,
+        4.0
+      ],
+      "checks": [
+        "all choose(8,4) assignments",
+        "variance equals 3"
+      ]
+    },
+    "C02": {
+      "rows": [
+        {
+          "sequence": "01010101",
+          "time": 2,
+          "current": 1,
+          "previous": 0,
+          "outcome": 2,
+          "alternative_outcome": 2
+        },
+        {
+          "sequence": "01010101",
+          "time": 3,
+          "current": 0,
+          "previous": 1,
+          "outcome": 3,
+          "alternative_outcome": 3
+        },
+        {
+          "sequence": "01010101",
+          "time": 4,
+          "current": 1,
+          "previous": 0,
+          "outcome": 2,
+          "alternative_outcome": 2
+        },
+        {
+          "sequence": "01010101",
+          "time": 5,
+          "current": 0,
+          "previous": 1,
+          "outcome": 3,
+          "alternative_outcome": 3
+        },
+        {
+          "sequence": "01010101",
+          "time": 6,
+          "current": 1,
+          "previous": 0,
+          "outcome": 2,
+          "alternative_outcome": 2
+        },
+        {
+          "sequence": "01010101",
+          "time": 7,
+          "current": 0,
+          "previous": 1,
+          "outcome": 3,
+          "alternative_outcome": 3
+        },
+        {
+          "sequence": "01010101",
+          "time": 8,
+          "current": 1,
+          "previous": 0,
+          "outcome": 2,
+          "alternative_outcome": 2
+        },
+        {
+          "sequence": "10101010",
+          "time": 2,
+          "current": 0,
+          "previous": 1,
+          "outcome": 3,
+          "alternative_outcome": 3
+        },
+        {
+          "sequence": "10101010",
+          "time": 3,
+          "current": 1,
+          "previous": 0,
+          "outcome": 2,
+          "alternative_outcome": 2
+        },
+        {
+          "sequence": "10101010",
+          "time": 4,
+          "current": 0,
+          "previous": 1,
+          "outcome": 3,
+          "alternative_outcome": 3
+        },
+        {
+          "sequence": "10101010",
+          "time": 5,
+          "current": 1,
+          "previous": 0,
+          "outcome": 2,
+          "alternative_outcome": 2
+        },
+        {
+          "sequence": "10101010",
+          "time": 6,
+          "current": 0,
+          "previous": 1,
+          "outcome": 3,
+          "alternative_outcome": 3
+        },
+        {
+          "sequence": "10101010",
+          "time": 7,
+          "current": 1,
+          "previous": 0,
+          "outcome": 2,
+          "alternative_outcome": 2
+        },
+        {
+          "sequence": "10101010",
+          "time": 8,
+          "current": 0,
+          "previous": 1,
+          "outcome": 3,
+          "alternative_outcome": 3
+        }
+      ],
+      "analyzed_rows": 14,
+      "excluded_time": 1,
+      "current_action_mean_difference": -1,
+      "direct_coefficient": 2,
+      "previous_coefficient": 3,
+      "alternative_coefficients": [
+        1,
+        1,
+        2
+      ],
+      "design_rank": 2,
+      "checks": [
+        "current + previous = 1 in every row",
+        "distinct coefficient vectors yield all same outcomes"
+      ]
+    },
+    "C03": {
+      "groups": {
+        "override": {
+          "n": 100,
+          "crude_rate": 0.82,
+          "standardized_rate": 0.5,
+          "ipw_normalized_rate": 0.5,
+          "weight_sum": 200.0,
+          "weight_ess": 36.0,
+          "clipped_weight_sum": 120.0,
+          "clipped_weighted_successes": 92.0,
+          "clipped_normalized_rate": 0.7666666666666667
+        },
+        "follow": {
+          "n": 100,
+          "crude_rate": 0.18,
+          "standardized_rate": 0.5,
+          "ipw_normalized_rate": 0.5,
+          "weight_sum": 200.0,
+          "weight_ess": 36.0,
+          "clipped_weight_sum": 120.0,
+          "clipped_weighted_successes": 28.0,
+          "clipped_normalized_rate": 0.23333333333333334
+        }
+      },
+      "target_state_probabilities": {
+        "good": 0.5,
+        "bad": 0.5
+      },
+      "crude_difference": 0.64,
+      "adjusted_difference": 0,
+      "clipped_difference": 0.5333333333333333,
+      "checks": [
+        "exact rational standardization equals normalized IPW",
+        "both normalized weight sums 200; ESS 36; clipped sums 120"
+      ]
+    },
+    "C04": {
+      "constructed_units": 200,
+      "observed_association": 0.6,
+      "ate_plus": 0.8,
+      "ate_minus": -0.2,
+      "binary_outcome_bounds": [
+        -0.2,
+        0.8
+      ],
+      "checks": [
+        "both worlds preserve all 200 observed outcomes",
+        "each unobserved binary potential outcome attains a sharp bound"
+      ]
+    },
+    "C05": {
+      "path_count": 8,
+      "probability_sum": 1,
+      "regimes": {
+        "00": {
+          "g_mean": 0.8,
+          "ipw_mean": 0.8,
+          "ipw_mass": 1.0,
+          "observed_mean": 0.23529411764705882,
+          "observed_mass": 0.34
+        },
+        "01": {
+          "g_mean": 3.8,
+          "ipw_mean": 3.8,
+          "ipw_mass": 1.0,
+          "observed_mean": 5.0,
+          "observed_mass": 0.16
+        },
+        "10": {
+          "g_mean": 5.2,
+          "ipw_mean": 5.2,
+          "ipw_mass": 1.0,
+          "observed_mean": 4.0,
+          "observed_mass": 0.16
+        },
+        "11": {
+          "g_mean": 8.2,
+          "ipw_mean": 8.2,
+          "ipw_mass": 1.0,
+          "observed_mean": 8.764705882352942,
+          "observed_mass": 0.34
+        }
+      },
+      "g_contrast_10_vs_00": 4.4,
+      "observed_contrast_10_vs_00": 3.764705882352941,
+      "fixed_l2_direct_coefficient": 2,
+      "checks": [
+        "all eight path probabilities sum to 1",
+        "g summation, sequential IPW and direct expectation agree for all four regimes"
+      ]
+    },
+    "C06": {
+      "actions": {
+        "A": {
+          "true_value": 0.6,
+          "model_value": 0.3
+        },
+        "B": {
+          "true_value": 0.5,
+          "model_value": 0.5
+        }
+      },
+      "outcome_rows": [
+        {
+          "action": "A",
+          "success": 0,
+          "probability": 0.4,
+          "utility": 0.0
+        },
+        {
+          "action": "A",
+          "success": 1,
+          "probability": 0.6,
+          "utility": 1.0
+        },
+        {
+          "action": "B",
+          "success": 0,
+          "probability": 0.1,
+          "utility": -0.4
+        },
+        {
+          "action": "B",
+          "success": 1,
+          "probability": 0.9,
+          "utility": 0.6
+        }
+      ],
+      "true_optimal": "A",
+      "misspecified_model_optimal": "B",
+      "true_optimal_failure_probability": 0.4,
+      "checks": [
+        "enumerated outcome utility equals probability minus cost"
+      ]
+    },
+    "C07": {
+      "observed_old_value_in_both_worlds": 5,
+      "new_action_historical_probability": 0,
+      "new_values_by_world": [
+        -5,
+        15
+      ],
+      "world_weights": [
+        0.2,
+        0.8
+      ],
+      "expected_values": {
+        "old": 5,
+        "new": 11.0
+      },
+      "worst_values_over_two_worlds": {
+        "old": 5,
+        "new": -5
+      },
+      "expected_choice": "new",
+      "maximin_choice": "old",
+      "checks": [
+        "identical observed history in both worlds",
+        "world weights are assumptions, not learned frequencies"
+      ]
+    }
+  },
+  "failures": [],
+  "deviations": [],
+  "randomness": "none; complete finite enumeration",
+  "finished_utc": "2026-10-23T23:07:08.371431+00:00"
+}

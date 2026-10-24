@@ -1,0 +1,159 @@
+{
+  "run_utc": "2026-10-24T02:47:32.769881+00:00",
+  "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "planned": 4,
+  "executed": 4,
+  "failed": 0,
+  "deviations": [],
+  "empirical_status": "UNKNOWN",
+  "independent_review": false,
+  "cases": {
+    "D01": {
+      "W_A": {
+        "observed_counts": {
+          "A": 90,
+          "B": 10
+        },
+        "joint_menu_choice": "A"
+      },
+      "W_B": {
+        "observed_counts": {
+          "A": 90,
+          "B": 10
+        },
+        "joint_menu_choice": "B"
+      }
+    },
+    "D02": {
+      "base": {
+        "probabilities": [
+          0.8807970779778823,
+          0.2689414213699951,
+          0.7310585786300049
+        ],
+        "scaled_coefficients": [
+          2.0,
+          -1.0
+        ],
+        "time_gain_tradeoff": 0.5
+      },
+      "scaled": {
+        "probabilities": [
+          0.8807970779778823,
+          0.2689414213699951,
+          0.7310585786300049
+        ],
+        "scaled_coefficients": [
+          2.0,
+          -1.0
+        ],
+        "time_gain_tradeoff": 0.5
+      },
+      "shifted": {
+        "probabilities": [
+          0.8807970779778823,
+          0.2689414213699951,
+          0.7310585786300049
+        ],
+        "scaled_coefficients": [
+          2.0,
+          -1.0
+        ],
+        "time_gain_tradeoff": 0.5
+      },
+      "noisier": {
+        "probabilities": [
+          0.7310585786300049,
+          0.3775406687981454,
+          0.6224593312018546
+        ],
+        "scaled_coefficients": [
+          1.0,
+          -0.5
+        ],
+        "time_gain_tradeoff": 0.5
+      }
+    },
+    "D03": {
+      "A": {
+        "base": 1.8,
+        "proper": -1.2000000000000002,
+        "truncated_nonzero_terminal": -1.2000000000000002,
+        "absorbing_tail": -0.0,
+        "restored": -1.2000000000000002
+      },
+      "B": {
+        "base": 1.0,
+        "proper": -1.9999999999999998,
+        "truncated_nonzero_terminal": 6.1000000000000005,
+        "absorbing_tail": -8.1,
+        "restored": -1.9999999999999991
+      },
+      "best_paths": {
+        "base": "A",
+        "proper": "A",
+        "truncated_nonzero_terminal": "B",
+        "restored": "A"
+      },
+      "first_step_best": {
+        "base": "B",
+        "proper": "A"
+      }
+    },
+    "D04": {
+      "models": {
+        "positive": {
+          "policy": [
+            "A",
+            "B"
+          ],
+          "max_actions": [
+            [
+              "A"
+            ],
+            [
+              "B"
+            ]
+          ],
+          "observed_value": 1.0,
+          "max_value": 1.0
+        },
+        "negative": {
+          "policy": [
+            "A",
+            "B"
+          ],
+          "max_actions": [
+            [
+              "B"
+            ],
+            [
+              "A"
+            ]
+          ],
+          "observed_value": -1.0,
+          "max_value": 0.0
+        },
+        "zero": {
+          "policy": [
+            "A",
+            "B"
+          ],
+          "max_actions": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "A",
+              "B"
+            ]
+          ],
+          "observed_value": 0.0,
+          "max_value": 0.0
+        }
+      },
+      "opposite_reward_regret": 1.0
+    }
+  }
+}

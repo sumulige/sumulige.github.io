@@ -1,0 +1,5 @@
+profile,intensities,total,mean_intensity,quadratic_score,mean_then_square,gap
+steady,"1,1,1,1",4,1,4,4,0
+alternating,"0,2,0,2",4,1,8,4,4
+late,"0,0,0,2",2,0.5,4,1.0,3.0
+early,"2,0,0,0",2,0.5,4,1.0,3.0

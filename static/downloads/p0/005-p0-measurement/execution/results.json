@@ -1,0 +1,292 @@
+{
+  "created_at": "2026-10-23T16:24:10.892029+00:00",
+  "python": "3.14.7",
+  "method": "Predeclared deterministic algebra; illustrative inputs only",
+  "status": "PASS",
+  "cases": [
+    {
+      "id": "M01",
+      "status": "PASS",
+      "values": {
+        "baseline_A": [
+          40,
+          50,
+          60
+        ],
+        "baseline_B": [
+          58.0,
+          70.0,
+          82.0
+        ],
+        "correlation": 1.0,
+        "after_A": 45,
+        "after_B": 70,
+        "affine_prediction": 64,
+        "z_A": -0.5,
+        "z_B": 0
+      },
+      "checks": {
+        "perfect_baseline": true,
+        "response_mismatch": true
+      }
+    },
+    {
+      "id": "M02",
+      "status": "PASS",
+      "values": {
+        "world_state_change": [
+          [
+            200,
+            210
+          ],
+          [
+            210,
+            220
+          ]
+        ],
+        "world_bias_change": [
+          [
+            200,
+            210
+          ],
+          [
+            210,
+            220
+          ]
+        ],
+        "true_changes": [
+          10,
+          0
+        ],
+        "device_differences": [
+          10,
+          10
+        ]
+      },
+      "checks": {
+        "same_full_observations": true,
+        "different_truths": true
+      }
+    },
+    {
+      "id": "M03",
+      "status": "PASS",
+      "values": {
+        "references": [
+          100,
+          200,
+          300
+        ],
+        "readings": [
+          109.0,
+          213.0,
+          317.0
+        ],
+        "slope": 1.04,
+        "intercept": 5.0,
+        "calibrated_value": 250.0,
+        "gradients": [
+          -0.9615384615384615,
+          -240.3846153846154,
+          0.9615384615384615
+        ],
+        "finite_difference": [
+          -0.96153845987601,
+          -240.384615409539,
+          0.96153845987601
+        ],
+        "uncertainty": 4.218732878553904,
+        "observation_only_uncertainty": 2.8846153846153846
+      },
+      "checks": {
+        "inverse": true,
+        "derivative": true,
+        "uncertainty_increases": true
+      }
+    },
+    {
+      "id": "M04",
+      "status": "PASS",
+      "values": {
+        "true_slope": 1.04,
+        "true_variance": 10000,
+        "reference_error_variance": 2500,
+        "population_ols_slope": 0.832
+      },
+      "checks": {
+        "attenuation": true
+      }
+    },
+    {
+      "id": "M05",
+      "status": "PASS",
+      "values": {
+        "power": 200,
+        "hr_cool": 140.0,
+        "hr_hot": 150.0,
+        "inferred_equivalent": 225.0,
+        "equivalent_per_observed": 1.125,
+        "observed_per_equivalent": 0.8888888888888888
+      },
+      "checks": {
+        "opposite_directions": true,
+        "reciprocal": true
+      }
+    },
+    {
+      "id": "M06",
+      "status": "PASS",
+      "values": {
+        "baseline": [
+          140,
+          200
+        ],
+        "after_world_capacity": [
+          140,
+          220
+        ],
+        "after_world_bias": [
+          140,
+          220
+        ],
+        "latent_true_power": [
+          220,
+          200
+        ],
+        "hr_power_before": 0.7,
+        "hr_power_after": 0.6363636363636364
+      },
+      "checks": {
+        "complete_observations_equal": true,
+        "ratio_improves": true
+      }
+    },
+    {
+      "id": "M07",
+      "status": "PASS",
+      "values": {
+        "design": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "parameters": [
+          [
+            250,
+            0,
+            -20
+          ],
+          [
+            250,
+            10,
+            -30
+          ],
+          [
+            250,
+            -20,
+            0
+          ]
+        ],
+        "predictions": [
+          [
+            250,
+            250,
+            230,
+            230
+          ],
+          [
+            250,
+            250,
+            230,
+            230
+          ],
+          [
+            250,
+            250,
+            230,
+            230
+          ]
+        ],
+        "rank_before": 2,
+        "rank_with_comparison": 3,
+        "comparison_outcome": 260,
+        "comparison_predictions": [
+          250,
+          260,
+          230
+        ]
+      },
+      "checks": {
+        "same_fit": true,
+        "rank_deficient": true,
+        "extra_row_full_rank": true,
+        "distinguishes": true
+      }
+    },
+    {
+      "id": "M08",
+      "status": "PASS",
+      "values": {
+        "power_W": [
+          300,
+          300,
+          280
+        ],
+        "mass_kg": [
+          75,
+          70,
+          70
+        ],
+        "power_per_mass": [
+          4.0,
+          4.285714285714286,
+          4.0
+        ]
+      },
+      "checks": {
+        "same_absolute_different_relative": true,
+        "same_relative_different_absolute": true
+      }
+    },
+    {
+      "id": "M09",
+      "status": "PASS",
+      "values": {
+        "before": 300,
+        "after": 290,
+        "change": -10,
+        "z_fixed": -2,
+        "z_current": 0,
+        "assumed_age_changes": [
+          -5,
+          -15
+        ],
+        "residuals": [
+          -5,
+          5
+        ]
+      },
+      "checks": {
+        "rolling_hides_change": true,
+        "assumption_changes_sign": true
+      }
+    }
+  ]
+}

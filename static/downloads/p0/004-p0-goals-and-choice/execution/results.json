@@ -1,0 +1,317 @@
+{
+  "created_utc": "2026-10-23T16:01:34.041667+00:00",
+  "python": "3.14.7",
+  "scope": "constructed examples only; no empirical training weights, effects or thresholds",
+  "planned_cases": 9,
+  "executed_cases": 9,
+  "passed_cases": 9,
+  "cases": [
+    {
+      "id": "G01",
+      "questions": [
+        "Q001"
+      ],
+      "status": "PASS",
+      "values": {
+        "scenarios": [
+          {
+            "power_w": 250,
+            "aero": 0.2,
+            "rolling": 4,
+            "distance_m": 20000,
+            "velocity_m_s": 10.154014781550437,
+            "time_s": 1969.6642589431171,
+            "back_substituted_power_w": 249.99999999999986
+          },
+          {
+            "power_w": 270,
+            "aero": 0.2,
+            "rolling": 4,
+            "distance_m": 20000,
+            "velocity_m_s": 10.449522069688438,
+            "time_s": 1913.9631331097153,
+            "back_substituted_power_w": 269.9999999999999
+          },
+          {
+            "power_w": 250,
+            "aero": 0.25,
+            "rolling": 4,
+            "distance_m": 20000,
+            "velocity_m_s": 9.46719920615843,
+            "time_s": 2112.5572161817367,
+            "back_substituted_power_w": 249.99999999999994
+          }
+        ]
+      }
+    },
+    {
+      "id": "G02",
+      "questions": [
+        "Q001"
+      ],
+      "status": "PASS",
+      "values": {
+        "elasticity": -0.37382178005724565,
+        "central_difference": -0.3738217835302926,
+        "pure_rolling": -1,
+        "pure_aero": -0.3333333333333333
+      }
+    },
+    {
+      "id": "G03",
+      "questions": [
+        "Q002",
+        "Q341"
+      ],
+      "status": "PASS",
+      "values": {
+        "options": {
+          "A": [
+            6,
+            8
+          ],
+          "B": [
+            4,
+            4
+          ],
+          "C": [
+            3,
+            10
+          ]
+        },
+        "dominated": [
+          "C"
+        ],
+        "choices": [
+          {
+            "lambda_per_hour": 0.25,
+            "hour_utility": {
+              "A": 4.0,
+              "B": 3.0,
+              "C": 0.5
+            },
+            "minute_utility": {
+              "A": 4.0,
+              "B": 3.0,
+              "C": 0.5
+            },
+            "chosen": "A"
+          },
+          {
+            "lambda_per_hour": 0.75,
+            "hour_utility": {
+              "A": 0.0,
+              "B": 1.0,
+              "C": -4.5
+            },
+            "minute_utility": {
+              "A": 0.0,
+              "B": 1.0,
+              "C": -4.5
+            },
+            "chosen": "B"
+          }
+        ]
+      }
+    },
+    {
+      "id": "G04",
+      "questions": [
+        "Q341"
+      ],
+      "status": "PASS",
+      "values": {
+        "scenarios": [
+          {
+            "time_sd": 2,
+            "utilities": {
+              "A": -1.0,
+              "B": 0.0
+            },
+            "chosen": "B"
+          },
+          {
+            "time_sd": 8,
+            "utilities": {
+              "A": 2.0,
+              "B": 1.5
+            },
+            "chosen": "A"
+          }
+        ]
+      }
+    },
+    {
+      "id": "G05",
+      "questions": [
+        "Q036"
+      ],
+      "status": "PASS",
+      "values": {
+        "first_inputs": {
+          "A": [
+            10,
+            0.3,
+            1
+          ],
+          "B": [
+            6,
+            0.9,
+            1
+          ],
+          "C": [
+            1,
+            1,
+            1
+          ]
+        },
+        "first_expected": {
+          "A": 3.7,
+          "B": 5.5,
+          "C": 1
+        },
+        "second_inputs": {
+          "A": [
+            10,
+            0.2,
+            5
+          ],
+          "B": [
+            6,
+            0.9,
+            0
+          ]
+        },
+        "second_full_expected": {
+          "A": 6.0,
+          "B": 5.4
+        },
+        "second_shortcut": {
+          "A": 2.0,
+          "B": 5.4
+        },
+        "double_counted_A": 1.11
+      }
+    },
+    {
+      "id": "G06",
+      "questions": [
+        "Q036"
+      ],
+      "status": "PASS",
+      "values": {
+        "A": [
+          2.8,
+          4.6
+        ],
+        "B": [
+          5.000000000000001,
+          5.749999999999999
+        ],
+        "A_wider": [
+          2.8,
+          8.2
+        ],
+        "B_dominates_narrow_A": true,
+        "B_dominates_wide_A": false
+      }
+    },
+    {
+      "id": "G07",
+      "questions": [
+        "Q181"
+      ],
+      "status": "PASS",
+      "values": {
+        "Y0_good_bad": [
+          6,
+          1
+        ],
+        "Y1_good_bad": [
+          8,
+          3
+        ],
+        "observed_system": 7.5,
+        "observed_reference": 1.5,
+        "crude_difference": 6.0,
+        "target_system": 5.5,
+        "target_reference": 3.5,
+        "standardized_difference": 2.0
+      }
+    },
+    {
+      "id": "G08",
+      "questions": [
+        "Q717",
+        "Q010"
+      ],
+      "status": "PASS",
+      "values": {
+        "before_w": [
+          300,
+          240
+        ],
+        "after_w": [
+          300,
+          258
+        ],
+        "change_w": [
+          0,
+          18
+        ],
+        "hypothetical_weights": [
+          [
+            0.8,
+            0.2
+          ],
+          [
+            0.2,
+            0.8
+          ]
+        ],
+        "value_changes": [
+          3.6,
+          14.4
+        ]
+      }
+    },
+    {
+      "id": "G09",
+      "questions": [
+        "Q250",
+        "Q010"
+      ],
+      "status": "PASS",
+      "values": {
+        "constructed_options": {
+          "A": [
+            8,
+            2
+          ],
+          "B": [
+            5,
+            8
+          ]
+        },
+        "preferences": [
+          {
+            "beta": 0.25,
+            "utility": {
+              "A": 8.5,
+              "B": 7.0
+            },
+            "chosen": "A"
+          },
+          {
+            "beta": 1,
+            "utility": {
+              "A": 10,
+              "B": 13
+            },
+            "chosen": "B"
+          }
+        ]
+      }
+    }
+  ]
+}

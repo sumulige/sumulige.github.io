@@ -1,0 +1,37 @@
+{
+  "run_utc": "2026-10-24T05:27:02.863187+00:00",
+  "python": "3.14.7",
+  "planned": 3,
+  "executed": 3,
+  "failed": 0,
+  "deviations": [],
+  "csv_rows": 27,
+  "empirical_status": "UNKNOWN",
+  "independent_review": false,
+  "cases": {
+    "D01": {
+      "rows": 7,
+      "rule": "ceil((m+1)*(1-alpha)); overflow infinity"
+    },
+    "D02": {
+      "count_rows": 10,
+      "method_rows": 2,
+      "exact_pooled": [
+        "2198672953/2500000000",
+        "211943423/2500000000"
+      ],
+      "exact_grouped": [
+        "68013053/80000000",
+        "15973841/16000000"
+      ],
+      "exact_infinite": [
+        "32117/500000000",
+        "495834453/500000000"
+      ]
+    },
+    "D03": {
+      "rows": 8,
+      "conditional_distributions": "unchanged"
+    }
+  }
+}

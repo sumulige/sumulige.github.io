@@ -1,0 +1,4 @@
+measurement_variance,post_difference,change_difference,adjusted_X,adjusted_A,true_effect
+0,4,0,0.5,2.0,2
+4,4,0,0.25,3.0,2
+16,4,0,0.1,3.6,2

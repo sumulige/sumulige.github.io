@@ -1,0 +1,304 @@
+{
+  "kind": "finite_examples_and_analytic_normal_calculations",
+  "cases": {
+    "G01": {
+      "status": "PASS",
+      "rows": [
+        {
+          "rho": -0.5,
+          "worlds": 4,
+          "difference_variance": 11.999999999999996,
+          "expected": 12.0
+        },
+        {
+          "rho": 0,
+          "worlds": 4,
+          "difference_variance": 8.0,
+          "expected": 8
+        },
+        {
+          "rho": 0.5,
+          "worlds": 4,
+          "difference_variance": 4.0,
+          "expected": 4.0
+        },
+        {
+          "rho": 1,
+          "worlds": 4,
+          "difference_variance": 0.0,
+          "expected": 0
+        }
+      ]
+    },
+    "G02": {
+      "status": "PASS",
+      "rows": [
+        {
+          "k": 1,
+          "rho": 0,
+          "worlds": 4,
+          "variance": 4.0,
+          "expected": 4.0
+        },
+        {
+          "k": 1,
+          "rho": 0.5,
+          "worlds": 4,
+          "variance": 4.000000000000001,
+          "expected": 4.0
+        },
+        {
+          "k": 1,
+          "rho": 1,
+          "worlds": 4,
+          "variance": 4.0,
+          "expected": 4.0
+        },
+        {
+          "k": 2,
+          "rho": 0,
+          "worlds": 8,
+          "variance": 2.0,
+          "expected": 2.0
+        },
+        {
+          "k": 2,
+          "rho": 0.5,
+          "worlds": 8,
+          "variance": 3.000000000000001,
+          "expected": 3.0
+        },
+        {
+          "k": 2,
+          "rho": 1,
+          "worlds": 8,
+          "variance": 4.0,
+          "expected": 4.0
+        },
+        {
+          "k": 4,
+          "rho": 0,
+          "worlds": 32,
+          "variance": 1.0,
+          "expected": 1.0
+        },
+        {
+          "k": 4,
+          "rho": 0.5,
+          "worlds": 32,
+          "variance": 2.5000000000000004,
+          "expected": 2.5
+        },
+        {
+          "k": 4,
+          "rho": 1,
+          "worlds": 32,
+          "variance": 4.0,
+          "expected": 4.0
+        },
+        {
+          "k": 8,
+          "rho": 0,
+          "worlds": 512,
+          "variance": 0.5,
+          "expected": 0.5
+        },
+        {
+          "k": 8,
+          "rho": 0.5,
+          "worlds": 512,
+          "variance": 2.2500000000000004,
+          "expected": 2.25
+        },
+        {
+          "k": 8,
+          "rho": 1,
+          "worlds": 512,
+          "variance": 4.0,
+          "expected": 4.0
+        }
+      ]
+    },
+    "G03": {
+      "status": "PASS",
+      "rows": [
+        {
+          "delta": 3,
+          "se": 0.5,
+          "threshold": 5,
+          "low": 2.02,
+          "high": 3.98,
+          "above_zero": true,
+          "above_worthwhile": false
+        },
+        {
+          "delta": 8,
+          "se": 1,
+          "threshold": 5,
+          "low": 6.04,
+          "high": 9.96,
+          "above_zero": true,
+          "above_worthwhile": true
+        },
+        {
+          "delta": 8,
+          "se": 4,
+          "threshold": 5,
+          "low": 0.16000000000000014,
+          "high": 15.84,
+          "above_zero": true,
+          "above_worthwhile": false
+        }
+      ]
+    },
+    "G04": {
+      "status": "PASS",
+      "rows": [
+        {
+          "model": "constant",
+          "worlds": 4,
+          "covariance": -4.0,
+          "correlation": -0.7071067811865475
+        },
+        {
+          "model": "heterogeneous",
+          "worlds": 8,
+          "covariance": -4.0,
+          "correlation": -0.3922322702763681
+        }
+      ],
+      "selected_groups": [
+        {
+          "baseline": 98,
+          "post_mean": 100,
+          "change_mean": 2
+        },
+        {
+          "baseline": 102,
+          "post_mean": 100,
+          "change_mean": -2
+        }
+      ]
+    },
+    "G05": {
+      "status": "PASS",
+      "rows": [
+        {
+          "model": "cancel",
+          "variance0": 1.0,
+          "variance1": 1.0,
+          "variance_difference": 0.0,
+          "effect_variance": 4.0,
+          "covariance": -2.0,
+          "error_variance_difference": 0
+        },
+        {
+          "model": "negative",
+          "variance0": 1.0,
+          "variance1": 0.0,
+          "variance_difference": -1.0,
+          "effect_variance": 1.0,
+          "covariance": -1.0,
+          "error_variance_difference": 0
+        },
+        {
+          "model": "inflate",
+          "variance0": 1.0,
+          "variance1": 4.0,
+          "variance_difference": 3.0,
+          "effect_variance": 1.0,
+          "covariance": 1.0,
+          "error_variance_difference": 0
+        },
+        {
+          "model": "independent",
+          "variance0": 1.0,
+          "variance1": 2.0,
+          "variance_difference": 1.0,
+          "effect_variance": 1.0,
+          "covariance": 0.0,
+          "error_variance_difference": 0
+        },
+        {
+          "model": "unequal_error",
+          "variance0": 2.0,
+          "variance1": 5.0,
+          "variance_difference": 3.0,
+          "effect_variance": 0,
+          "covariance": 0,
+          "error_variance_difference": 3
+        }
+      ]
+    },
+    "G06": {
+      "status": "PASS",
+      "rows": [
+        {
+          "a": 0,
+          "worlds": 32,
+          "variance": 10.0,
+          "covariance": 0.0,
+          "correlation": 0.0,
+          "correlation_without_measurement_error": 0.0
+        },
+        {
+          "a": 2,
+          "worlds": 32,
+          "variance": 14.0,
+          "covariance": 4.0,
+          "correlation": 0.2857142857142857,
+          "correlation_without_measurement_error": 0.3076923076923077
+        },
+        {
+          "a": 4,
+          "worlds": 32,
+          "variance": 26.0,
+          "covariance": 16.0,
+          "correlation": 0.6153846153846154,
+          "correlation_without_measurement_error": 0.64
+        }
+      ]
+    },
+    "G07": {
+      "status": "PASS",
+      "rows": [
+        {
+          "prevalence": 0,
+          "z": 0.6744897501960817,
+          "false_positive_rate": 0.25,
+          "true_positive_rate": 0.9074990139425073,
+          "true_positive_mass": 0.0,
+          "false_positive_mass": 0.25,
+          "positive_predictive_value": 0.0
+        },
+        {
+          "prevalence": 0.1,
+          "z": 0.6744897501960817,
+          "false_positive_rate": 0.25,
+          "true_positive_rate": 0.9074990139425073,
+          "true_positive_mass": 0.09074990139425074,
+          "false_positive_mass": 0.225,
+          "positive_predictive_value": 0.2874107038308742
+        },
+        {
+          "prevalence": 0.5,
+          "z": 0.6744897501960817,
+          "false_positive_rate": 0.25,
+          "true_positive_rate": 0.9074990139425073,
+          "true_positive_mass": 0.45374950697125366,
+          "false_positive_mass": 0.125,
+          "positive_predictive_value": 0.7840170946250004
+        }
+      ]
+    }
+  },
+  "planned": 7,
+  "executed": 7,
+  "passed": 7,
+  "failed": 0,
+  "deviations": [],
+  "empirical_status": "UNKNOWN",
+  "independent_review": false,
+  "run_utc": "2026-10-23T23:47:52.679711+00:00",
+  "python": "3.14.7"
+}

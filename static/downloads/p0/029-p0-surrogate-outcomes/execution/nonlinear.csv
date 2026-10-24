@@ -1,0 +1,5 @@
+group,a,s,y,probability
+majority,0,1,1,0.45
+majority,1,0,0,0.45
+minority,0,1,1,0.05
+minority,1,20,1,0.05

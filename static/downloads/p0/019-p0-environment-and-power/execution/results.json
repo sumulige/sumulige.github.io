@@ -1,0 +1,103 @@
+{
+  "run_utc": "2026-10-24T00:52:45.091425+00:00",
+  "python": "3.14.7",
+  "planned": 4,
+  "executed": 4,
+  "failed": 0,
+  "deviations": [],
+  "empirical_status": "UNKNOWN",
+  "independent_review": false,
+  "sources": [
+    {
+      "id": "S01",
+      "doi": "10.1123/ijspp.2021-0341",
+      "sample": "14_men",
+      "scope": "same_power_meter_environment_bundle",
+      "timing": "4_tests_14_days"
+    },
+    {
+      "id": "S02",
+      "doi": "10.1371/journal.pone.0191644",
+      "sample": "13_of_14",
+      "scope": "drift_check_not_calibration_validation",
+      "timing": "4_road_tests"
+    },
+    {
+      "id": "S03",
+      "doi": "10.1007/s42978-024-00300-0",
+      "sample": "10_HOT_post9",
+      "scope": "heat_acclimation_crossover_normobaric_hypoxia",
+      "timing": "3_weeks_each"
+    },
+    {
+      "id": "S04",
+      "doi": "10.1007/s00421-006-0249-y",
+      "sample": "10_men",
+      "scope": "cooling_during_drift",
+      "timing": "18_minutes"
+    },
+    {
+      "id": "S05",
+      "doi": "10.1080/23328940.2019.1657344",
+      "sample": "8_men",
+      "scope": "cooling_after_drift",
+      "timing": "38_minutes"
+    }
+  ],
+  "cases": {
+    "D01": {
+      "indoor": 300,
+      "loss": [
+        0.042,
+        0.088
+      ],
+      "outdoor": [
+        313.1524008350731,
+        328.9473684210526
+      ],
+      "common": 320.855614973262,
+      "residual": [
+        7.703214138188912,
+        -8.091753447790609
+      ],
+      "constructed": true
+    },
+    "D02": {
+      "capacity": [
+        4.34,
+        3.56,
+        4.09
+      ],
+      "demand": 2.6039999999999996,
+      "fraction": [
+        0.6,
+        0.7314606741573033,
+        0.6366748166259169
+      ],
+      "fixed_demand_assumption": true,
+      "fan_start_minutes": [
+        18,
+        38
+      ],
+      "randomized_timing_comparison": false
+    },
+    "D03": {
+      "baseline": 327.00000000000006,
+      "delta_height": 3.269999999999982,
+      "delta_mass": 4.08749999999992,
+      "delta_time": 1.3682008368200513,
+      "with_omitted_resistance": 342.00000000000006,
+      "idealized": true
+    },
+    "D04": {
+      "baseline": 100,
+      "hot_pre": 85,
+      "hot_post": 92,
+      "cool_post": 104,
+      "current_ratio": 0.8846153846153846,
+      "old_factor_estimate": 108.23529411764706,
+      "overestimate": 4.235294117647058,
+      "rounded_source_percentages": true
+    }
+  }
+}

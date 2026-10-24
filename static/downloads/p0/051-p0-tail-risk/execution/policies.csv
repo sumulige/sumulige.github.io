@@ -1,0 +1,4 @@
+﻿policy,mean_exact,static_exact,nested_exact
+outside,1/2,1/2,1/2
+enter_R,1/10,1,1
+enter_S,1/50,1/5,2

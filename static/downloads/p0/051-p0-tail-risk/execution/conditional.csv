@@ -1,0 +1,5 @@
+﻿state,mean_exact,var_exact,cvar_exact
+good,0,0,0
+bad_R,10,10,10
+bad_S,2,0,20
+outside,1/2,1/2,1/2

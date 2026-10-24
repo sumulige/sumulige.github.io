@@ -1,0 +1,55 @@
+{
+  "run_utc": "2026-10-24T02:04:06.931126+00:00",
+  "python": "3.14.7",
+  "planned": 2,
+  "executed": 2,
+  "failed": 0,
+  "deviations": [],
+  "cases": {
+    "D01": {
+      "totals": {
+        "randomized": 13463,
+        "withdrawn": 1522,
+        "insufficient": 597,
+        "sufficient": 11344,
+        "analyzed": 7711,
+        "post_sufficient_excluded": 3633
+      },
+      "analysis_of_randomized": 0.5727549580331278,
+      "analysis_of_sufficient": 0.6797425952045134,
+      "withdrawal_rate": 0.11305058307955136,
+      "scope": "Published CONSORT counts only; selection bias not estimated"
+    },
+    "D02": {
+      "recomputed": [
+        0.6026666666666667,
+        0.883,
+        0.196,
+        0.196
+      ],
+      "reported": [
+        0.602,
+        0.883,
+        0.195,
+        0.195
+      ],
+      "lower": [
+        0.602,
+        0.8825000000000001,
+        0.195,
+        0.195
+      ],
+      "upper": [
+        0.6033333333333334,
+        0.8835,
+        0.197,
+        0.197
+      ],
+      "all_precision_compatible": true,
+      "scope": "Rounding-envelope compatibility; unrounded original P values unavailable"
+    }
+  },
+  "errors": [],
+  "empirical_status": "UNKNOWN",
+  "independent_review": false
+}

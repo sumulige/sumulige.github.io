@@ -1,0 +1,4 @@
+target,mass,x1_share,mean0,mean1,effect
+trial,0.2,0.2,0.26,0.4,0.14
+all,1.0,0.8,0.44,0.4,-0.04
+nontrial,0.8,0.95,0.485,0.4,-0.085

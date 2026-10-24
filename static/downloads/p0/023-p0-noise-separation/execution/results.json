@@ -1,0 +1,103 @@
+{
+  "run_utc": "2026-10-24T01:34:10.912667+00:00",
+  "python": "3.14.7",
+  "planned": 4,
+  "executed": 4,
+  "failed": 0,
+  "deviations": [],
+  "cases": {
+    "D01": {
+      "observation_variance": 1,
+      "mean_at_y2_q02": 0.4,
+      "mean_at_y2_q08": 1.6,
+      "posterior_variance": 0.16000000000000003
+    },
+    "D02": {
+      "near_zero_r_range": [
+        0.3333333333333337,
+        1.2857142857142856
+      ],
+      "rho07_r_range": [
+        0.9979550102249488,
+        1.0020366598778003
+      ],
+      "all_variances_positive": true
+    },
+    "D03": {
+      "independent": {
+        "observation_variance": 13.0,
+        "covariance": 9.0,
+        "half_difference_variance": 4.0
+      },
+      "shared": {
+        "observation_variance": 12.999999999999998,
+        "covariance": 11.999999999999998,
+        "half_difference_variance": 1.0
+      },
+      "mean_error_variance": [
+        {
+          "m": 1,
+          "independent": 4.0,
+          "shared": 4.0
+        },
+        {
+          "m": 2,
+          "independent": 2.0,
+          "shared": 3.5
+        },
+        {
+          "m": 4,
+          "independent": 1.0,
+          "shared": 3.25
+        },
+        {
+          "m": 8,
+          "independent": 0.5,
+          "shared": 3.125
+        }
+      ]
+    },
+    "D04": {
+      "stationary_floor": 5.263157894736843,
+      "max_closed_form_difference": 7.105427357601002e-15,
+      "selected": [
+        {
+          "time": 0,
+          "initial_component": 100.0,
+          "process_component": 0.0,
+          "state_variance": 100,
+          "observation_variance": 104,
+          "closed_form": 100.0
+        },
+        {
+          "time": 10,
+          "initial_component": 12.157665459056934,
+          "process_component": 4.623280765312795,
+          "state_variance": 16.78094622436973,
+          "observation_variance": 20.78094622436973,
+          "closed_form": 16.78094622436973
+        },
+        {
+          "time": 50,
+          "initial_component": 0.002656139888758754,
+          "process_component": 5.263018097900593,
+          "state_variance": 5.2656742377893515,
+          "observation_variance": 9.265674237789352,
+          "closed_form": 5.2656742377893515
+        },
+        {
+          "time": 100,
+          "initial_component": 7.055079108655367e-08,
+          "process_component": 5.263157891023644,
+          "state_variance": 5.263157961574435,
+          "observation_variance": 9.263157961574436,
+          "closed_form": 5.263157961574435
+        }
+      ],
+      "observation_updates": false
+    }
+  },
+  "empirical_status": "UNKNOWN",
+  "independent_review": false,
+  "random_sampling": false
+}

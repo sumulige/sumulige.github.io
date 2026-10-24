@@ -58,8 +58,8 @@
     return `<a class="project-card" href="#/project/${encodeURIComponent(project.id)}"><div class="project-art" aria-hidden="true">${art}</div><div class="project-card-body"><span class="meta">${e(project.topic)} <span class="meta-dot">·</span> ${e(project.status)}</span><h2>${e(project.title)} ${icon('up')}</h2><p>${e(project.description)}</p></div></a>`;
   }
   function home() {
-    const entries = articles().filter(a => a.id !== "series-guide");
-    return `<div class="page home-page"><section class="home-intro"><div><h1>sumulige<span class="blue">。</span></h1><p>研究与写作</p></div></section><section class="series-intro"><span class="eyebrow">研究 001 · 七篇系列</span><h2>精英耐力教练工作流</h2><p>从专业职责与公开案例，走向可以检查的模型。</p><a class="button" href="#/article/series-guide">阅读指南 ${icon("arrow")}</a></section><section class="recent-section"><div class="section-heading"><h2>文章</h2><a href="#/articles">全部 ${icon('arrow')}</a></div>${entries.length ? `<div class="article-list">${entries.map(a=>articleRow(a)).join('')}</div>` : '<div class="empty-state"><h2>内容整理中</h2></div>'}</section>${footer()}</div>`;
+    const entries = articles().filter(a => a.id.startsWith("p0-") && a.id !== "p0-guide").slice(0,8);
+    return `<div class="page home-page"><section class="home-intro"><div><h1>sumulige<span class="blue">。</span></h1><p>研究与写作</p></div></section><section class="series-intro"><span class="eyebrow">53组 · 162篇文章</span><h2>训练研究与决策</h2><p>从测量与模型，到证据、选择和适用边界。</p><a class="button" href="#/article/p0-guide">阅读索引 ${icon("arrow")}</a></section><section class="series-intro"><span class="eyebrow">研究 001 · 七篇系列</span><h2>精英耐力教练工作流</h2><p>从专业职责与公开案例，走向可以检查的模型。</p><a class="button" href="#/article/series-guide">阅读指南 ${icon("arrow")}</a></section><section class="recent-section"><div class="section-heading"><h2>文章</h2><a href="#/articles">全部 ${icon('arrow')}</a></div>${entries.length ? `<div class="article-list">${entries.map(a=>articleRow(a)).join('')}</div>` : '<div class="empty-state"><h2>内容整理中</h2></div>'}</section>${footer()}</div>`;
   }
   function filterArticles(params) {
     const q = (params.get('q') || '').trim().toLocaleLowerCase();
@@ -88,7 +88,7 @@
     return `<div class="page">${pageIntro('文章')}<label class="search-box">${icon('search')}<span class="sr-only">搜索文章标题与正文</span><input id="article-search" name="q" type="search" placeholder="搜索标题或正文" value="${e(params.get('q') || '')}" autocomplete="off"><kbd aria-hidden="true">/</kbd></label><div class="topic-filters" role="group" aria-label="文章主题">${['',...topics].map(t=>`<button data-topic="${e(t)}" aria-pressed="${(params.get('topic') || '') === t}">${e(t || '全部')}</button>`).join('')}</div><div id="result-count" class="result-count" role="status" aria-live="polite" aria-atomic="true" tabindex="-1"></div><div id="article-results">${results(params)}</div>${footer()}</div>`;
   }
   const tocLinks = a => a.toc.filter(t=>t.level<=3).map(t=>`<a class="toc-level-${t.level}" href="${pathTo(a)}?section=${encodeURIComponent(t.id)}" data-section="${e(t.id)}">${e(t.text)}</a>`).join('');
-  const relatedArticles = a => { const list = articles().filter(x => x.id !== 'series-guide'); const at = list.findIndex(x => x.id === a.id); return at < 0 ? list.slice(0,2) : [list[at-1],list[at+1]].filter(Boolean); };
+  const relatedArticles = a => { const list = articles().filter(x => x.topic === a.topic && !['series-guide','p0-guide'].includes(x.id)); const at = list.findIndex(x => x.id === a.id); return at < 0 ? list.slice(0,2) : [list[at-1],list[at+1]].filter(Boolean); };
   function feedback() {
     return `<section class="feedback"><h2><label for="feedback-text">阅读反馈</label></h2>
       <textarea id="feedback-text" name="feedback" rows="4" maxlength="1600" placeholder="你的尝试或疑问" aria-describedby="feedback-help feedback-error"></textarea>

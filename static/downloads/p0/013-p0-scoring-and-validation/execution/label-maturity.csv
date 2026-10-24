@@ -1,0 +1,9 @@
+origin,target_end,available,eligible_at_8,target,perturbed_target
+1,4,5,True,3.0,3.0
+2,5,6,True,4.0,4.0
+3,6,7,True,5.0,5.0
+4,7,8,True,6.0,6.0
+5,8,9,False,7.0,7.0
+6,9,10,False,8.0,41.333333333333336
+7,10,11,False,9.0,75.66666666666667
+8,11,12,False,10.0,110.0

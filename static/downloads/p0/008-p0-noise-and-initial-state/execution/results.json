@@ -1,0 +1,346 @@
+{
+  "created_at": "2026-10-23T22:46:37.501725+00:00",
+  "python": "3.14.7",
+  "status": "PASS",
+  "cases": [
+    {
+      "id": "U01",
+      "values": {
+        "scales": [
+          {
+            "n": 25,
+            "true_sigma": 10,
+            "fixed_sigma": 3,
+            "z": 1.9599639845400534,
+            "posterior_sd": 0.6,
+            "halfwidth": 1.175978390724032,
+            "coverage": 0.4434604548997081,
+            "erf_coverage": 0.443460454899708
+          },
+          {
+            "n": 25,
+            "true_sigma": 10,
+            "fixed_sigma": 10,
+            "z": 1.9599639845400534,
+            "posterior_sd": 2.0,
+            "halfwidth": 3.9199279690801068,
+            "coverage": 0.95,
+            "erf_coverage": 0.95
+          },
+          {
+            "n": 25,
+            "true_sigma": 10,
+            "fixed_sigma": 20,
+            "z": 1.9599639845400534,
+            "posterior_sd": 4.0,
+            "halfwidth": 7.8398559381602135,
+            "coverage": 0.9999114245616787,
+            "erf_coverage": 0.9999114245616786
+          }
+        ]
+      },
+      "checks": {
+        "coverage_identity": true,
+        "correct_scale": true,
+        "ordering": true
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "U02",
+      "values": {
+        "worlds": [
+          {
+            "theta": 0,
+            "bias": 2,
+            "errors": [
+              -1,
+              0,
+              1
+            ],
+            "observed": [
+              1,
+              2,
+              3
+            ],
+            "fitted_mean": 2,
+            "residuals": [
+              -1,
+              0,
+              1
+            ],
+            "residual_sample_variance": 1.0
+          },
+          {
+            "theta": 2,
+            "bias": 0,
+            "errors": [
+              -1,
+              0,
+              1
+            ],
+            "observed": [
+              1,
+              2,
+              3
+            ],
+            "fitted_mean": 2,
+            "residuals": [
+              -1,
+              0,
+              1
+            ],
+            "residual_sample_variance": 1.0
+          }
+        ]
+      },
+      "checks": {
+        "observation_equivalence": true,
+        "residual_equivalence": true,
+        "target_differs": true
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "U03",
+      "values": {
+        "pairs": [
+          {
+            "values": [
+              80,
+              80
+            ],
+            "probability": 0.25,
+            "arithmetic": 80,
+            "weighted": 80.0
+          },
+          {
+            "values": [
+              80,
+              120
+            ],
+            "probability": 0.25,
+            "arithmetic": 100,
+            "weighted": 92.3076923076923
+          },
+          {
+            "values": [
+              120,
+              80
+            ],
+            "probability": 0.25,
+            "arithmetic": 100,
+            "weighted": 92.3076923076923
+          },
+          {
+            "values": [
+              120,
+              120
+            ],
+            "probability": 0.25,
+            "arithmetic": 120,
+            "weighted": 119.99999999999999
+          }
+        ],
+        "true_mean": 100,
+        "expected_arithmetic": 100.0,
+        "expected_weighted": 96.15384615384615,
+        "bias": -3.846153846153854
+      },
+      "checks": {
+        "probabilities_sum": true,
+        "arithmetic_unbiased": true,
+        "weighted_shift": true,
+        "mixed_pair_closed_form": true
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "U04",
+      "values": {
+        "updates": [
+          {
+            "kappa0": 1,
+            "mu0": 0,
+            "alpha0": 2,
+            "beta0": 1,
+            "y": [
+              -1,
+              1
+            ],
+            "kappa": 3,
+            "mu": 0.0,
+            "alpha": 3.0,
+            "beta": 2.0,
+            "expected_sigma_squared": 1.0,
+            "posterior_mu_variance": 0.3333333333333333,
+            "marginal_t_df": 6.0,
+            "marginal_t_scale_squared": 0.2222222222222222,
+            "t_variance": 0.3333333333333333
+          },
+          {
+            "kappa0": 1,
+            "mu0": 0,
+            "alpha0": 2,
+            "beta0": 9,
+            "y": [
+              -1,
+              1
+            ],
+            "kappa": 3,
+            "mu": 0.0,
+            "alpha": 3.0,
+            "beta": 10.0,
+            "expected_sigma_squared": 5.0,
+            "posterior_mu_variance": 1.6666666666666667,
+            "marginal_t_df": 6.0,
+            "marginal_t_scale_squared": 1.1111111111111112,
+            "t_variance": 1.6666666666666667
+          }
+        ]
+      },
+      "checks": {
+        "moment_identity": true,
+        "finite_moments": true,
+        "hyperparameters_matter": true
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "U05",
+      "values": {
+        "tau": 42,
+        "day": 180,
+        "residual_fraction": 0.013763786733050402,
+        "residual_percent": 1.3763786733050403,
+        "half_life": 29.112181583517703,
+        "relative": [
+          {
+            "tolerance": 0.05,
+            "required_time": 125.82075548926761
+          },
+          {
+            "tolerance": 0.01,
+            "required_time": 193.41714781149983
+          }
+        ],
+        "absolute": [
+          {
+            "initial_error": 10,
+            "tolerance": 1,
+            "required_time": 96.70857390574993
+          },
+          {
+            "initial_error": 1000,
+            "tolerance": 1,
+            "required_time": 290.12572171724975
+          }
+        ]
+      },
+      "checks": {
+        "half_life_identity": true,
+        "relative_identity": true,
+        "absolute_identity": true,
+        "original_percentage_false": true
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "U06",
+      "values": {
+        "delta0": 100.0,
+        "tau": 42.0,
+        "dynamics": [
+          {
+            "b": 0,
+            "day": 0,
+            "recursive": 100.0,
+            "closed_form": 100.0,
+            "initial_component": 100.0,
+            "persistent_component": 0.0
+          },
+          {
+            "b": 0,
+            "day": 42,
+            "recursive": 36.787944117144285,
+            "closed_form": 36.787944117144235,
+            "initial_component": 36.787944117144235,
+            "persistent_component": 0.0
+          },
+          {
+            "b": 0,
+            "day": 180,
+            "recursive": 1.376378673305049,
+            "closed_form": 1.3763786733050403,
+            "initial_component": 1.3763786733050403,
+            "persistent_component": 0.0
+          },
+          {
+            "b": 0,
+            "day": 1095,
+            "recursive": 4.756882632224156e-10,
+            "closed_form": 4.756882632223955e-10,
+            "initial_component": 4.756882632223955e-10,
+            "persistent_component": 0.0
+          },
+          {
+            "b": 1,
+            "day": 0,
+            "recursive": 100.0,
+            "closed_form": 100.0,
+            "initial_component": 100.0,
+            "persistent_component": 0.0
+          },
+          {
+            "b": 1,
+            "day": 42,
+            "recursive": 63.337007587943745,
+            "closed_form": 63.33700758794366,
+            "initial_component": 36.787944117144235,
+            "persistent_component": 26.54906347079942
+          },
+          {
+            "b": 1,
+            "day": 180,
+            "recursive": 42.79829963051702,
+            "closed_form": 42.79829963051692,
+            "initial_component": 1.3763786733050403,
+            "persistent_component": 41.42192095721188
+          },
+          {
+            "b": 1,
+            "day": 1095,
+            "recursive": 42.00000000027599,
+            "closed_form": 42.0000000002759,
+            "initial_component": 4.756882632223955e-10,
+            "persistent_component": 41.99999999980021
+          }
+        ]
+      },
+      "checks": {
+        "recurrence_identity": true,
+        "persistence": true,
+        "initial_effect_small": true
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "U07",
+      "values": {
+        "as_of_mean": 0.0,
+        "as_of_variance": 1.0,
+        "future_value": 2.0,
+        "retrospective_mean": 1.0,
+        "retrospective_variance": 0.5,
+        "conditional_mean": 1.0,
+        "conditional_variance": 0.5
+      },
+      "checks": {
+        "two_forms_agree": true,
+        "future_changes_estimate": true,
+        "precision_increases": true
+      },
+      "status": "PASS"
+    }
+  ]
+}

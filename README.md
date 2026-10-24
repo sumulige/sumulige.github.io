@@ -41,3 +41,11 @@ python3 analysis/verify_model.py --model analysis/model.json --output /tmp/model
 ## 验证边界
 
 网页、链接、渲染与公开附件范围的检查不替代论文主张的独立学术审核。发布前核对本地证据，发布后分别回读 GitHub 提交、Pages 部署和域名 HTTPS。
+
+## P0文章增量（待发布）
+
+新增53组、162篇文章及阅读索引，来自已完成的004—056批；057未完成材料不发布。网站副本位于 `source/p0/`，原始研究保留不变。文内引用的数值结果与配图使用 `source/p0/manifest.json` 的显式清单；内部阶段记录、审计、历史原答和过程验收不导出。
+
+在已有构建环境运行 `python tools/build.py`。首次导入可运行 `python tools/p0.py --research <研究studies目录>`。新增解析支持原稿的两类数学分隔符，生成稳定文章地址、跨文链接、批次索引和本地附件地址。现有八个阅读条目保持内容不变。
+
+本次发布仍需具体版本的master推送确认与有效GitHub认证；本地验证不能代替Cloudflare部署与正式域名回读。

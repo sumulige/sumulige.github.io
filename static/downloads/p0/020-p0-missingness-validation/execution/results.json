@@ -1,0 +1,199 @@
+{
+  "run_utc": "2026-10-24T01:01:07.445865+00:00",
+  "python": "3.14.7",
+  "planned": 4,
+  "executed": 4,
+  "failed": 0,
+  "deviations": [],
+  "empirical_status": "UNKNOWN",
+  "independent_review": false,
+  "sources": [
+    {
+      "id": "S01",
+      "identifier": "10.2196/81123",
+      "sample": "299_of_300_1495_nights",
+      "evaluation": "missingness_classification",
+      "missing_truth": "unobserved",
+      "future_context": "not_applicable"
+    },
+    {
+      "id": "S02",
+      "identifier": "PMLR248_Wei2024",
+      "sample": "100_train_500_test",
+      "evaluation": "artificial_MCAR_observed_targets",
+      "missing_truth": "unobserved",
+      "future_context": "yes"
+    },
+    {
+      "id": "S03",
+      "identifier": "10.1177/09622802231188518",
+      "sample": "1023_reanalysis",
+      "evaluation": "simulated_masks_and_real_reanalysis",
+      "missing_truth": "known_in_simulation_only",
+      "future_context": "retrospective"
+    }
+  ],
+  "cases": {
+    "D01": {
+      "RF": {
+        "tn": 978,
+        "fn": 319,
+        "fp": 62,
+        "tp": 136,
+        "sensitivity": 0.2989010989010989,
+        "specificity": 0.9403846153846154,
+        "accuracy": 0.7451505016722408
+      },
+      "GEE": {
+        "tn": 996,
+        "fn": 402,
+        "fp": 44,
+        "tp": 53,
+        "sensitivity": 0.11648351648351649,
+        "specificity": 0.9576923076923077,
+        "accuracy": 0.7016722408026755
+      },
+      "baseline_accuracy": 0.6956521739130435,
+      "overall_mae_difference": -18.70999999999998,
+      "high_missing_mae_difference": 19.82000000000002,
+      "nurse_coefficients": [
+        681.35,
+        678.65,
+        803.41,
+        878.96
+      ],
+      "coefficient_span": 200.31000000000006
+    },
+    "D02": {
+      "observed_projection": {
+        "MAR": [
+          {
+            "x": 0,
+            "visible_0": 40,
+            "visible_1": 40,
+            "missing": 20
+          },
+          {
+            "x": 1,
+            "visible_0": 10,
+            "visible_1": 10,
+            "missing": 80
+          }
+        ],
+        "MNAR": [
+          {
+            "x": 0,
+            "visible_0": 40,
+            "visible_1": 40,
+            "missing": 20
+          },
+          {
+            "x": 1,
+            "visible_0": 10,
+            "visible_1": 10,
+            "missing": 80
+          }
+        ]
+      },
+      "auc": {
+        "MAR": 0.8,
+        "MNAR": 0.8
+      },
+      "prevalence": {
+        "MAR": 0.5,
+        "MNAR": 0.75
+      },
+      "MAR_conditional_independence": true,
+      "MNAR_conditional_independence": false,
+      "constructed": true
+    },
+    "D03": {
+      "truth": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "targets": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "linear": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "single_forward": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "block_forward": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "alternative": [
+        0,
+        10,
+        10,
+        10,
+        10,
+        10,
+        6
+      ],
+      "single_forward_mae": 1,
+      "block_forward_mae": 3,
+      "single_linear_mae": 0.0,
+      "block_linear_mae": 0.0,
+      "alternative_linear_mae": 7.0,
+      "linear_requires_future": true,
+      "endpoints_identical": true,
+      "constructed": true
+    },
+    "D04": {
+      "truth": [
+        0,
+        0,
+        10,
+        10
+      ],
+      "truth_difference": 10,
+      "constructed": true,
+      "A": {
+        "values": [
+          5,
+          5,
+          15,
+          15
+        ],
+        "mae": 5,
+        "difference": 10,
+        "difference_error": 0
+      },
+      "B": {
+        "values": [
+          3,
+          3,
+          7,
+          7
+        ],
+        "mae": 3,
+        "difference": 4,
+        "difference_error": -6
+      }
+    }
+  }
+}

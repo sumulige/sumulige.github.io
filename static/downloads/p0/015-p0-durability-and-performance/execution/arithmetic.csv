@@ -1,0 +1,19 @@
+case,source,metric,inputs,formula,value,unit,interpretation
+D01,S02,moderate_minutes,4837 s,4837/60,80.61666666666666,min,reported mean converted
+D01,S02,heavy_minutes,4000 s,4000/60,66.66666666666667,min,reported mean converted
+D01,S02,duration_difference,4837;4000 s,(4837-4000)/60,13.95,min,difference of reported means
+D01,S02,duration_shortening,4837;4000 s,100*(4837-4000)/4837,17.304114120322513,percent,moderate mean is denominator
+D01,S02,power_ratio,277.5;229.5 W,277.5/229.5,1.2091503267973855,ratio,"ratio of group means, not individual ratios"
+D01,S02,peak_decline_moderate,412.6;380.2 W,100*(412.6-380.2)/412.6,7.852641783809994,percent,ratio of reported means; no paired uncertainty
+D01,S02,peak_decline_heavy,412.6;374.8 W,100*(412.6-374.8)/412.6,9.161415414444985,percent,ratio of reported means; no paired uncertainty
+D02,S01,training_hours_ratio,68.2;15.6 h,68.2/15.6,4.371794871794872,ratio,"exposure contrast, not training efficiency"
+D02,S01,EE_drift_change_LIT,6.4;4.0 percent,4.0-6.4,-2.4000000000000004,percentage_points,"change in one endpoint, not composite"
+D02,S01,EE_drift_relative_change_LIT,6.4;4.0 percent,100*(4.0-6.4)/6.4,-37.5,percent,"relative to baseline drift, not baseline energy cost"
+D02,S01,EE_drift_change_HIT,6.5;3.0 percent,3.0-6.5,-3.5,percentage_points,"change in one endpoint, not composite"
+D02,S01,EE_drift_relative_change_HIT,6.5;3.0 percent,100*(3.0-6.5)/6.5,-53.84615384615385,percent,"relative to baseline drift, not baseline energy cost"
+D03,S04,retention,500;520 W,100*500/520,96.15384615384616,percent,"source illustrative example, not observed participant"
+D03,S04,loss,500;520 W,100*(520-500)/520,3.8461538461538463,percent,source illustrative example
+D03,S04,absolute_difference,500;520 W,520-500,20,W,source illustrative example
+D04,S05,signed_bias_difference,23;2 W,23-2,21,W,mean signed bias difference; not MAE improvement
+D04,S05,shortest_duration,491 s,491/60,8.183333333333334,min,observed selected finish duration
+D04,S05,longest_duration,1860 s,1860/60,31.0,min,observed selected finish duration

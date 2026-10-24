@@ -1,0 +1,566 @@
+{
+  "created_at": "2026-10-23T16:57:09.007214+00:00",
+  "python": "3.14.7",
+  "status": "PASS",
+  "cases": [
+    {
+      "id": "I01",
+      "status": "PASS",
+      "values": {
+        "ridge": [
+          {
+            "tau": 30,
+            "k": 0.0655677990359882,
+            "steady": 2.0,
+            "pulse_day_10": 0.04698138097469546
+          },
+          {
+            "tau": 60,
+            "k": 0.033057092356765023,
+            "steady": 2.0000000000000004,
+            "pulse_day_10": 0.027982224558022795
+          }
+        ]
+      },
+      "checks": {
+        "steady_equal": true,
+        "distinct_k": true,
+        "distinct_transient": true
+      }
+    },
+    {
+      "id": "I02",
+      "status": "PASS",
+      "values": {
+        "grids": [
+          {
+            "n": 61,
+            "cells": 3721,
+            "mass": 0.9999999999999999,
+            "tau_mean": 43.43239735445159,
+            "tau_sd": 17.046922359931983,
+            "k_mean": 0.053031840858065636,
+            "k_sd": 0.020621506565521946,
+            "correlation": -0.939204019940062,
+            "joint_S_mean": 1.9997917070691038,
+            "joint_S_sd": 0.04986318051600663,
+            "independent_S_mean": 2.329934939247508,
+            "independent_S_sd": 1.3272478648681374,
+            "S_at_parameter_means": 2.3299176558111094
+          },
+          {
+            "n": 121,
+            "cells": 14641,
+            "mass": 0.9999999999999999,
+            "tau_mean": 43.4070374297861,
+            "tau_sd": 17.048141523297836,
+            "k_mean": 0.053072847489352995,
+            "k_sd": 0.020645195918742438,
+            "correlation": -0.9392125255625369,
+            "joint_S_mean": 1.999841604605334,
+            "joint_S_sd": 0.049893460606208015,
+            "independent_S_mean": 2.3303907141404663,
+            "independent_S_sd": 1.3282347160108157,
+            "S_at_parameter_means": 2.330373390186548
+          },
+          {
+            "n": 241,
+            "cells": 58081,
+            "mass": 1.0,
+            "tau_mean": 43.40125951015866,
+            "tau_sd": 17.04921674467444,
+            "k_mean": 0.053083040680038676,
+            "k_sd": 0.020651835122725552,
+            "correlation": -0.9392081410046,
+            "joint_S_mean": 1.999856885073442,
+            "joint_S_sd": 0.049894093665883446,
+            "independent_S_mean": 2.3305316018514675,
+            "independent_S_sd": 1.3285453546702126,
+            "S_at_parameter_means": 2.3305142665843483
+          }
+        ],
+        "scope": "Uniform density in tau,k; one steady observation; no population data"
+      },
+      "checks": {
+        "normalized": true,
+        "finite": true,
+        "dependence_matters": true,
+        "ridge_negative": true
+      }
+    },
+    {
+      "id": "I03",
+      "status": "PASS",
+      "values": {
+        "uniform_tau_mean": 50,
+        "uniform_log_tau_mean": 43.2808512266689,
+        "transformed_uniform_tau_mean": 50.00000024022649,
+        "quadrature_points": 10001
+      },
+      "checks": {
+        "jacobian_recovers_same_prior": true,
+        "different_prior_means": true
+      }
+    },
+    {
+      "id": "I04",
+      "status": "PASS",
+      "values": {
+        "updates": [
+          {
+            "prior_variance": 1,
+            "n": 1,
+            "measurement_variance": 4,
+            "likelihood_mean_variance": 4.0,
+            "data_weight": 0.2,
+            "posterior_mean": 0.6000000000000001,
+            "posterior_variance": 0.8,
+            "precision_mean": 0.6000000000000001
+          },
+          {
+            "prior_variance": 1,
+            "n": 8,
+            "measurement_variance": 4,
+            "likelihood_mean_variance": 0.5,
+            "data_weight": 0.6666666666666666,
+            "posterior_mean": 2.0,
+            "posterior_variance": 0.3333333333333333,
+            "precision_mean": 2.0
+          },
+          {
+            "prior_variance": 1,
+            "n": 32,
+            "measurement_variance": 4,
+            "likelihood_mean_variance": 0.125,
+            "data_weight": 0.8888888888888888,
+            "posterior_mean": 2.6666666666666665,
+            "posterior_variance": 0.1111111111111111,
+            "precision_mean": 2.6666666666666665
+          },
+          {
+            "prior_variance": 4,
+            "n": 1,
+            "measurement_variance": 4,
+            "likelihood_mean_variance": 4.0,
+            "data_weight": 0.5,
+            "posterior_mean": 1.5,
+            "posterior_variance": 2.0,
+            "precision_mean": 1.5
+          },
+          {
+            "prior_variance": 4,
+            "n": 8,
+            "measurement_variance": 4,
+            "likelihood_mean_variance": 0.5,
+            "data_weight": 0.8888888888888888,
+            "posterior_mean": 2.6666666666666665,
+            "posterior_variance": 0.4444444444444444,
+            "precision_mean": 2.6666666666666665
+          },
+          {
+            "prior_variance": 4,
+            "n": 32,
+            "measurement_variance": 4,
+            "likelihood_mean_variance": 0.125,
+            "data_weight": 0.9696969696969697,
+            "posterior_mean": 2.909090909090909,
+            "posterior_variance": 0.12121212121212122,
+            "precision_mean": 2.909090909090909
+          }
+        ]
+      },
+      "checks": {
+        "equivalent_formula": true,
+        "no_noise_reduction": true,
+        "variance_reduction": true
+      }
+    },
+    {
+      "id": "I05",
+      "status": "PASS",
+      "values": {
+        "source_paths": [
+          "[本机路径未公开]",
+          "[本机路径未公开]"
+        ],
+        "summary": [
+          {
+            "density": "dense",
+            "method": "last",
+            "planned_n": "140",
+            "completed_n": "140",
+            "reliable_n": "140",
+            "not_reliable_or_missing_n": "0",
+            "mean_rmse_mu_all_completed": "0.4499215075585576",
+            "mean_rmse_mu_reliable": "0.4499215075585576",
+            "mean_rmse_y_all_completed": "0.6917822792350565",
+            "mean_rmse_y_reliable": "0.6917822792350565"
+          },
+          {
+            "density": "dense",
+            "method": "mean",
+            "planned_n": "140",
+            "completed_n": "140",
+            "reliable_n": "140",
+            "not_reliable_or_missing_n": "0",
+            "mean_rmse_mu_all_completed": "0.9775228447782245",
+            "mean_rmse_mu_reliable": "0.9775228447782245",
+            "mean_rmse_y_all_completed": "1.0969454262270102",
+            "mean_rmse_y_reliable": "1.0969454262270102"
+          },
+          {
+            "density": "dense",
+            "method": "NLS",
+            "planned_n": "140",
+            "completed_n": "140",
+            "reliable_n": "140",
+            "not_reliable_or_missing_n": "0",
+            "mean_rmse_mu_all_completed": "0.10206331150024317",
+            "mean_rmse_mu_reliable": "0.10206331150024317",
+            "mean_rmse_y_all_completed": "0.5073070971366878",
+            "mean_rmse_y_reliable": "0.5073070971366878"
+          },
+          {
+            "density": "dense",
+            "method": "P0",
+            "planned_n": "140",
+            "completed_n": "140",
+            "reliable_n": "132",
+            "not_reliable_or_missing_n": "8",
+            "mean_rmse_mu_all_completed": "0.09531231487432992",
+            "mean_rmse_mu_reliable": "0.09405865239435386",
+            "mean_rmse_y_all_completed": "0.5048955671221753",
+            "mean_rmse_y_reliable": "0.5039346861984888"
+          },
+          {
+            "density": "dense",
+            "method": "P1",
+            "planned_n": "140",
+            "completed_n": "140",
+            "reliable_n": "140",
+            "not_reliable_or_missing_n": "0",
+            "mean_rmse_mu_all_completed": "0.06997182305646807",
+            "mean_rmse_mu_reliable": "0.06997182305646807",
+            "mean_rmse_y_all_completed": "0.5000141304853156",
+            "mean_rmse_y_reliable": "0.5000141304853156"
+          },
+          {
+            "density": "dense",
+            "method": "P2",
+            "planned_n": "140",
+            "completed_n": "140",
+            "reliable_n": "140",
+            "not_reliable_or_missing_n": "0",
+            "mean_rmse_mu_all_completed": "0.08672154518442188",
+            "mean_rmse_mu_reliable": "0.08672154518442188",
+            "mean_rmse_y_all_completed": "0.5036678794482403",
+            "mean_rmse_y_reliable": "0.5036678794482403"
+          },
+          {
+            "density": "sparse",
+            "method": "last",
+            "planned_n": "140",
+            "completed_n": "140",
+            "reliable_n": "140",
+            "not_reliable_or_missing_n": "0",
+            "mean_rmse_mu_all_completed": "0.44938519009616856",
+            "mean_rmse_mu_reliable": "0.44938519009616856",
+            "mean_rmse_y_all_completed": "0.6960526826720098",
+            "mean_rmse_y_reliable": "0.6960526826720098"
+          },
+          {
+            "density": "sparse",
+            "method": "mean",
+            "planned_n": "140",
+            "completed_n": "140",
+            "reliable_n": "140",
+            "not_reliable_or_missing_n": "0",
+            "mean_rmse_mu_all_completed": "0.9685801361344737",
+            "mean_rmse_mu_reliable": "0.9685801361344737",
+            "mean_rmse_y_all_completed": "1.0901526750850563",
+            "mean_rmse_y_reliable": "1.0901526750850563"
+          },
+          {
+            "density": "sparse",
+            "method": "NLS",
+            "planned_n": "140",
+            "completed_n": "140",
+            "reliable_n": "140",
+            "not_reliable_or_missing_n": "0",
+            "mean_rmse_mu_all_completed": "30.819190013378616",
+            "mean_rmse_mu_reliable": "30.819190013378616",
+            "mean_rmse_y_all_completed": "31.083142269680632",
+            "mean_rmse_y_reliable": "31.083142269680632"
+          },
+          {
+            "density": "sparse",
+            "method": "P0",
+            "planned_n": "140",
+            "completed_n": "140",
+            "reliable_n": "125",
+            "not_reliable_or_missing_n": "15",
+            "mean_rmse_mu_all_completed": "0.22085522686325768",
+            "mean_rmse_mu_reliable": "0.2138893941735551",
+            "mean_rmse_y_all_completed": "0.5560303772986521",
+            "mean_rmse_y_reliable": "0.5512781455818876"
+          },
+          {
+            "density": "sparse",
+            "method": "P1",
+            "planned_n": "140",
+            "completed_n": "140",
+            "reliable_n": "140",
+            "not_reliable_or_missing_n": "0",
+            "mean_rmse_mu_all_completed": "0.1473405000990212",
+            "mean_rmse_mu_reliable": "0.1473405000990212",
+            "mean_rmse_y_all_completed": "0.5237997434016703",
+            "mean_rmse_y_reliable": "0.5237997434016703"
+          },
+          {
+            "density": "sparse",
+            "method": "P2",
+            "planned_n": "140",
+            "completed_n": "140",
+            "reliable_n": "138",
+            "not_reliable_or_missing_n": "2",
+            "mean_rmse_mu_all_completed": "0.17055810495441046",
+            "mean_rmse_mu_reliable": "0.16903281972762788",
+            "mean_rmse_y_all_completed": "0.5326628377491055",
+            "mean_rmse_y_reliable": "0.5327461951850203"
+          }
+        ],
+        "paired": [
+          {
+            "density": "dense",
+            "model": "NLS",
+            "baseline": "last",
+            "planned_n": "140",
+            "paired_reliable_n": "140",
+            "mean_model_minus_baseline_mu": "-0.3478581960583144",
+            "median_model_minus_baseline_mu": "-0.26256281598159026",
+            "model_lower_mu_n": "131",
+            "mean_model_minus_baseline_y": "-0.18447518209836877",
+            "median_model_minus_baseline_y": "-0.12541054837749566",
+            "model_lower_y_n": "121"
+          },
+          {
+            "density": "dense",
+            "model": "NLS",
+            "baseline": "mean",
+            "planned_n": "140",
+            "paired_reliable_n": "140",
+            "mean_model_minus_baseline_mu": "-0.8754595332779813",
+            "median_model_minus_baseline_mu": "-0.882671839336152",
+            "model_lower_mu_n": "140",
+            "mean_model_minus_baseline_y": "-0.5896383290903225",
+            "median_model_minus_baseline_y": "-0.5900431399841353",
+            "model_lower_y_n": "140"
+          },
+          {
+            "density": "dense",
+            "model": "P0",
+            "baseline": "last",
+            "planned_n": "140",
+            "paired_reliable_n": "132",
+            "mean_model_minus_baseline_mu": "-0.36038048304055603",
+            "median_model_minus_baseline_mu": "-0.2964842762796428",
+            "model_lower_mu_n": "127",
+            "mean_model_minus_baseline_y": "-0.1883907334434213",
+            "median_model_minus_baseline_y": "-0.13807799942848525",
+            "model_lower_y_n": "114"
+          },
+          {
+            "density": "dense",
+            "model": "P0",
+            "baseline": "mean",
+            "planned_n": "140",
+            "paired_reliable_n": "132",
+            "mean_model_minus_baseline_mu": "-0.8838267942953667",
+            "median_model_minus_baseline_mu": "-0.896109031219805",
+            "model_lower_mu_n": "132",
+            "mean_model_minus_baseline_y": "-0.5921766640207574",
+            "median_model_minus_baseline_y": "-0.5924080090922013",
+            "model_lower_y_n": "132"
+          },
+          {
+            "density": "dense",
+            "model": "P1",
+            "baseline": "last",
+            "planned_n": "140",
+            "paired_reliable_n": "140",
+            "mean_model_minus_baseline_mu": "-0.37994968450208955",
+            "median_model_minus_baseline_mu": "-0.3168775257044083",
+            "model_lower_mu_n": "137",
+            "mean_model_minus_baseline_y": "-0.19176814874974094",
+            "median_model_minus_baseline_y": "-0.1342055879117551",
+            "model_lower_y_n": "120"
+          },
+          {
+            "density": "dense",
+            "model": "P1",
+            "baseline": "mean",
+            "planned_n": "140",
+            "paired_reliable_n": "140",
+            "mean_model_minus_baseline_mu": "-0.9075510217217564",
+            "median_model_minus_baseline_mu": "-0.9122173006353752",
+            "model_lower_mu_n": "140",
+            "mean_model_minus_baseline_y": "-0.5969312957416947",
+            "median_model_minus_baseline_y": "-0.6021966951391491",
+            "model_lower_y_n": "140"
+          },
+          {
+            "density": "dense",
+            "model": "P2",
+            "baseline": "last",
+            "planned_n": "140",
+            "paired_reliable_n": "140",
+            "mean_model_minus_baseline_mu": "-0.3631999623741357",
+            "median_model_minus_baseline_mu": "-0.29455485090851763",
+            "model_lower_mu_n": "136",
+            "mean_model_minus_baseline_y": "-0.18811439978681624",
+            "median_model_minus_baseline_y": "-0.13150734538100708",
+            "model_lower_y_n": "122"
+          },
+          {
+            "density": "dense",
+            "model": "P2",
+            "baseline": "mean",
+            "planned_n": "140",
+            "paired_reliable_n": "140",
+            "mean_model_minus_baseline_mu": "-0.8908012995938026",
+            "median_model_minus_baseline_mu": "-0.8960589081493447",
+            "model_lower_mu_n": "140",
+            "mean_model_minus_baseline_y": "-0.59327754677877",
+            "median_model_minus_baseline_y": "-0.6013479539330047",
+            "model_lower_y_n": "140"
+          },
+          {
+            "density": "sparse",
+            "model": "NLS",
+            "baseline": "last",
+            "planned_n": "140",
+            "paired_reliable_n": "140",
+            "mean_model_minus_baseline_mu": "30.369804823282443",
+            "median_model_minus_baseline_mu": "-0.04417500549836954",
+            "model_lower_mu_n": "88",
+            "mean_model_minus_baseline_y": "30.38708958700862",
+            "median_model_minus_baseline_y": "-0.036855486565385315",
+            "model_lower_y_n": "82"
+          },
+          {
+            "density": "sparse",
+            "model": "NLS",
+            "baseline": "mean",
+            "planned_n": "140",
+            "paired_reliable_n": "140",
+            "mean_model_minus_baseline_mu": "29.850609877244143",
+            "median_model_minus_baseline_mu": "-0.678702175615749",
+            "model_lower_mu_n": "126",
+            "mean_model_minus_baseline_y": "29.992989594595574",
+            "median_model_minus_baseline_y": "-0.5033481497431277",
+            "model_lower_y_n": "126"
+          },
+          {
+            "density": "sparse",
+            "model": "P0",
+            "baseline": "last",
+            "planned_n": "140",
+            "paired_reliable_n": "125",
+            "mean_model_minus_baseline_mu": "-0.2427452947472919",
+            "median_model_minus_baseline_mu": "-0.16543455514950742",
+            "model_lower_mu_n": "103",
+            "mean_model_minus_baseline_y": "-0.15247620218398195",
+            "median_model_minus_baseline_y": "-0.09532210203118341",
+            "model_lower_y_n": "99"
+          },
+          {
+            "density": "sparse",
+            "model": "P0",
+            "baseline": "mean",
+            "planned_n": "140",
+            "paired_reliable_n": "125",
+            "mean_model_minus_baseline_mu": "-0.7627346099363704",
+            "median_model_minus_baseline_mu": "-0.7759774789730046",
+            "model_lower_mu_n": "124",
+            "mean_model_minus_baseline_y": "-0.5496592325983055",
+            "median_model_minus_baseline_y": "-0.5626945955231026",
+            "model_lower_y_n": "124"
+          },
+          {
+            "density": "sparse",
+            "model": "P1",
+            "baseline": "last",
+            "planned_n": "140",
+            "paired_reliable_n": "140",
+            "mean_model_minus_baseline_mu": "-0.3020446899971474",
+            "median_model_minus_baseline_mu": "-0.23922662796341024",
+            "model_lower_mu_n": "124",
+            "mean_model_minus_baseline_y": "-0.17225293927033944",
+            "median_model_minus_baseline_y": "-0.10871461870131433",
+            "model_lower_y_n": "120"
+          },
+          {
+            "density": "sparse",
+            "model": "P1",
+            "baseline": "mean",
+            "planned_n": "140",
+            "paired_reliable_n": "140",
+            "mean_model_minus_baseline_mu": "-0.8212396360354525",
+            "median_model_minus_baseline_mu": "-0.8363607675837943",
+            "model_lower_mu_n": "140",
+            "mean_model_minus_baseline_y": "-0.566352931683386",
+            "median_model_minus_baseline_y": "-0.5861944317981642",
+            "model_lower_y_n": "140"
+          },
+          {
+            "density": "sparse",
+            "model": "P2",
+            "baseline": "last",
+            "planned_n": "140",
+            "paired_reliable_n": "138",
+            "mean_model_minus_baseline_mu": "-0.26960581169174075",
+            "median_model_minus_baseline_mu": "-0.21682426094429766",
+            "model_lower_mu_n": "117",
+            "mean_model_minus_baseline_y": "-0.15564601574928483",
+            "median_model_minus_baseline_y": "-0.09640199672428995",
+            "model_lower_y_n": "111"
+          },
+          {
+            "density": "sparse",
+            "model": "P2",
+            "baseline": "mean",
+            "planned_n": "140",
+            "paired_reliable_n": "138",
+            "mean_model_minus_baseline_mu": "-0.7974602719842693",
+            "median_model_minus_baseline_mu": "-0.805684148864932",
+            "model_lower_mu_n": "138",
+            "mean_model_minus_baseline_y": "-0.5565993532505707",
+            "median_model_minus_baseline_y": "-0.5642884329732278",
+            "model_lower_y_n": "138"
+          }
+        ],
+        "sparse_nls_last": {
+          "density": "sparse",
+          "model": "NLS",
+          "baseline": "last",
+          "planned_n": "140",
+          "paired_reliable_n": "140",
+          "mean_model_minus_baseline_mu": "30.369804823282443",
+          "median_model_minus_baseline_mu": "-0.04417500549836954",
+          "model_lower_mu_n": "88",
+          "mean_model_minus_baseline_y": "30.38708958700862",
+          "median_model_minus_baseline_y": "-0.036855486565385315",
+          "model_lower_y_n": "82"
+        },
+        "method": "Read saved reanalysis only; no NLS or MCMC fit in this round"
+      },
+      "checks": {
+        "all_summary": true,
+        "all_pairs": true,
+        "all_planned": true,
+        "accounting": true,
+        "mean_median_disagree": true
+      }
+    }
+  ]
+}

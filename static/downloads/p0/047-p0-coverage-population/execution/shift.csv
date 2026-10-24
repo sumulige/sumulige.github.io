@@ -1,0 +1,9 @@
+method,calibration_hard,target_hard,coverage
+pooled,0.1,0.0,0.8794691812
+pooled,0.1,0.1,0.8
+pooled,0.1,0.5,0.4821232752
+pooled,0.1,1.0,0.0847773692
+by_group,0.1,0.0,0.8501631625
+by_group,0.1,0.1,0.8649833525
+by_group,0.1,0.5,0.9242641125
+by_group,0.1,1.0,0.9983650625

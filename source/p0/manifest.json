@@ -1,0 +1,1334 @@
+{
+  "articles": [
+    {
+      "id": "p0-004-01-capability-and-results",
+      "path": "004-p0-goals-and-choice/articles/01-capability-and-results.md",
+      "title": "能力变化怎样连接比赛结果",
+      "study": "004-p0-goals-and-choice",
+      "math_count": 3
+    },
+    {
+      "id": "p0-004-02-priorities-and-units",
+      "path": "004-p0-goals-and-choice/articles/02-priorities-and-units.md",
+      "title": "优先级怎样变得可计算",
+      "study": "004-p0-goals-and-choice",
+      "math_count": 2
+    },
+    {
+      "id": "p0-004-03-adherence",
+      "path": "004-p0-goals-and-choice/articles/03-adherence.md",
+      "title": "怎样比较真正可能被执行的方案",
+      "study": "004-p0-goals-and-choice",
+      "math_count": 1
+    },
+    {
+      "id": "p0-004-04-purpose-and-contribution",
+      "path": "004-p0-goals-and-choice/articles/04-purpose-and-contribution.md",
+      "title": "系统追求什么，又能把多少改善归给自己",
+      "study": "004-p0-goals-and-choice",
+      "math_count": 2
+    },
+    {
+      "id": "p0-005-01-calibration",
+      "path": "005-p0-measurement/articles/01-calibration.md",
+      "title": "发现功率异常之后，离校正还差什么",
+      "study": "005-p0-measurement",
+      "math_count": 7
+    },
+    {
+      "id": "p0-005-02-hrv-bridge",
+      "path": "005-p0-measurement/articles/02-hrv-bridge.md",
+      "title": "换了HRV设备，怎样判断旧基线还能用",
+      "study": "005-p0-measurement",
+      "math_count": 0
+    },
+    {
+      "id": "p0-005-03-environment",
+      "path": "005-p0-measurement/articles/03-environment.md",
+      "title": "环境变了，哪些影响应该校正",
+      "study": "005-p0-measurement",
+      "math_count": 2
+    },
+    {
+      "id": "p0-005-04-longitudinal",
+      "path": "005-p0-measurement/articles/04-longitudinal.md",
+      "title": "长期比较，先保留原来的问题",
+      "study": "005-p0-measurement",
+      "math_count": 0
+    },
+    {
+      "id": "p0-006-01-mechanism",
+      "path": "006-p0-missingness/articles/01-mechanism.md",
+      "title": "缺失可以提供线索，但不会自行说明原因",
+      "study": "006-p0-missingness",
+      "math_count": 2
+    },
+    {
+      "id": "p0-006-02-dynamics",
+      "path": "006-p0-missingness/articles/02-dynamics.md",
+      "title": "多日没有数据，模型究竟还知道什么",
+      "study": "006-p0-missingness",
+      "math_count": 4
+    },
+    {
+      "id": "p0-006-03-imputation",
+      "path": "006-p0-missingness/articles/03-imputation.md",
+      "title": "缺少HRV时，补一个值与继续提供帮助不是一回事",
+      "study": "006-p0-missingness",
+      "math_count": 1
+    },
+    {
+      "id": "p0-006-04-questions",
+      "path": "006-p0-missingness/articles/04-questions.md",
+      "title": "少问问题，先判断答案能改变什么",
+      "study": "006-p0-missingness",
+      "math_count": 2
+    },
+    {
+      "id": "p0-007-01-joint-posterior",
+      "path": "007-p0-identifiability/articles/01-joint-posterior.md",
+      "title": "网格能画出山脊，数据才决定能否分清参数",
+      "study": "007-p0-identifiability",
+      "math_count": 3
+    },
+    {
+      "id": "p0-007-02-usable-model",
+      "path": "007-p0-identifiability/articles/02-usable-model.md",
+      "title": "稀疏数据下，先说明模型要用来做什么",
+      "study": "007-p0-identifiability",
+      "math_count": 0
+    },
+    {
+      "id": "p0-007-03-cold-start",
+      "path": "007-p0-identifiability/articles/03-cold-start.md",
+      "title": "冷启动借用群体信息，关键在于这份信息有多适合他",
+      "study": "007-p0-identifiability",
+      "math_count": 2
+    },
+    {
+      "id": "p0-008-01-noise-and-coverage",
+      "path": "008-p0-noise-and-initial-state/articles/01-noise-and-coverage.md",
+      "title": "噪声可以估计，区间仍然需要检验",
+      "study": "008-p0-noise-and-initial-state",
+      "math_count": 3
+    },
+    {
+      "id": "p0-008-02-initial-state",
+      "path": "008-p0-noise-and-initial-state/articles/02-initial-state.md",
+      "title": "预热多久，取决于要消除哪一种误差",
+      "study": "008-p0-noise-and-initial-state",
+      "math_count": 6
+    },
+    {
+      "id": "p0-009-01-what-simulation-shows",
+      "path": "009-p0-simulation-validity/articles/01-what-simulation-shows.md",
+      "title": "合成运动员需要多真实，先看要检验什么",
+      "study": "009-p0-simulation-validity",
+      "math_count": 3
+    },
+    {
+      "id": "p0-009-02-recovery-and-calibration",
+      "path": "009-p0-simulation-validity/articles/02-recovery-and-calibration.md",
+      "title": "参数恢复测试，需要先说清哪一种“正确”",
+      "study": "009-p0-simulation-validity",
+      "math_count": 4
+    },
+    {
+      "id": "p0-009-03-answering-model-criticism",
+      "path": "009-p0-simulation-validity/articles/03-answering-model-criticism.md",
+      "title": "回应模型批评，需要改变哪一项证据",
+      "study": "009-p0-simulation-validity",
+      "math_count": 3
+    },
+    {
+      "id": "p0-010-01-single-person-inference",
+      "path": "010-p0-causal-decisions/articles/01-single-person-inference.md",
+      "title": "一个人的进步，需要什么证据才能归因",
+      "study": "010-p0-causal-decisions",
+      "math_count": 4
+    },
+    {
+      "id": "p0-010-02-sequential-learning",
+      "path": "010-p0-causal-decisions/articles/02-sequential-learning.md",
+      "title": "序贯学习：今天的行动会改变明天的比较条件",
+      "study": "010-p0-causal-decisions",
+      "math_count": 14
+    },
+    {
+      "id": "p0-010-03-advice-quality",
+      "path": "010-p0-causal-decisions/articles/03-advice-quality.md",
+      "title": "一条建议的质量，不能由一次结果倒推",
+      "study": "010-p0-causal-decisions",
+      "math_count": 1
+    },
+    {
+      "id": "p0-010-04-overrides",
+      "path": "010-p0-causal-decisions/articles/04-overrides.md",
+      "title": "未采纳建议的日子，可以观察什么，又缺少什么",
+      "study": "010-p0-causal-decisions",
+      "math_count": 3
+    },
+    {
+      "id": "p0-011-01-personal-counterfactuals",
+      "path": "011-p0-counterfactual-evaluation/articles/01-personal-counterfactuals.md",
+      "title": "“如果你上周休息了”：这句话需要哪一种证据",
+      "study": "011-p0-counterfactual-evaluation",
+      "math_count": 0
+    },
+    {
+      "id": "p0-011-02-off-policy-evaluation",
+      "path": "011-p0-counterfactual-evaluation/articles/02-off-policy-evaluation.md",
+      "title": "旧数据怎样评估新策略：先看目标和可比较的信息",
+      "study": "011-p0-counterfactual-evaluation",
+      "math_count": 6
+    },
+    {
+      "id": "p0-011-03-retrospective-simulation",
+      "path": "011-p0-counterfactual-evaluation/articles/03-retrospective-simulation.md",
+      "title": "模拟回溯能验证什么",
+      "study": "011-p0-counterfactual-evaluation",
+      "math_count": 0
+    },
+    {
+      "id": "p0-011-04-information-time",
+      "path": "011-p0-counterfactual-evaluation/articles/04-information-time.md",
+      "title": "今天补算过去的预测，怎样判断有没有使用未来信息",
+      "study": "011-p0-counterfactual-evaluation",
+      "math_count": 1
+    },
+    {
+      "id": "p0-012-01-trial-objective",
+      "path": "012-p0-prospective-evidence/articles/01-trial-objective.md",
+      "title": "前瞻性试验首先要说清：究竟比较什么",
+      "study": "012-p0-prospective-evidence",
+      "math_count": 4
+    },
+    {
+      "id": "p0-012-02-sample-size",
+      "path": "012-p0-prospective-evidence/articles/02-sample-size.md",
+      "title": "样本量由目标差异和信息量决定",
+      "study": "012-p0-prospective-evidence",
+      "math_count": 35
+    },
+    {
+      "id": "p0-012-03-minimal-claim",
+      "path": "012-p0-prospective-evidence/articles/03-minimal-claim.md",
+      "title": "可打分的预测，究竟证明了什么",
+      "study": "012-p0-prospective-evidence",
+      "math_count": 7
+    },
+    {
+      "id": "p0-013-01-fair-scoring",
+      "path": "013-p0-scoring-and-validation/articles/01-fair-scoring.md",
+      "title": "一个分数先要回答同一个问题",
+      "study": "013-p0-scoring-and-validation",
+      "math_count": 11
+    },
+    {
+      "id": "p0-013-02-validation-targets",
+      "path": "013-p0-scoring-and-validation/articles/02-validation-targets.md",
+      "title": "切分是在定义未来使用对象",
+      "study": "013-p0-scoring-and-validation",
+      "math_count": 2
+    },
+    {
+      "id": "p0-013-03-information-availability",
+      "path": "013-p0-scoring-and-validation/articles/03-information-availability.md",
+      "title": "当时究竟知道什么",
+      "study": "013-p0-scoring-and-validation",
+      "math_count": 5
+    },
+    {
+      "id": "p0-014-01-change-and-uncertainty",
+      "path": "014-p0-individual-change/articles/01-change-and-uncertainty.md",
+      "title": "数字提高了，究竟说明了什么",
+      "study": "014-p0-individual-change",
+      "math_count": 12
+    },
+    {
+      "id": "p0-014-02-response-and-repeatability",
+      "path": "014-p0-individual-change/articles/02-response-and-repeatability.md",
+      "title": "一次进步，为什么还不能定义“响应者”",
+      "study": "014-p0-individual-change",
+      "math_count": 24
+    },
+    {
+      "id": "p0-014-03-labels-and-goals",
+      "path": "014-p0-individual-change/articles/03-labels-and-goals.md",
+      "title": "不急着贴标签，怎样形成可用的判断",
+      "study": "014-p0-individual-change",
+      "math_count": 6
+    },
+    {
+      "id": "p0-015-01-measuring-durability",
+      "path": "015-p0-durability-and-performance/articles/01-measuring-durability.md",
+      "title": "骑到后程还能输出多少：先把耐久度测清楚",
+      "study": "015-p0-durability-and-performance",
+      "math_count": 0
+    },
+    {
+      "id": "p0-015-02-prediction-and-racing",
+      "path": "015-p0-durability-and-performance/articles/02-prediction-and-racing.md",
+      "title": "疲劳后的功率更贴近比赛，为什么还不能直接预测成绩",
+      "study": "015-p0-durability-and-performance",
+      "math_count": 0
+    },
+    {
+      "id": "p0-015-03-training-and-transfer",
+      "path": "015-p0-durability-and-performance/articles/03-training-and-transfer.md",
+      "title": "耐久度能训练，不等于已经知道该怎样训练你",
+      "study": "015-p0-durability-and-performance",
+      "math_count": 0
+    },
+    {
+      "id": "p0-016-01-preferences-and-robust-choice",
+      "path": "016-p0-preferences-and-execution/articles/01-preferences-and-robust-choice.md",
+      "title": "权重还没问清，也可以先把取舍说清",
+      "study": "016-p0-preferences-and-execution",
+      "math_count": 4
+    },
+    {
+      "id": "p0-016-02-prescription-and-behavior",
+      "path": "016-p0-preferences-and-execution/articles/02-prescription-and-behavior.md",
+      "title": "“更愿意做”与“确实做到了”，中间还隔着什么",
+      "study": "016-p0-preferences-and-execution",
+      "math_count": 0
+    },
+    {
+      "id": "p0-016-03-behavior-and-benefit",
+      "path": "016-p0-preferences-and-execution/articles/03-behavior-and-benefit.md",
+      "title": "到场更多，何时才意味着方案更好",
+      "study": "016-p0-preferences-and-execution",
+      "math_count": 4
+    },
+    {
+      "id": "p0-017-01-incremental-training-benefit",
+      "path": "017-p0-adaptive-training-benefit/articles/01-incremental-training-benefit.md",
+      "title": "动态调课有没有用，先问它比什么更好",
+      "study": "017-p0-adaptive-training-benefit",
+      "math_count": 0
+    },
+    {
+      "id": "p0-017-02-delivery-and-execution",
+      "path": "017-p0-adaptive-training-benefit/articles/02-delivery-and-execution.md",
+      "title": "完成了同样多的课，未必接受了同样的训练",
+      "study": "017-p0-adaptive-training-benefit",
+      "math_count": 0
+    },
+    {
+      "id": "p0-017-03-policy-components-and-understanding",
+      "path": "017-p0-adaptive-training-benefit/articles/03-policy-components-and-understanding.md",
+      "title": "整套策略有效，不等于每个组件都已被证明",
+      "study": "017-p0-adaptive-training-benefit",
+      "math_count": 0
+    },
+    {
+      "id": "p0-018-01-what-was-validated",
+      "path": "018-p0-hrv-measurement-bridge/articles/01-what-was-validated.md",
+      "title": "心率很准，为什么HRV仍可能不准",
+      "study": "018-p0-hrv-measurement-bridge",
+      "math_count": 0
+    },
+    {
+      "id": "p0-018-02-clean-data-and-coverage",
+      "path": "018-p0-hrv-measurement-bridge/articles/02-clean-data-and-coverage.md",
+      "title": "筛选后的HRV更准，不等于这一夜测得更完整",
+      "study": "018-p0-hrv-measurement-bridge",
+      "math_count": 0
+    },
+    {
+      "id": "p0-018-03-personal-change-and-timing",
+      "path": "018-p0-hrv-measurement-bridge/articles/03-personal-change-and-timing.md",
+      "title": "对一群人测得准，能否跟上你的变化",
+      "study": "018-p0-hrv-measurement-bridge",
+      "math_count": 0
+    },
+    {
+      "id": "p0-019-01-indoor-outdoor",
+      "path": "019-p0-environment-and-power/articles/01-indoor-outdoor.md",
+      "title": "室内少了二十瓦，先别把它当成功率计偏差",
+      "study": "019-p0-environment-and-power",
+      "math_count": 0
+    },
+    {
+      "id": "p0-019-02-cooling-and-acclimation",
+      "path": "019-p0-environment-and-power/articles/02-cooling-and-acclimation.md",
+      "title": "同样热、同样心率，为什么不能给功率统一打折",
+      "study": "019-p0-environment-and-power",
+      "math_count": 0
+    },
+    {
+      "id": "p0-019-03-climb-reference",
+      "path": "019-p0-environment-and-power/articles/03-climb-reference.md",
+      "title": "爬坡功率对不上，能否据此自动校准",
+      "study": "019-p0-environment-and-power",
+      "math_count": 1
+    },
+    {
+      "id": "p0-020-01-predicting-missingness",
+      "path": "020-p0-missingness-validation/articles/01-predicting-missingness.md",
+      "title": "能预测你什么时候没记录，仍不等于知道缺失了什么",
+      "study": "020-p0-missingness-validation",
+      "math_count": 0
+    },
+    {
+      "id": "p0-020-02-masking-and-time",
+      "path": "020-p0-missingness-validation/articles/02-masking-and-time.md",
+      "title": "人工遮掉的数据补得准，能否代表真实缺失",
+      "study": "020-p0-missingness-validation",
+      "math_count": 0
+    },
+    {
+      "id": "p0-020-03-imputation-target",
+      "path": "020-p0-missingness-validation/articles/03-imputation-target.md",
+      "title": "补得更像原始数据，未必更准确地回答训练问题",
+      "study": "020-p0-missingness-validation",
+      "math_count": 0
+    },
+    {
+      "id": "p0-021-01-fewer-questions",
+      "path": "021-p0-questionnaire-burden/articles/01-fewer-questions.md",
+      "title": "把问卷缩短，用户就会更愿意回答吗？",
+      "study": "021-p0-questionnaire-burden",
+      "math_count": 0
+    },
+    {
+      "id": "p0-021-02-completion-denominator",
+      "path": "021-p0-questionnaire-burden/articles/02-completion-denominator.md",
+      "title": "完成率很高，为什么还不能说明用户会持续记录？",
+      "study": "021-p0-questionnaire-burden",
+      "math_count": 1
+    },
+    {
+      "id": "p0-021-03-response-value",
+      "path": "021-p0-questionnaire-burden/articles/03-response-value.md",
+      "title": "每次都填完，也不等于得到了更好的判断",
+      "study": "021-p0-questionnaire-burden",
+      "math_count": 1
+    },
+    {
+      "id": "p0-022-01-what-improved",
+      "path": "022-p0-model-evidence/articles/01-what-improved.md",
+      "title": "模型预测更好，究竟好在模型，还是多看到了信息？",
+      "study": "022-p0-model-evidence",
+      "math_count": 0
+    },
+    {
+      "id": "p0-022-02-what-parameters-identify",
+      "path": "022-p0-model-evidence/articles/02-what-parameters-identify.md",
+      "title": "多画出两条曲线，就能知道适应与疲劳各有多大吗？",
+      "study": "022-p0-model-evidence",
+      "math_count": 0
+    },
+    {
+      "id": "p0-022-03-from-fit-to-decisions",
+      "path": "022-p0-model-evidence/articles/03-from-fit-to-decisions.md",
+      "title": "研究回应了模型批评，距离指导训练还有哪一步？",
+      "study": "022-p0-model-evidence",
+      "math_count": 0
+    },
+    {
+      "id": "p0-023-01-what-noise-can-be-separated",
+      "path": "023-p0-noise-separation/articles/01-what-noise-can-be-separated.md",
+      "title": "表现上下波动，模型能分清是哪一种噪声吗？",
+      "study": "023-p0-noise-separation",
+      "math_count": 0
+    },
+    {
+      "id": "p0-023-02-what-warmup-forgets",
+      "path": "023-p0-noise-separation/articles/02-what-warmup-forgets.md",
+      "title": "导入更多训练历史，模型究竟忘掉了什么？",
+      "study": "023-p0-noise-separation",
+      "math_count": 1
+    },
+    {
+      "id": "p0-023-03-what-repetitions-add",
+      "path": "023-p0-noise-separation/articles/03-what-repetitions-add.md",
+      "title": "多测几次、多模拟几万次，各自增加了什么证据？",
+      "study": "023-p0-noise-separation",
+      "math_count": 0
+    },
+    {
+      "id": "p0-024-01-what-randomized-advice-tests",
+      "path": "024-p0-randomized-advice/articles/01-what-randomized-advice-tests.md",
+      "title": "随机发出一条建议，究竟验证了什么？",
+      "study": "024-p0-randomized-advice",
+      "math_count": 0
+    },
+    {
+      "id": "p0-024-02-availability-and-policy",
+      "path": "024-p0-randomized-advice/articles/02-availability-and-policy.md",
+      "title": "“这时发建议有用”，为什么还要说明此前怎样发？",
+      "study": "024-p0-randomized-advice",
+      "math_count": 0
+    },
+    {
+      "id": "p0-024-03-assignment-is-not-adherence",
+      "path": "024-p0-randomized-advice/articles/03-assignment-is-not-adherence.md",
+      "title": "用户没有采纳建议，随机化还剩下什么作用？",
+      "study": "024-p0-randomized-advice",
+      "math_count": 0
+    },
+    {
+      "id": "p0-025-01-policy-changes-states",
+      "path": "025-p0-long-term-policy/articles/01-policy-changes-states.md",
+      "title": "换一套训练策略，也会换掉以后遇到的状态",
+      "study": "025-p0-long-term-policy",
+      "math_count": 5
+    },
+    {
+      "id": "p0-025-02-finite-horizon",
+      "path": "025-p0-long-term-policy/articles/02-finite-horizon.md",
+      "title": "“长期平均更好”不一定回答这一个训练周期",
+      "study": "025-p0-long-term-policy",
+      "math_count": 1
+    },
+    {
+      "id": "p0-025-03-individual-means",
+      "path": "025-p0-long-term-policy/articles/03-individual-means.md",
+      "title": "个体反事实均值与未发生的实际结果有什么区别",
+      "study": "025-p0-long-term-policy",
+      "math_count": 3
+    },
+    {
+      "id": "p0-026-01-what-beats-what",
+      "path": "026-p0-algorithm-trial/articles/01-what-beats-what.md",
+      "title": "个体化算法到底赢了谁：从四组试验读懂产品主张",
+      "study": "026-p0-algorithm-trial",
+      "math_count": 0
+    },
+    {
+      "id": "p0-026-02-who-was-analyzed",
+      "path": "026-p0-algorithm-trial/articles/02-who-was-analyzed.md",
+      "title": "13,463人随机分组，为什么最后分析7,711人",
+      "study": "026-p0-algorithm-trial",
+      "math_count": 0
+    },
+    {
+      "id": "p0-027-01-finite-samples",
+      "path": "027-p0-forecast-comparisons/articles/01-finite-samples.md",
+      "title": "同一个预测分布，多抽一些样本为什么会得更高评价",
+      "study": "027-p0-forecast-comparisons",
+      "math_count": 1
+    },
+    {
+      "id": "p0-027-02-whole-trajectories",
+      "path": "027-p0-forecast-comparisons/articles/02-whole-trajectories.md",
+      "title": "逐日分布相同，整段轨迹仍可能不同",
+      "study": "027-p0-forecast-comparisons",
+      "math_count": 0
+    },
+    {
+      "id": "p0-027-03-overlapping-windows",
+      "path": "027-p0-forecast-comparisons/articles/03-overlapping-windows.md",
+      "title": "每天评一次未来七天，不等于每天增加一次独立验证",
+      "study": "027-p0-forecast-comparisons",
+      "math_count": 1
+    },
+    {
+      "id": "p0-028-01-repeatability",
+      "path": "028-p0-repeated-training/articles/01-repeatability.md",
+      "title": "同样练两遍，为什么“有相关”仍不等于“进步可复制”",
+      "study": "028-p0-repeated-training",
+      "math_count": 0
+    },
+    {
+      "id": "p0-028-02-shared-measurement",
+      "path": "028-p0-repeated-training/articles/02-shared-measurement.md",
+      "title": "进步越多、停训损失越大，是否说明“长得快也掉得快”",
+      "study": "028-p0-repeated-training",
+      "math_count": 1
+    },
+    {
+      "id": "p0-028-03-using-repeated-evidence",
+      "path": "028-p0-repeated-training/articles/03-using-repeated-evidence.md",
+      "title": "重复训练增加了哪些证据，还没有回答什么",
+      "study": "028-p0-repeated-training",
+      "math_count": 0
+    },
+    {
+      "id": "p0-029-01-indicator-and-goal",
+      "path": "029-p0-surrogate-outcomes/articles/01-indicator-and-goal.md",
+      "title": "指标涨了，究竟是哪件事变好了",
+      "study": "029-p0-surrogate-outcomes",
+      "math_count": 0
+    },
+    {
+      "id": "p0-029-02-surrogate-paradox",
+      "path": "029-p0-surrogate-outcomes/articles/02-surrogate-paradox.md",
+      "title": "为什么指标改善，目标反而可能变差",
+      "study": "029-p0-surrogate-outcomes",
+      "math_count": 0
+    },
+    {
+      "id": "p0-029-03-trial-level-transfer",
+      "path": "029-p0-surrogate-outcomes/articles/03-trial-level-transfer.md",
+      "title": "人与人高度相关，为什么仍预测不了干预收益",
+      "study": "029-p0-surrogate-outcomes",
+      "math_count": 0
+    },
+    {
+      "id": "p0-030-01-choice-and-opportunity",
+      "path": "030-p0-learning-preferences/articles/01-choice-and-opportunity.md",
+      "title": "用户经常选短课，是否说明他更喜欢短课",
+      "study": "030-p0-learning-preferences",
+      "math_count": 0
+    },
+    {
+      "id": "p0-030-02-what-weights-identify",
+      "path": "030-p0-learning-preferences/articles/02-what-weights-identify.md",
+      "title": "模型学到的权重，究竟是什么",
+      "study": "030-p0-learning-preferences",
+      "math_count": 0
+    },
+    {
+      "id": "p0-030-03-behavior-and-objective",
+      "path": "030-p0-learning-preferences/articles/03-behavior-and-objective.md",
+      "title": "能解释同一行为，不等于找到了同一个目标",
+      "study": "030-p0-learning-preferences",
+      "math_count": 0
+    },
+    {
+      "id": "p0-031-01-what-the-interval-covers",
+      "path": "031-p0-agreement-and-calibration/articles/01-what-the-interval-covers.md",
+      "title": "设备“误差很小”时，先问这个区间覆盖什么",
+      "study": "031-p0-agreement-and-calibration",
+      "math_count": 0
+    },
+    {
+      "id": "p0-031-02-repeated-measurements",
+      "path": "031-p0-agreement-and-calibration/articles/02-repeated-measurements.md",
+      "title": "一个人测一百次，为什么不能算作一百个人",
+      "study": "031-p0-agreement-and-calibration",
+      "math_count": 2
+    },
+    {
+      "id": "p0-031-03-calibration-and-artifacts",
+      "path": "031-p0-agreement-and-calibration/articles/03-calibration-and-artifacts.md",
+      "title": "差值随读数变化，不一定说明设备有比例偏差",
+      "study": "031-p0-agreement-and-calibration",
+      "math_count": 2
+    },
+    {
+      "id": "p0-032-01-same-altitude-different-exposure",
+      "path": "032-p0-altitude-transport/articles/01-same-altitude-different-exposure.md",
+      "title": "同样写着“四千米”，不一定是同一种低氧暴露",
+      "study": "032-p0-altitude-transport",
+      "math_count": 1
+    },
+    {
+      "id": "p0-032-02-different-performance-scales",
+      "path": "032-p0-altitude-transport/articles/02-different-performance-scales.md",
+      "title": "“表现下降百分之几”，必须先说清表现是什么",
+      "study": "032-p0-altitude-transport",
+      "math_count": 1
+    },
+    {
+      "id": "p0-032-03-combined-environments",
+      "path": "032-p0-altitude-transport/articles/03-combined-environments.md",
+      "title": "热和低氧同时出现，两个折扣可以直接相加吗",
+      "study": "032-p0-altitude-transport",
+      "math_count": 1
+    },
+    {
+      "id": "p0-033-01-what-proxy-adds",
+      "path": "033-p0-missingness-identification/articles/01-what-proxy-adds.md",
+      "title": "多一个指标，什么时候真的能知道缺失了什么",
+      "study": "033-p0-missingness-identification",
+      "math_count": 1
+    },
+    {
+      "id": "p0-033-02-identification-is-not-stability",
+      "path": "033-p0-missingness-identification/articles/02-identification-is-not-stability.md",
+      "title": "能算出唯一答案，为什么仍可能没有把握",
+      "study": "033-p0-missingness-identification",
+      "math_count": 0
+    },
+    {
+      "id": "p0-033-03-followup-is-a-sampling-design",
+      "path": "033-p0-missingness-identification/articles/03-followup-is-a-sampling-design.md",
+      "title": "补问几个人，为什么不等于补齐了缺失",
+      "study": "033-p0-missingness-identification",
+      "math_count": 2
+    },
+    {
+      "id": "p0-034-01-population-is-not-person",
+      "path": "034-p0-population-borrowing/articles/01-population-is-not-person.md",
+      "title": "知道很多人的平均值，为什么仍不了解一个新人",
+      "study": "034-p0-population-borrowing",
+      "math_count": 1
+    },
+    {
+      "id": "p0-034-02-conflict-and-uncertainty",
+      "path": "034-p0-population-borrowing/articles/02-conflict-and-uncertainty.md",
+      "title": "新人的数据与群体不一样，模型会自动相信他吗",
+      "study": "034-p0-population-borrowing",
+      "math_count": 0
+    },
+    {
+      "id": "p0-034-03-robust-group-is-not-personal-validation",
+      "path": "034-p0-population-borrowing/articles/03-robust-group-is-not-personal-validation.md",
+      "title": "群体估计更稳健，为什么还不能证明新人预测准确",
+      "study": "034-p0-population-borrowing",
+      "math_count": 1
+    },
+    {
+      "id": "p0-035-01-profile-versus-slice",
+      "path": "035-p0-profile-identifiability/articles/01-profile-versus-slice.md",
+      "title": "参数曲线很尖，为什么仍可能没有识别出参数",
+      "study": "035-p0-profile-identifiability",
+      "math_count": 1
+    },
+    {
+      "id": "p0-035-02-local-curvature-and-bounds",
+      "path": "035-p0-profile-identifiability/articles/02-local-curvature-and-bounds.md",
+      "title": "一个有限标准误，不能保证参数上界来自数据",
+      "study": "035-p0-profile-identifiability",
+      "math_count": 1
+    },
+    {
+      "id": "p0-035-03-marginalization",
+      "path": "035-p0-profile-identifiability/articles/03-marginalization.md",
+      "title": "剖面是平的，边缘分布为什么仍然会有峰",
+      "study": "035-p0-profile-identifiability",
+      "math_count": 2
+    },
+    {
+      "id": "p0-036-01-history-and-initial-information",
+      "path": "036-p0-initial-state-information/articles/01-history-and-initial-information.md",
+      "title": "三年历史能消除初值影响，却不一定能找回第一天",
+      "study": "036-p0-initial-state-information",
+      "math_count": 1
+    },
+    {
+      "id": "p0-036-02-initial-prior",
+      "path": "036-p0-initial-state-information/articles/02-initial-prior.md",
+      "title": "把初值设为零，究竟设定了什么",
+      "study": "036-p0-initial-state-information",
+      "math_count": 0
+    },
+    {
+      "id": "p0-036-03-transient-output-error",
+      "path": "036-p0-initial-state-information/articles/03-transient-output-error.md",
+      "title": "每个状态都在衰减，输出误差为什么还会先变大",
+      "study": "036-p0-initial-state-information",
+      "math_count": 2
+    },
+    {
+      "id": "p0-037-01-power-and-assurance",
+      "path": "037-p0-design-assurance/articles/01-power-and-assurance.md",
+      "title": "算出了85%功效，为什么还不能说研究有85%机会成功",
+      "study": "037-p0-design-assurance",
+      "math_count": 1
+    },
+    {
+      "id": "p0-037-02-design-distribution",
+      "path": "037-p0-design-assurance/articles/02-design-distribution.md",
+      "title": "平均效应相同，为什么研究成功概率可以差很多",
+      "study": "037-p0-design-assurance",
+      "math_count": 0
+    },
+    {
+      "id": "p0-037-03-selected-pilot-effects",
+      "path": "037-p0-design-assurance/articles/03-selected-pilot-effects.md",
+      "title": "先导研究显著了，为什么不能直接拿它的效应计算下一次样本量",
+      "study": "037-p0-design-assurance",
+      "math_count": 0
+    },
+    {
+      "id": "p0-038-01-calibrated-forecasts-and-decisions",
+      "path": "038-p0-scores-and-decisions/articles/01-calibrated-forecasts-and-decisions.md",
+      "title": "两个预测都校准，评分更好的那个一定更有用吗",
+      "study": "038-p0-scores-and-decisions",
+      "math_count": 0
+    },
+    {
+      "id": "p0-038-02-proper-weights",
+      "path": "038-p0-scores-and-decisions/articles/02-proper-weights.md",
+      "title": "都鼓励诚实报告，为什么两种评分还能给出相反排名",
+      "study": "038-p0-scores-and-decisions",
+      "math_count": 2
+    },
+    {
+      "id": "p0-038-03-information-and-implementation",
+      "path": "038-p0-scores-and-decisions/articles/03-information-and-implementation.md",
+      "title": "更多信息为什么有理论价值，却不保证一次模型改动有价值",
+      "study": "038-p0-scores-and-decisions",
+      "math_count": 0
+    },
+    {
+      "id": "p0-039-01-complementary-questions",
+      "path": "039-p0-sequential-questions/articles/01-complementary-questions.md",
+      "title": "一个问题单独没信息，为什么仍可能值得先问",
+      "study": "039-p0-sequential-questions",
+      "math_count": 0
+    },
+    {
+      "id": "p0-039-02-sequence-and-stopping",
+      "path": "039-p0-sequential-questions/articles/02-sequence-and-stopping.md",
+      "title": "同样只能问两题，为什么先后顺序会改变价值",
+      "study": "039-p0-sequential-questions",
+      "math_count": 0
+    },
+    {
+      "id": "p0-039-03-nonresponse-and-constraints",
+      "path": "039-p0-sequential-questions/articles/03-nonresponse-and-constraints.md",
+      "title": "如果第一题可能没有回答，原来的最佳顺序还成立吗",
+      "study": "039-p0-sequential-questions",
+      "math_count": 0
+    },
+    {
+      "id": "p0-040-01-counting-values",
+      "path": "040-p0-value-structure/articles/01-counting-values.md",
+      "title": "指标多了一列，为什么推荐方案就变了",
+      "study": "040-p0-value-structure",
+      "math_count": 0
+    },
+    {
+      "id": "p0-040-02-uncertain-value",
+      "path": "040-p0-value-structure/articles/02-uncertain-value.md",
+      "title": "平均收益更高，为什么还不能直接叫“更合意”",
+      "study": "040-p0-value-structure",
+      "math_count": 0
+    },
+    {
+      "id": "p0-040-03-joint-outcomes",
+      "path": "040-p0-value-structure/articles/03-joint-outcomes.md",
+      "title": "两项结果各有一半概率变好，还缺什么信息",
+      "study": "040-p0-value-structure",
+      "math_count": 0
+    },
+    {
+      "id": "p0-041-01-continuous-checking",
+      "path": "041-p0-sequential-alarms/articles/01-continuous-checking.md",
+      "title": "每次检验控制在5%，为什么连续看数据仍会更常误报",
+      "study": "041-p0-sequential-alarms",
+      "math_count": 0
+    },
+    {
+      "id": "p0-041-02-arl-and-probability",
+      "path": "041-p0-sequential-alarms/articles/02-arl-and-probability.md",
+      "title": "“平均100次才误报”不等于“100次内只有1%会误报”",
+      "study": "041-p0-sequential-alarms",
+      "math_count": 0
+    },
+    {
+      "id": "p0-041-03-alarm-and-cause",
+      "path": "041-p0-sequential-alarms/articles/03-alarm-and-cause.md",
+      "title": "报警之后，为什么还不能直接把数据“校正回来”",
+      "study": "041-p0-sequential-alarms",
+      "math_count": 0
+    },
+    {
+      "id": "p0-042-01-what-was-checked",
+      "path": "042-p0-predictive-checks/articles/01-what-was-checked.md",
+      "title": "后验预测检查没有报警，究竟说明了什么",
+      "study": "042-p0-predictive-checks",
+      "math_count": 0
+    },
+    {
+      "id": "p0-042-02-tail-probability",
+      "path": "042-p0-predictive-checks/articles/02-tail-probability.md",
+      "title": "后验预测p值不均匀，不等于后验计算错了",
+      "study": "042-p0-predictive-checks",
+      "math_count": 0
+    },
+    {
+      "id": "p0-042-03-imputation-checks",
+      "path": "042-p0-predictive-checks/articles/03-imputation-checks.md",
+      "title": "数据补得更完整，为什么模型问题反而更难看见",
+      "study": "042-p0-predictive-checks",
+      "math_count": 0
+    },
+    {
+      "id": "p0-043-01-direction-and-target",
+      "path": "043-p0-calibration-target/articles/01-direction-and-target.md",
+      "title": "两台设备的回归线，为什么换个方向就变了",
+      "study": "043-p0-calibration-target",
+      "math_count": 0
+    },
+    {
+      "id": "p0-043-02-what-pairs-identify",
+      "path": "043-p0-calibration-target/articles/02-what-pairs-identify.md",
+      "title": "配对测量再多，也未必能确定真正的校准斜率",
+      "study": "043-p0-calibration-target",
+      "math_count": 0
+    },
+    {
+      "id": "p0-043-03-prediction-and-transfer",
+      "path": "043-p0-calibration-target/articles/03-prediction-and-transfer.md",
+      "title": "设备没有变，最佳预测公式也可能改变",
+      "study": "043-p0-calibration-target",
+      "math_count": 0
+    },
+    {
+      "id": "p0-044-01-bounds-not-confidence",
+      "path": "044-p0-attribution-bounds/articles/01-bounds-not-confidence.md",
+      "title": "成功率提高了，究竟有多少人因它受益",
+      "study": "044-p0-attribution-bounds",
+      "math_count": 0
+    },
+    {
+      "id": "p0-044-02-strata-and-assumptions",
+      "path": "044-p0-attribution-bounds/articles/02-strata-and-assumptions.md",
+      "title": "分层信息怎样收紧归因范围，又怎样否定一个方便的假设",
+      "study": "044-p0-attribution-bounds",
+      "math_count": 0
+    },
+    {
+      "id": "p0-044-03-choice-and-attribution",
+      "path": "044-p0-attribution-bounds/articles/03-choice-and-attribution.md",
+      "title": "不知道这次成功归功于谁，还能比较下一次的选择吗",
+      "study": "044-p0-attribution-bounds",
+      "math_count": 0
+    },
+    {
+      "id": "p0-045-01-overlap-and-precision",
+      "path": "045-p0-validation-uncertainty/articles/01-overlap-and-precision.md",
+      "title": "一百条滚动预测，为什么不等于一百次独立比较",
+      "study": "045-p0-validation-uncertainty",
+      "math_count": 0
+    },
+    {
+      "id": "p0-045-02-which-risk",
+      "path": "045-p0-validation-uncertainty/articles/02-which-risk.md",
+      "title": "交叉验证在估计哪个模型的风险",
+      "study": "045-p0-validation-uncertainty",
+      "math_count": 0
+    },
+    {
+      "id": "p0-045-03-repeated-splits",
+      "path": "045-p0-validation-uncertainty/articles/03-repeated-splits.md",
+      "title": "重新分折一百次，增加了多少证据",
+      "study": "045-p0-validation-uncertainty",
+      "math_count": 0
+    },
+    {
+      "id": "p0-046-01-what-load-forgets",
+      "path": "046-p0-training-input/articles/01-what-load-forgets.md",
+      "title": "两次训练负荷相同，模型还能看见它们的区别吗",
+      "study": "046-p0-training-input",
+      "math_count": 0
+    },
+    {
+      "id": "p0-046-02-within-day-time",
+      "path": "046-p0-training-input/articles/02-within-day-time.md",
+      "title": "把训练都记在日末，会造成多大差别",
+      "study": "046-p0-training-input",
+      "math_count": 0
+    },
+    {
+      "id": "p0-046-03-linear-dose-and-history",
+      "path": "046-p0-training-input/articles/03-linear-dose-and-history.md",
+      "title": "固定冲量响应能表达怎样的剂量关系",
+      "study": "046-p0-training-input",
+      "math_count": 0
+    },
+    {
+      "id": "p0-047-01-finite-calibration",
+      "path": "047-p0-coverage-population/articles/01-finite-calibration.md",
+      "title": "只有四个校准样本，怎样承诺90%的预测覆盖？",
+      "study": "047-p0-coverage-population",
+      "math_count": 0
+    },
+    {
+      "id": "p0-047-02-groups-under-average",
+      "path": "047-p0-coverage-population/articles/02-groups-under-average.md",
+      "title": "总体覆盖80%，一类对象可能只覆盖8.48%",
+      "study": "047-p0-coverage-population",
+      "math_count": 0
+    },
+    {
+      "id": "p0-047-03-population-shift",
+      "path": "047-p0-coverage-population/articles/03-population-shift.md",
+      "title": "人群构成变了，过去的80%还代表什么？",
+      "study": "047-p0-coverage-population",
+      "math_count": 0
+    },
+    {
+      "id": "p0-048-01-whose-effect",
+      "path": "048-p0-trial-transport/articles/01-whose-effect.md",
+      "title": "试验里增加14个百分点，推广后为何可能减少4个百分点？",
+      "study": "048-p0-trial-transport",
+      "math_count": 0
+    },
+    {
+      "id": "p0-048-02-robustness-and-assumptions",
+      "path": "048-p0-trial-transport/articles/02-robustness-and-assumptions.md",
+      "title": "双重稳健能修正模型错误，不能凭空补出推广证据",
+      "study": "048-p0-trial-transport",
+      "math_count": 0
+    },
+    {
+      "id": "p0-048-03-overlap-and-information",
+      "path": "048-p0-trial-transport/articles/03-overlap-and-information.md",
+      "title": "某类用户几乎不参加试验，权重能补回多少信息？",
+      "study": "048-p0-trial-transport",
+      "math_count": 0
+    },
+    {
+      "id": "p0-049-01-change-is-a-constraint",
+      "path": "049-p0-baseline-and-change/articles/01-change-is-a-constraint.md",
+      "title": "比较“提高了多少”，真的已经控制基线了吗？",
+      "study": "049-p0-baseline-and-change",
+      "math_count": 0
+    },
+    {
+      "id": "p0-049-02-noisy-baseline",
+      "path": "049-p0-baseline-and-change/articles/02-noisy-baseline.md",
+      "title": "基线测得不准，调整后还会剩下多少混杂？",
+      "study": "049-p0-baseline-and-change",
+      "math_count": 0
+    },
+    {
+      "id": "p0-049-03-before-what",
+      "path": "049-p0-baseline-and-change/articles/03-before-what.md",
+      "title": "“基线”必须说明在什么之前",
+      "study": "049-p0-baseline-and-change",
+      "math_count": 0
+    },
+    {
+      "id": "p0-050-01-which-mass-exponent",
+      "path": "050-p0-mass-scaling/articles/01-which-mass-exponent.md",
+      "title": "除以体重，究竟想消除什么？",
+      "study": "050-p0-mass-scaling",
+      "math_count": 0
+    },
+    {
+      "id": "p0-050-02-zero-slope-is-not-flat",
+      "path": "050-p0-mass-scaling/articles/02-zero-slope-is-not-flat.md",
+      "title": "标准化后与体重不相关，不代表每个体重都完全等价",
+      "study": "050-p0-mass-scaling",
+      "math_count": 0
+    },
+    {
+      "id": "p0-050-03-course-and-validation",
+      "path": "050-p0-mass-scaling/articles/03-course-and-validation.md",
+      "title": "整条路线的指数，为什么不一定是分段指数的时间平均？",
+      "study": "050-p0-mass-scaling",
+      "math_count": 0
+    },
+    {
+      "id": "p0-051-01-mean-quantile-tail",
+      "path": "051-p0-tail-risk/articles/01-mean-quantile-tail.md",
+      "title": "平均损失较小，为什么仍可能更不愿选择？",
+      "study": "051-p0-tail-risk",
+      "math_count": 0
+    },
+    {
+      "id": "p0-051-02-risk-weight",
+      "path": "051-p0-tail-risk/articles/02-risk-weight.md",
+      "title": "风险权重能计算方案排序，却不能替人确定取舍",
+      "study": "051-p0-tail-risk",
+      "math_count": 0
+    },
+    {
+      "id": "p0-051-03-sequential-tail",
+      "path": "051-p0-tail-risk/articles/03-sequential-tail.md",
+      "title": "现在愿意承诺的选择，到时还愿意执行吗？",
+      "study": "051-p0-tail-risk",
+      "math_count": 0
+    },
+    {
+      "id": "p0-052-01-zero-is-not-no-information",
+      "path": "052-p0-zero-events/articles/01-zero-is-not-no-information.md",
+      "title": "一次失败也没看到，能说明多少？",
+      "study": "052-p0-zero-events",
+      "math_count": 0
+    },
+    {
+      "id": "p0-052-02-rows-and-detection",
+      "path": "052-p0-zero-events/articles/02-rows-and-detection.md",
+      "title": "300条“没有问题”的记录，可能并不是300次独立证据",
+      "study": "052-p0-zero-events",
+      "math_count": 0
+    },
+    {
+      "id": "p0-052-03-unseen-severity",
+      "path": "052-p0-zero-events/articles/03-unseen-severity.md",
+      "title": "没见过坏结果，也就不知道它能有多严重吗？",
+      "study": "052-p0-zero-events",
+      "math_count": 0
+    },
+    {
+      "id": "p0-053-01-best-observed-score",
+      "path": "053-p0-selected-winner/articles/01-best-observed-score.md",
+      "title": "选出来的最高分，为什么不能沿用原来的置信界？",
+      "study": "053-p0-selected-winner",
+      "math_count": 0
+    },
+    {
+      "id": "p0-053-02-independent-validation",
+      "path": "053-p0-selected-winner/articles/02-independent-validation.md",
+      "title": "再评价一次，为什么还可能保留赢家的乐观偏差？",
+      "study": "053-p0-selected-winner",
+      "math_count": 0
+    },
+    {
+      "id": "p0-053-03-selection-and-reporting",
+      "path": "053-p0-selected-winner/articles/03-selection-and-reporting.md",
+      "title": "选对方案和准确报告表现，是两个目标",
+      "study": "053-p0-selected-winner",
+      "math_count": 0
+    },
+    {
+      "id": "p0-054-01-variance-confidence",
+      "path": "054-p0-misspecified-confidence/articles/01-variance-confidence.md",
+      "title": "数据更多，错误的噪声假设也可能更自信",
+      "study": "054-p0-misspecified-confidence",
+      "math_count": 0
+    },
+    {
+      "id": "p0-054-02-biased-prediction",
+      "path": "054-p0-misspecified-confidence/articles/02-biased-prediction.md",
+      "title": "噪声估对了，区间仍可能收缩到错误的函数旁边",
+      "study": "054-p0-misspecified-confidence",
+      "math_count": 0
+    },
+    {
+      "id": "p0-054-03-design-and-parameters",
+      "path": "054-p0-misspecified-confidence/articles/03-design-and-parameters.md",
+      "title": "参数变了，可能是观测范围变了",
+      "study": "054-p0-misspecified-confidence",
+      "math_count": 0
+    },
+    {
+      "id": "p0-055-01-four-conclusions",
+      "path": "055-p0-equivalence-and-plateau/articles/01-four-conclusions.md",
+      "title": "“有差异”和“足够接近”可以同时成立",
+      "study": "055-p0-equivalence-and-plateau",
+      "math_count": 0
+    },
+    {
+      "id": "p0-055-02-plateau-and-precision",
+      "path": "055-p0-equivalence-and-plateau/articles/02-plateau-and-precision.md",
+      "title": "数据太少时，“没显著进步”最容易被误读",
+      "study": "055-p0-equivalence-and-plateau",
+      "math_count": 0
+    },
+    {
+      "id": "p0-055-03-calibration-equivalence",
+      "path": "055-p0-equivalence-and-plateau/articles/03-calibration-equivalence.md",
+      "title": "正好80%的覆盖，不等于已经证明校准足够好",
+      "study": "055-p0-equivalence-and-plateau",
+      "math_count": 0
+    },
+    {
+      "id": "p0-056-01-point-and-neighborhood",
+      "path": "056-p0-continuous-actions/articles/01-point-and-neighborhood.md",
+      "title": "历史没有完全相同的行动，怎样评价新建议？",
+      "study": "056-p0-continuous-actions",
+      "math_count": 0
+    },
+    {
+      "id": "p0-056-02-bandwidth-target",
+      "path": "056-p0-continuous-actions/articles/02-bandwidth-target.md",
+      "title": "邻域越窄，偏差越小，但估计未必更好",
+      "study": "056-p0-continuous-actions",
+      "math_count": 0
+    },
+    {
+      "id": "p0-056-03-dimensions-and-support",
+      "path": "056-p0-continuous-actions/articles/03-dimensions-and-support.md",
+      "title": "数据很多，也可能没有覆盖你想评价的行动",
+      "study": "056-p0-continuous-actions",
+      "math_count": 0
+    }
+  ],
+  "public_files": {
+    "004-p0-goals-and-choice/execution/results.json": "downloads/p0/004-p0-goals-and-choice/execution/results.json",
+    "005-p0-measurement/execution/results.json": "downloads/p0/005-p0-measurement/execution/results.json",
+    "006-p0-missingness/execution/results.json": "downloads/p0/006-p0-missingness/execution/results.json",
+    "007-p0-identifiability/execution/results.json": "downloads/p0/007-p0-identifiability/execution/results.json",
+    "003-observation-and-decisions/execution/baseline-summary.csv": "downloads/p0/003-observation-and-decisions/execution/baseline-summary.csv",
+    "003-observation-and-decisions/execution/paired.csv": "downloads/p0/003-observation-and-decisions/execution/paired.csv",
+    "008-p0-noise-and-initial-state/execution/results.json": "downloads/p0/008-p0-noise-and-initial-state/execution/results.json",
+    "009-p0-simulation-validity/execution/data.npz": "downloads/p0/009-p0-simulation-validity/execution/data.npz",
+    "009-p0-simulation-validity/figures/sbc-ranks.png": "downloads/p0/009-p0-simulation-validity/figures/sbc-ranks.png",
+    "010-p0-causal-decisions/execution/trend-assignments.csv": "downloads/p0/010-p0-causal-decisions/execution/trend-assignments.csv",
+    "010-p0-causal-decisions/execution/results.json": "downloads/p0/010-p0-causal-decisions/execution/results.json",
+    "010-p0-causal-decisions/execution/longitudinal.csv": "downloads/p0/010-p0-causal-decisions/execution/longitudinal.csv",
+    "010-p0-causal-decisions/execution/selection.csv": "downloads/p0/010-p0-causal-decisions/execution/selection.csv",
+    "010-p0-causal-decisions/execution/worlds.csv": "downloads/p0/010-p0-causal-decisions/execution/worlds.csv",
+    "011-p0-counterfactual-evaluation/execution/couplings.csv": "downloads/p0/011-p0-counterfactual-evaluation/execution/couplings.csv",
+    "011-p0-counterfactual-evaluation/execution/weights.csv": "downloads/p0/011-p0-counterfactual-evaluation/execution/weights.csv",
+    "011-p0-counterfactual-evaluation/execution/ope.csv": "downloads/p0/011-p0-counterfactual-evaluation/execution/ope.csv",
+    "011-p0-counterfactual-evaluation/execution/results.json": "downloads/p0/011-p0-counterfactual-evaluation/execution/results.json",
+    "011-p0-counterfactual-evaluation/execution/availability.csv": "downloads/p0/011-p0-counterfactual-evaluation/execution/availability.csv",
+    "012-p0-prospective-evidence/execution/results.json": "downloads/p0/012-p0-prospective-evidence/execution/results.json",
+    "012-p0-prospective-evidence/execution/sample-size.csv": "downloads/p0/012-p0-prospective-evidence/execution/sample-size.csv",
+    "012-p0-prospective-evidence/execution/repeated-measures.csv": "downloads/p0/012-p0-prospective-evidence/execution/repeated-measures.csv",
+    "012-p0-prospective-evidence/execution/dropout.csv": "downloads/p0/012-p0-prospective-evidence/execution/dropout.csv",
+    "012-p0-prospective-evidence/execution/forecast-scores.csv": "downloads/p0/012-p0-prospective-evidence/execution/forecast-scores.csv",
+    "013-p0-scoring-and-validation/execution/results.json": "downloads/p0/013-p0-scoring-and-validation/execution/results.json",
+    "013-p0-scoring-and-validation/execution/case-mix.csv": "downloads/p0/013-p0-scoring-and-validation/execution/case-mix.csv",
+    "013-p0-scoring-and-validation/execution/split-predictions.csv": "downloads/p0/013-p0-scoring-and-validation/execution/split-predictions.csv",
+    "013-p0-scoring-and-validation/execution/selection.csv": "downloads/p0/013-p0-scoring-and-validation/execution/selection.csv",
+    "013-p0-scoring-and-validation/execution/label-maturity.csv": "downloads/p0/013-p0-scoring-and-validation/execution/label-maturity.csv",
+    "014-p0-individual-change/execution/results.json": "downloads/p0/014-p0-individual-change/execution/results.json",
+    "014-p0-individual-change/execution/error-grid.csv": "downloads/p0/014-p0-individual-change/execution/error-grid.csv",
+    "014-p0-individual-change/execution/variance-decomposition.csv": "downloads/p0/014-p0-individual-change/execution/variance-decomposition.csv",
+    "014-p0-individual-change/execution/regression-mean.csv": "downloads/p0/014-p0-individual-change/execution/regression-mean.csv",
+    "014-p0-individual-change/execution/coverage-labels.csv": "downloads/p0/014-p0-individual-change/execution/coverage-labels.csv",
+    "015-p0-durability-and-performance/execution/arithmetic.csv": "downloads/p0/015-p0-durability-and-performance/execution/arithmetic.csv",
+    "016-p0-preferences-and-execution/execution/results.json": "downloads/p0/016-p0-preferences-and-execution/execution/results.json",
+    "016-p0-preferences-and-execution/execution/arithmetic.csv": "downloads/p0/016-p0-preferences-and-execution/execution/arithmetic.csv",
+    "016-p0-preferences-and-execution/execution/studies.csv": "downloads/p0/016-p0-preferences-and-execution/execution/studies.csv",
+    "017-p0-adaptive-training-benefit/execution/arithmetic.csv": "downloads/p0/017-p0-adaptive-training-benefit/execution/arithmetic.csv",
+    "017-p0-adaptive-training-benefit/execution/results.json": "downloads/p0/017-p0-adaptive-training-benefit/execution/results.json",
+    "018-p0-hrv-measurement-bridge/execution/results.json": "downloads/p0/018-p0-hrv-measurement-bridge/execution/results.json",
+    "018-p0-hrv-measurement-bridge/execution/arithmetic.csv": "downloads/p0/018-p0-hrv-measurement-bridge/execution/arithmetic.csv",
+    "019-p0-environment-and-power/execution/results.json": "downloads/p0/019-p0-environment-and-power/execution/results.json",
+    "020-p0-missingness-validation/execution/results.json": "downloads/p0/020-p0-missingness-validation/execution/results.json",
+    "020-p0-missingness-validation/execution/worlds.csv": "downloads/p0/020-p0-missingness-validation/execution/worlds.csv",
+    "020-p0-missingness-validation/execution/arithmetic.csv": "downloads/p0/020-p0-missingness-validation/execution/arithmetic.csv",
+    "021-p0-questionnaire-burden/execution/results.json": "downloads/p0/021-p0-questionnaire-burden/execution/results.json",
+    "021-p0-questionnaire-burden/execution/arithmetic.csv": "downloads/p0/021-p0-questionnaire-burden/execution/arithmetic.csv",
+    "021-p0-questionnaire-burden/execution/report-worlds.csv": "downloads/p0/021-p0-questionnaire-burden/execution/report-worlds.csv",
+    "022-p0-model-evidence/execution/information.csv": "downloads/p0/022-p0-model-evidence/execution/information.csv",
+    "022-p0-model-evidence/execution/equal-tau.csv": "downloads/p0/022-p0-model-evidence/execution/equal-tau.csv",
+    "022-p0-model-evidence/execution/mixture.csv": "downloads/p0/022-p0-model-evidence/execution/mixture.csv",
+    "023-p0-noise-separation/execution/likelihood.csv": "downloads/p0/023-p0-noise-separation/execution/likelihood.csv",
+    "023-p0-noise-separation/execution/covariance.csv": "downloads/p0/023-p0-noise-separation/execution/covariance.csv",
+    "023-p0-noise-separation/execution/initial-variance.csv": "downloads/p0/023-p0-noise-separation/execution/initial-variance.csv",
+    "023-p0-noise-separation/execution/replicates.csv": "downloads/p0/023-p0-noise-separation/execution/replicates.csv",
+    "023-p0-noise-separation/execution/results.json": "downloads/p0/023-p0-noise-separation/execution/results.json",
+    "024-p0-randomized-advice/execution/sequences.csv": "downloads/p0/024-p0-randomized-advice/execution/sequences.csv",
+    "024-p0-randomized-advice/execution/availability.csv": "downloads/p0/024-p0-randomized-advice/execution/availability.csv",
+    "024-p0-randomized-advice/execution/results.json": "downloads/p0/024-p0-randomized-advice/execution/results.json",
+    "024-p0-randomized-advice/execution/compliance.csv": "downloads/p0/024-p0-randomized-advice/execution/compliance.csv",
+    "024-p0-randomized-advice/execution/exclusion.csv": "downloads/p0/024-p0-randomized-advice/execution/exclusion.csv",
+    "025-p0-long-term-policy/execution/occupancy.csv": "downloads/p0/025-p0-long-term-policy/execution/occupancy.csv",
+    "025-p0-long-term-policy/execution/mixing.csv": "downloads/p0/025-p0-long-term-policy/execution/mixing.csv",
+    "025-p0-long-term-policy/execution/matrix.csv": "downloads/p0/025-p0-long-term-policy/execution/matrix.csv",
+    "025-p0-long-term-policy/execution/intervals.csv": "downloads/p0/025-p0-long-term-policy/execution/intervals.csv",
+    "026-p0-algorithm-trial/execution/bh.csv": "downloads/p0/026-p0-algorithm-trial/execution/bh.csv",
+    "026-p0-algorithm-trial/execution/results.json": "downloads/p0/026-p0-algorithm-trial/execution/results.json",
+    "026-p0-algorithm-trial/execution/flow.csv": "downloads/p0/026-p0-algorithm-trial/execution/flow.csv",
+    "027-p0-forecast-comparisons/execution/ensemble.csv": "downloads/p0/027-p0-forecast-comparisons/execution/ensemble.csv",
+    "027-p0-forecast-comparisons/execution/joint.csv": "downloads/p0/027-p0-forecast-comparisons/execution/joint.csv",
+    "027-p0-forecast-comparisons/execution/shift.csv": "downloads/p0/027-p0-forecast-comparisons/execution/shift.csv",
+    "027-p0-forecast-comparisons/execution/overlap.csv": "downloads/p0/027-p0-forecast-comparisons/execution/overlap.csv",
+    "028-p0-repeated-training/execution/agreement.csv": "downloads/p0/028-p0-repeated-training/execution/agreement.csv",
+    "028-p0-repeated-training/execution/coupling.csv": "downloads/p0/028-p0-repeated-training/execution/coupling.csv",
+    "028-p0-repeated-training/execution/baselines.csv": "downloads/p0/028-p0-repeated-training/execution/baselines.csv",
+    "029-p0-surrogate-outcomes/execution/transfer.csv": "downloads/p0/029-p0-surrogate-outcomes/execution/transfer.csv",
+    "029-p0-surrogate-outcomes/execution/direct.csv": "downloads/p0/029-p0-surrogate-outcomes/execution/direct.csv",
+    "029-p0-surrogate-outcomes/execution/nonlinear.csv": "downloads/p0/029-p0-surrogate-outcomes/execution/nonlinear.csv",
+    "029-p0-surrogate-outcomes/execution/trials.csv": "downloads/p0/029-p0-surrogate-outcomes/execution/trials.csv",
+    "029-p0-surrogate-outcomes/execution/results.json": "downloads/p0/029-p0-surrogate-outcomes/execution/results.json",
+    "030-p0-learning-preferences/execution/menus.csv": "downloads/p0/030-p0-learning-preferences/execution/menus.csv",
+    "030-p0-learning-preferences/execution/scale.csv": "downloads/p0/030-p0-learning-preferences/execution/scale.csv",
+    "030-p0-learning-preferences/execution/results.json": "downloads/p0/030-p0-learning-preferences/execution/results.json",
+    "030-p0-learning-preferences/execution/shaping.csv": "downloads/p0/030-p0-learning-preferences/execution/shaping.csv",
+    "030-p0-learning-preferences/execution/planners.csv": "downloads/p0/030-p0-learning-preferences/execution/planners.csv",
+    "031-p0-agreement-and-calibration/execution/results.json": "downloads/p0/031-p0-agreement-and-calibration/execution/results.json",
+    "031-p0-agreement-and-calibration/execution/intervals.csv": "downloads/p0/031-p0-agreement-and-calibration/execution/intervals.csv",
+    "031-p0-agreement-and-calibration/execution/repeated.csv": "downloads/p0/031-p0-agreement-and-calibration/execution/repeated.csv",
+    "031-p0-agreement-and-calibration/execution/errors.csv": "downloads/p0/031-p0-agreement-and-calibration/execution/errors.csv",
+    "031-p0-agreement-and-calibration/execution/ratios.csv": "downloads/p0/031-p0-agreement-and-calibration/execution/ratios.csv",
+    "032-p0-altitude-transport/execution/pressure.csv": "downloads/p0/032-p0-altitude-transport/execution/pressure.csv",
+    "032-p0-altitude-transport/execution/time_power.csv": "downloads/p0/032-p0-altitude-transport/execution/time_power.csv",
+    "032-p0-altitude-transport/execution/endpoints.csv": "downloads/p0/032-p0-altitude-transport/execution/endpoints.csv",
+    "032-p0-altitude-transport/execution/combined.csv": "downloads/p0/032-p0-altitude-transport/execution/combined.csv",
+    "033-p0-missingness-identification/execution/proxy.csv": "downloads/p0/033-p0-missingness-identification/execution/proxy.csv",
+    "033-p0-missingness-identification/execution/stability.csv": "downloads/p0/033-p0-missingness-identification/execution/stability.csv",
+    "033-p0-missingness-identification/execution/worlds.csv": "downloads/p0/033-p0-missingness-identification/execution/worlds.csv",
+    "033-p0-missingness-identification/execution/followup.csv": "downloads/p0/033-p0-missingness-identification/execution/followup.csv",
+    "034-p0-population-borrowing/execution/population.csv": "downloads/p0/034-p0-population-borrowing/execution/population.csv",
+    "034-p0-population-borrowing/execution/mixture.csv": "downloads/p0/034-p0-population-borrowing/execution/mixture.csv",
+    "034-p0-population-borrowing/execution/hyper.csv": "downloads/p0/034-p0-population-borrowing/execution/hyper.csv",
+    "034-p0-population-borrowing/execution/weights.csv": "downloads/p0/034-p0-population-borrowing/execution/weights.csv",
+    "035-p0-profile-identifiability/execution/profile.csv": "downloads/p0/035-p0-profile-identifiability/execution/profile.csv",
+    "035-p0-profile-identifiability/execution/bounds.csv": "downloads/p0/035-p0-profile-identifiability/execution/bounds.csv",
+    "035-p0-profile-identifiability/execution/local.csv": "downloads/p0/035-p0-profile-identifiability/execution/local.csv",
+    "035-p0-profile-identifiability/execution/marginal.csv": "downloads/p0/035-p0-profile-identifiability/execution/marginal.csv",
+    "036-p0-initial-state-information/execution/information.csv": "downloads/p0/036-p0-initial-state-information/execution/information.csv",
+    "036-p0-initial-state-information/execution/priors.csv": "downloads/p0/036-p0-initial-state-information/execution/priors.csv",
+    "036-p0-initial-state-information/execution/cancellation.csv": "downloads/p0/036-p0-initial-state-information/execution/cancellation.csv",
+    "036-p0-initial-state-information/execution/transient.csv": "downloads/p0/036-p0-initial-state-information/execution/transient.csv",
+    "037-p0-design-assurance/execution/assurance.csv": "downloads/p0/037-p0-design-assurance/execution/assurance.csv",
+    "037-p0-design-assurance/execution/design-priors.csv": "downloads/p0/037-p0-design-assurance/execution/design-priors.csv",
+    "037-p0-design-assurance/execution/variance.csv": "downloads/p0/037-p0-design-assurance/execution/variance.csv",
+    "037-p0-design-assurance/execution/selection.csv": "downloads/p0/037-p0-design-assurance/execution/selection.csv",
+    "038-p0-scores-and-decisions/execution/joint.csv": "downloads/p0/038-p0-scores-and-decisions/execution/joint.csv",
+    "038-p0-scores-and-decisions/articles/decision-loss.png": "downloads/p0/038-p0-scores-and-decisions/articles/decision-loss.png",
+    "038-p0-scores-and-decisions/articles/decision-loss.svg": "downloads/p0/038-p0-scores-and-decisions/articles/decision-loss.svg",
+    "038-p0-scores-and-decisions/execution/thresholds.csv": "downloads/p0/038-p0-scores-and-decisions/execution/thresholds.csv",
+    "038-p0-scores-and-decisions/execution/scores.csv": "downloads/p0/038-p0-scores-and-decisions/execution/scores.csv",
+    "038-p0-scores-and-decisions/execution/calibration.csv": "downloads/p0/038-p0-scores-and-decisions/execution/calibration.csv",
+    "039-p0-sequential-questions/execution/worlds.csv": "downloads/p0/039-p0-sequential-questions/execution/worlds.csv",
+    "039-p0-sequential-questions/execution/information.csv": "downloads/p0/039-p0-sequential-questions/execution/information.csv",
+    "039-p0-sequential-questions/execution/policies.csv": "downloads/p0/039-p0-sequential-questions/execution/policies.csv",
+    "039-p0-sequential-questions/execution/nonresponse.csv": "downloads/p0/039-p0-sequential-questions/execution/nonresponse.csv",
+    "040-p0-value-structure/execution/duplicates.csv": "downloads/p0/040-p0-value-structure/execution/duplicates.csv",
+    "040-p0-value-structure/execution/lotteries.csv": "downloads/p0/040-p0-value-structure/execution/lotteries.csv",
+    "040-p0-value-structure/execution/joint-summary.csv": "downloads/p0/040-p0-value-structure/execution/joint-summary.csv",
+    "041-p0-sequential-alarms/execution/monitoring.csv": "downloads/p0/041-p0-sequential-alarms/execution/monitoring.csv",
+    "041-p0-sequential-alarms/execution/arl.csv": "downloads/p0/041-p0-sequential-alarms/execution/arl.csv",
+    "042-p0-predictive-checks/execution/discrepancies.csv": "downloads/p0/042-p0-predictive-checks/execution/discrepancies.csv",
+    "042-p0-predictive-checks/execution/p_distribution.csv": "downloads/p0/042-p0-predictive-checks/execution/p_distribution.csv",
+    "042-p0-predictive-checks/execution/p_values.csv": "downloads/p0/042-p0-predictive-checks/execution/p_values.csv",
+    "042-p0-predictive-checks/execution/imputation.csv": "downloads/p0/042-p0-predictive-checks/execution/imputation.csv",
+    "043-p0-calibration-target/execution/slopes.csv": "downloads/p0/043-p0-calibration-target/execution/slopes.csv",
+    "043-p0-calibration-target/execution/worlds.csv": "downloads/p0/043-p0-calibration-target/execution/worlds.csv",
+    "043-p0-calibration-target/execution/densities.csv": "downloads/p0/043-p0-calibration-target/execution/densities.csv",
+    "043-p0-calibration-target/execution/predictions.csv": "downloads/p0/043-p0-calibration-target/execution/predictions.csv",
+    "044-p0-attribution-bounds/execution/couplings.csv": "downloads/p0/044-p0-attribution-bounds/execution/couplings.csv",
+    "044-p0-attribution-bounds/execution/bounds.csv": "downloads/p0/044-p0-attribution-bounds/execution/bounds.csv",
+    "044-p0-attribution-bounds/execution/results.json": "downloads/p0/044-p0-attribution-bounds/execution/results.json",
+    "044-p0-attribution-bounds/execution/caps.csv": "downloads/p0/044-p0-attribution-bounds/execution/caps.csv",
+    "045-p0-validation-uncertainty/execution/overlap.csv": "downloads/p0/045-p0-validation-uncertainty/execution/overlap.csv",
+    "045-p0-validation-uncertainty/execution/loo.csv": "downloads/p0/045-p0-validation-uncertainty/execution/loo.csv",
+    "045-p0-validation-uncertainty/execution/partitions.csv": "downloads/p0/045-p0-validation-uncertainty/execution/partitions.csv",
+    "045-p0-validation-uncertainty/execution/repeats.csv": "downloads/p0/045-p0-validation-uncertainty/execution/repeats.csv",
+    "046-p0-training-input/execution/profiles.csv": "downloads/p0/046-p0-training-input/execution/profiles.csv",
+    "046-p0-training-input/execution/timing.csv": "downloads/p0/046-p0-training-input/execution/timing.csv",
+    "046-p0-training-input/execution/scaling.csv": "downloads/p0/046-p0-training-input/execution/scaling.csv",
+    "046-p0-training-input/execution/optima.csv": "downloads/p0/046-p0-training-input/execution/optima.csv",
+    "046-p0-training-input/execution/fit-table.csv": "downloads/p0/046-p0-training-input/execution/fit-table.csv",
+    "047-p0-coverage-population/execution/rank.csv": "downloads/p0/047-p0-coverage-population/execution/rank.csv",
+    "047-p0-coverage-population/execution/counts.csv": "downloads/p0/047-p0-coverage-population/execution/counts.csv",
+    "047-p0-coverage-population/execution/groups.csv": "downloads/p0/047-p0-coverage-population/execution/groups.csv",
+    "047-p0-coverage-population/execution/shift.csv": "downloads/p0/047-p0-coverage-population/execution/shift.csv",
+    "047-p0-coverage-population/execution/results.json": "downloads/p0/047-p0-coverage-population/execution/results.json",
+    "048-p0-trial-transport/execution/targets.csv": "downloads/p0/048-p0-trial-transport/execution/targets.csv",
+    "048-p0-trial-transport/execution/weights.csv": "downloads/p0/048-p0-trial-transport/execution/weights.csv",
+    "048-p0-trial-transport/execution/augmentation.csv": "downloads/p0/048-p0-trial-transport/execution/augmentation.csv",
+    "048-p0-trial-transport/execution/sensitivity.csv": "downloads/p0/048-p0-trial-transport/execution/sensitivity.csv",
+    "048-p0-trial-transport/execution/positivity.csv": "downloads/p0/048-p0-trial-transport/execution/positivity.csv",
+    "049-p0-baseline-and-change/execution/variance.csv": "downloads/p0/049-p0-baseline-and-change/execution/variance.csv",
+    "049-p0-baseline-and-change/execution/imbalance.csv": "downloads/p0/049-p0-baseline-and-change/execution/imbalance.csv",
+    "049-p0-baseline-and-change/execution/equivalence.csv": "downloads/p0/049-p0-baseline-and-change/execution/equivalence.csv",
+    "049-p0-baseline-and-change/execution/confounding.csv": "downloads/p0/049-p0-baseline-and-change/execution/confounding.csv",
+    "049-p0-baseline-and-change/execution/timing.csv": "downloads/p0/049-p0-baseline-and-change/execution/timing.csv",
+    "050-p0-mass-scaling/execution/scaling.csv": "downloads/p0/050-p0-mass-scaling/execution/scaling.csv",
+    "050-p0-mass-scaling/execution/normalization.csv": "downloads/p0/050-p0-mass-scaling/execution/normalization.csv",
+    "050-p0-mass-scaling/execution/course.csv": "downloads/p0/050-p0-mass-scaling/execution/course.csv",
+    "050-p0-mass-scaling/execution/published.csv": "downloads/p0/050-p0-mass-scaling/execution/published.csv",
+    "051-p0-tail-risk/execution/risk.csv": "downloads/p0/051-p0-tail-risk/execution/risk.csv",
+    "051-p0-tail-risk/execution/weights.csv": "downloads/p0/051-p0-tail-risk/execution/weights.csv",
+    "051-p0-tail-risk/execution/conditional.csv": "downloads/p0/051-p0-tail-risk/execution/conditional.csv",
+    "051-p0-tail-risk/execution/policies.csv": "downloads/p0/051-p0-tail-risk/execution/policies.csv",
+    "052-p0-zero-events/execution/bounds.csv": "downloads/p0/052-p0-zero-events/execution/bounds.csv",
+    "052-p0-zero-events/execution/clusters.csv": "downloads/p0/052-p0-zero-events/execution/clusters.csv",
+    "052-p0-zero-events/execution/detection.csv": "downloads/p0/052-p0-zero-events/execution/detection.csv",
+    "052-p0-zero-events/execution/severity.csv": "downloads/p0/052-p0-zero-events/execution/severity.csv",
+    "053-p0-selected-winner/execution/candidates.csv": "downloads/p0/053-p0-selected-winner/execution/candidates.csv",
+    "053-p0-selected-winner/execution/validation.csv": "downloads/p0/053-p0-selected-winner/execution/validation.csv",
+    "053-p0-selected-winner/execution/regret.csv": "downloads/p0/053-p0-selected-winner/execution/regret.csv",
+    "054-p0-misspecified-confidence/execution/variance.csv": "downloads/p0/054-p0-misspecified-confidence/execution/variance.csv",
+    "054-p0-misspecified-confidence/execution/bias.csv": "downloads/p0/054-p0-misspecified-confidence/execution/bias.csv",
+    "054-p0-misspecified-confidence/execution/projection.csv": "downloads/p0/054-p0-misspecified-confidence/execution/projection.csv",
+    "054-p0-misspecified-confidence/execution/predictions.csv": "downloads/p0/054-p0-misspecified-confidence/execution/predictions.csv",
+    "055-p0-equivalence-and-plateau/execution/decisions.csv": "downloads/p0/055-p0-equivalence-and-plateau/execution/decisions.csv",
+    "055-p0-equivalence-and-plateau/execution/power.csv": "downloads/p0/055-p0-equivalence-and-plateau/execution/power.csv",
+    "055-p0-equivalence-and-plateau/execution/acceptance.csv": "downloads/p0/055-p0-equivalence-and-plateau/execution/acceptance.csv",
+    "055-p0-equivalence-and-plateau/execution/calibration.csv": "downloads/p0/055-p0-equivalence-and-plateau/execution/calibration.csv",
+    "056-p0-continuous-actions/execution/point.csv": "downloads/p0/056-p0-continuous-actions/execution/point.csv",
+    "056-p0-continuous-actions/execution/bandwidth.csv": "downloads/p0/056-p0-continuous-actions/execution/bandwidth.csv",
+    "056-p0-continuous-actions/execution/dimension.csv": "downloads/p0/056-p0-continuous-actions/execution/dimension.csv",
+    "056-p0-continuous-actions/execution/support.csv": "downloads/p0/056-p0-continuous-actions/execution/support.csv"
+  },
+  "scope": "P0 batches 004–056; 057 excluded"
+}

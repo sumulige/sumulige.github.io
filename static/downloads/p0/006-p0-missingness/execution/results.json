@@ -1,0 +1,459 @@
+{
+  "created_at": "2026-10-23T16:40:37.618820+00:00",
+  "python": "3.14.7",
+  "method": "Nine predeclared illustrative algebraic cases; no real data",
+  "status": "PASS",
+  "cases": [
+    {
+      "id": "N01",
+      "values": {
+        "collapsed": [
+          0,
+          0
+        ],
+        "retained": [
+          {
+            "observed": true,
+            "value": 0
+          },
+          {
+            "observed": false,
+            "value": null
+          }
+        ]
+      },
+      "checks": {
+        "merged": true,
+        "distinguishable": true
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "N02",
+      "values": {
+        "worlds": [
+          {
+            "observed_one_zero": [
+              10,
+              40
+            ],
+            "missing_one_zero": [
+              10,
+              40
+            ],
+            "totals_one_zero": [
+              20,
+              80
+            ],
+            "full_rate": 0.2,
+            "observation_rate_by_state": [
+              0.5,
+              0.5
+            ]
+          },
+          {
+            "observed_one_zero": [
+              10,
+              40
+            ],
+            "missing_one_zero": [
+              40,
+              10
+            ],
+            "totals_one_zero": [
+              50,
+              50
+            ],
+            "full_rate": 0.5,
+            "observation_rate_by_state": [
+              0.2,
+              0.8
+            ]
+          }
+        ]
+      },
+      "checks": {
+        "same_observed": true,
+        "different_complete": true
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "N03",
+      "values": {
+        "prior": 0.3,
+        "prior_entropy": 0.8812908992306927,
+        "mechanisms": [
+          {
+            "missing_given_one": 0.8,
+            "missing_given_zero": 0.2,
+            "probability_missing": 0.38,
+            "posterior": 0.631578947368421,
+            "entropy": 0.9494520153879484
+          },
+          {
+            "missing_given_one": 0.5,
+            "missing_given_zero": 0.5,
+            "probability_missing": 0.5,
+            "posterior": 0.3,
+            "entropy": 0.8812908992306927
+          },
+          {
+            "missing_given_one": 0.2,
+            "missing_given_zero": 0.8,
+            "probability_missing": 0.6199999999999999,
+            "posterior": 0.09677419354838711,
+            "entropy": 0.4586858162005403
+          },
+          {
+            "missing_given_one": 0.95,
+            "missing_given_zero": 0.05,
+            "probability_missing": 0.31999999999999995,
+            "posterior": 0.8906250000000001,
+            "entropy": 0.49802788653447616
+          }
+        ]
+      },
+      "checks": {
+        "different_directions": true,
+        "unchanged": true,
+        "missing_can_reduce_entropy": true
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "N04",
+      "values": {
+        "dynamics": [
+          {
+            "a": 0.8,
+            "initial_variance": 100,
+            "process_variance": 1,
+            "measurement_variance": 1,
+            "steps": 21,
+            "path": [
+              65.00000000000001,
+              42.600000000000016,
+              28.264000000000014,
+              19.08896000000001,
+              13.216934400000008,
+              9.458838016000007,
+              7.053656330240005,
+              5.514340051353604,
+              4.529177632866308,
+              3.8986736850344372,
+              3.4951511584220403,
+              3.2368967413901064,
+              3.0716139144896686,
+              2.9658329052733885,
+              2.898133059374969,
+              2.8548051579999805,
+              2.827075301119988,
+              2.8093281927167926,
+              2.7979700433387475,
+              2.790700827736799,
+              2.7860485297515516
+            ],
+            "with_measurements": [
+              0.9848484848484849,
+              0.619815668202765,
+              0.5827564990001538,
+              0.5785861341160486,
+              0.5781116076640327,
+              0.5780575457768491,
+              0.5780513857307045,
+              0.578050683816887,
+              0.5780506038363302,
+              0.5780505947228313,
+              0.5780505936843806,
+              0.5780505935660529,
+              0.5780505935525699,
+              0.5780505935510335,
+              0.5780505935508584,
+              0.5780505935508385,
+              0.5780505935508363,
+              0.578050593550836,
+              0.578050593550836,
+              0.578050593550836,
+              0.578050593550836
+            ],
+            "final": 2.7860485297515516,
+            "closed_form": 2.7860485297515516
+          },
+          {
+            "a": 1,
+            "initial_variance": 100,
+            "process_variance": 1,
+            "measurement_variance": 1,
+            "steps": 21,
+            "path": [
+              101.0,
+              102.0,
+              103.0,
+              104.0,
+              105.0,
+              106.0,
+              107.0,
+              108.0,
+              109.0,
+              110.0,
+              111.0,
+              112.0,
+              113.0,
+              114.0,
+              115.0,
+              116.0,
+              117.0,
+              118.0,
+              119.0,
+              120.0,
+              121.0
+            ],
+            "with_measurements": [
+              0.9901960784313726,
+              0.6655737704918033,
+              0.6248462484624846,
+              0.6190253045923149,
+              0.6181785650384685,
+              0.6180550809813435,
+              0.6180370660401984,
+              0.6180344377199717,
+              0.618034054253735,
+              0.6180339983067761,
+              0.618033990144225,
+              0.6180339889533248,
+              0.6180339887795748,
+              0.6180339887542251,
+              0.6180339887505266,
+              0.618033988749987,
+              0.6180339887499082,
+              0.6180339887498968,
+              0.6180339887498951,
+              0.6180339887498949,
+              0.6180339887498949
+            ],
+            "final": 121.0,
+            "closed_form": 121.0
+          },
+          {
+            "a": 1.1,
+            "initial_variance": 100,
+            "process_variance": 1,
+            "measurement_variance": 1,
+            "steps": 21,
+            "path": [
+              122.00000000000001,
+              148.62000000000003,
+              180.83020000000008,
+              219.8045420000001,
+              266.96349582000016,
+              324.02582994220023,
+              393.0712542300623,
+              476.61621761837546,
+              577.7056233182344,
+              700.0238042150637,
+              848.0288031002273,
+              1027.1148517512752,
+              1243.808970619043,
+              1506.0088544490422,
+              1823.2707138833414,
+              2207.1575637988435,
+              2671.660652196601,
+              3233.7093891578875,
+              3913.7883608810444,
+              4736.683916666065,
+              5732.387539165939
+            ],
+            "with_measurements": [
+              0.991869918699187,
+              0.6875158782582186,
+              0.6468794648055577,
+              0.6406399106673063,
+              0.6396622716936898,
+              0.6395086089757117,
+              0.6394844447553937,
+              0.6394806445177891,
+              0.6394800468580327,
+              0.6394799528644706,
+              0.6394799380821595,
+              0.6394799357573543,
+              0.6394799353917336,
+              0.6394799353342326,
+              0.6394799353251895,
+              0.6394799353237672,
+              0.6394799353235435,
+              0.6394799353235083,
+              0.6394799353235029,
+              0.639479935323502,
+              0.6394799353235019
+            ],
+            "final": 5732.387539165939,
+            "closed_form": 5732.387539165942
+          }
+        ]
+      },
+      "checks": {
+        "closed_agrees": true,
+        "contraction": true,
+        "missing_less_informative": true
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "N05",
+      "values": {
+        "initial": 100,
+        "a": 0.9,
+        "steps": 21,
+        "scenarios": [
+          {
+            "load": 0,
+            "final": 10.941898913151244,
+            "closed_form": 10.941898913151242
+          },
+          {
+            "load": 10,
+            "final": 100.0,
+            "closed_form": 100.00000000000003
+          }
+        ],
+        "scenario_probabilities": [
+          0.5,
+          0.5
+        ],
+        "mixture_mean": 55.470949456575624,
+        "mixture_variance": 1982.836342298843
+      },
+      "checks": {
+        "closed_agrees": true,
+        "zero_input_not_unique": true
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "N06",
+      "values": {
+        "states": [
+          0,
+          2
+        ],
+        "probabilities": [
+          0.5,
+          0.5
+        ],
+        "mean_state": 1.0,
+        "plug_in_loss_A": 0,
+        "expected_loss_A": 0.5,
+        "loss_B": 0.25
+      },
+      "checks": {
+        "choice_reverses": true
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "N07",
+      "values": {
+        "prior": 0.2,
+        "initial_loss": 0.2,
+        "branches": [
+          {
+            "response": "positive",
+            "probability": 0.32000000000000006,
+            "posterior": 0.5,
+            "loss_A": 0.5,
+            "loss_B": 0.25,
+            "best_loss": 0.25
+          },
+          {
+            "response": "negative",
+            "probability": 0.6800000000000002,
+            "posterior": 0.058823529411764705,
+            "loss_A": 0.058823529411764705,
+            "loss_B": 0.25,
+            "best_loss": 0.058823529411764705
+          }
+        ],
+        "expected_loss_after": 0.12000000000000002,
+        "decision_value": 0.07999999999999999,
+        "information_bits": 0.18245336283713143,
+        "unrelated_question": {
+          "information_bits": 1,
+          "decision_value": 0
+        },
+        "independent_response_rate": 0.5,
+        "including_nonresponse_loss": 0.16000000000000003,
+        "net_value_cost_005": -0.010000000000000023,
+        "net_value_cost_002": 0.01999999999999998
+      },
+      "checks": {
+        "probabilities_sum": true,
+        "posterior_mean": true,
+        "expected_loss": true,
+        "less_information_more_value": true,
+        "cost_changes_choice": true
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "N08",
+      "values": {
+        "sensitivity": [
+          {
+            "missing_rate": 0,
+            "complete_rate": 0.1,
+            "preferred": "A"
+          },
+          {
+            "missing_rate": 0.2,
+            "complete_rate": 0.2,
+            "preferred": "A"
+          },
+          {
+            "missing_rate": 0.3,
+            "complete_rate": 0.25,
+            "preferred": "tie"
+          },
+          {
+            "missing_rate": 0.8,
+            "complete_rate": 0.5,
+            "preferred": "B"
+          },
+          {
+            "missing_rate": 1,
+            "complete_rate": 0.6,
+            "preferred": "B"
+          }
+        ],
+        "complete_rate_bounds": [
+          0.1,
+          0.6
+        ],
+        "tipping_missing_rate": 0.3
+      },
+      "checks": {
+        "tipping": true,
+        "different_choices": true
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "N09",
+      "values": {
+        "prior_training": 0.5,
+        "equipment_declaration": 0.5,
+        "explicit_training_declaration": 0.9,
+        "reliability_sensitivity_range": [
+          0.8,
+          0.95
+        ]
+      },
+      "checks": {
+        "reason_not_activity": true,
+        "explicit_not_certain": true,
+        "reliability_matters": true
+      },
+      "status": "PASS"
+    }
+  ]
+}

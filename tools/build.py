@@ -7,6 +7,7 @@ import re
 import shutil
 import zipfile
 from markdown_it import MarkdownIt
+from p0 import build_articles
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCE = ROOT / 'source' / 'articles'
@@ -82,6 +83,8 @@ def render(path):
 
 def main():
     articles = [render(p) for p in FILES] + [render(SOURCE/'README.md')]
+    if (ROOT/'source/p0/manifest.json').exists():
+        articles += build_articles()
     (OUT/'content.js').write_text('window.SITE_CONTENT = ' + json.dumps({'articles': articles, 'projects': [], 'books': []}, ensure_ascii=False) + ';\n')
     assets = OUT/'assets'
     assets.mkdir(exist_ok=True)
@@ -95,7 +98,7 @@ def main():
     with zipfile.ZipFile(OUT/'downloads/study-001.zip', 'w', zipfile.ZIP_DEFLATED) as bundle:
         for name in PUBLIC_FILES.values():
             bundle.write(OUT/'downloads/study-001'/name, 'study-001/'+name)
-    print(f'Built {len(FILES)} articles, 1 reading guide, {len(PUBLIC_FILES)} public attachments.')
+    print(f'Built {len(articles)} reading entries; existing series and explicit public attachments preserved.')
 
 
 if __name__ == '__main__':

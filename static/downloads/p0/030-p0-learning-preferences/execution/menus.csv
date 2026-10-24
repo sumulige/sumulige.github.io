@@ -1,0 +1,7 @@
+world,menu,observed_opportunities,utility_a,utility_b,choice
+W_A,A,90,2,1,A
+W_A,B,10,2,1,B
+W_A,AB,0,2,1,A
+W_B,A,90,1,2,A
+W_B,B,10,1,2,B
+W_B,AB,0,1,2,B

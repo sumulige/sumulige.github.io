@@ -1,0 +1,27 @@
+case,metric,value,unit,reference,interpretation
+D01,crossing,0.5714285714285714,weight,A_vs_B,"given linear value model, not elicited person"
+D01,A_minus_B_lower,-1.5499999999999998,value_units,w=0.35,analytic linear endpoint extremum
+D01,A_minus_B_upper,0.5500000000000007,value_units,w=0.65,analytic linear endpoint extremum
+D01,regret_A,1.5499999999999998,value_units,best candidate at each allowed weight,max of affine differences reached at an endpoint
+D01,regret_B,0.5500000000000007,value_units,best candidate at each allowed weight,max of affine differences reached at an endpoint
+D01,regret_C,3.5999999999999996,value_units,best candidate at each allowed weight,max of affine differences reached at an endpoint
+D02,top_agree_percent,69.04176904176904,percent_of_people,407 participants,"between-method agreement, not accuracy"
+D02,top_disagree_count,126,people,407 participants,not all methods agree; not a mistake count
+D02,top_disagree_percent,30.95823095823096,percent_of_people,407 participants,"complement of agreement, not accuracy"
+D02,rank_agree_percent,55.77395577395578,percent_of_people,407 participants,"between-method agreement, not accuracy"
+D02,rank_disagree_count,180,people,407 participants,not all methods agree; not a mistake count
+D02,rank_disagree_percent,44.22604422604422,percent_of_people,407 participants,"complement of agreement, not accuracy"
+D03,relative_vs_placebo,27.229729729729733,percent,placebo,reference mean only; not individual response
+D03,four_week_vs_placebo,1.612,checkin_days,placebo,mean cumulative contrast; no new confidence interval
+D03,four_week_vs_active,1.064,checkin_days,active_baseline,mean cumulative contrast; no new confidence interval
+D03,contrast_difference,0.137,checkin_days_per_week,two reported fitted contrasts,"rounded numerical difference, not causal mediation"
+D03,analyzed_people,61293,people,randomized minus reported exclusions,denominator reconciliation
+D03,significant_conditions_percent,45.283018867924525,percent_of_conditions,53 active conditions,not fraction of people who respond
+D04,standard_completion_rate,0.5,proportion,standard,"constructed illustration, not human study"
+D04,standard_total,200,arbitrary_outcome_units,standard,"constructed illustration, not human study"
+D04,standard_mean_all,2.0,arbitrary_outcome_units,standard,"constructed illustration, not human study"
+D04,standard_mean_complete,4.0,arbitrary_outcome_units,standard,"constructed illustration, not human study"
+D04,enhanced_completion_rate,0.8,proportion,enhanced,"constructed illustration, not human study"
+D04,enhanced_total,230,arbitrary_outcome_units,enhanced,"constructed illustration, not human study"
+D04,enhanced_mean_all,2.3,arbitrary_outcome_units,enhanced,"constructed illustration, not human study"
+D04,enhanced_mean_complete,2.875,arbitrary_outcome_units,enhanced,"constructed illustration, not human study"

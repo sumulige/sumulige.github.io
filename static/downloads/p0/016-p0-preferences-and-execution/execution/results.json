@@ -1,0 +1,187 @@
+{
+  "run_utc": "2026-10-24T00:17:45.071307+00:00",
+  "python": "3.14.7",
+  "planned": 4,
+  "executed": 4,
+  "failed": 0,
+  "deviations": [],
+  "cases": {
+    "D01": {
+      "kind": "constructed_linear_model",
+      "candidates": {
+        "A": [
+          9,
+          3
+        ],
+        "B": [
+          6,
+          7
+        ],
+        "C": [
+          5,
+          2
+        ]
+      },
+      "bounds": [
+        0.35,
+        0.65
+      ],
+      "endpoints": {
+        "A": [
+          5.1,
+          6.9
+        ],
+        "B": [
+          6.6499999999999995,
+          6.35
+        ],
+        "C": [
+          3.05,
+          3.95
+        ]
+      },
+      "robust_dominance": [
+        [
+          "A",
+          "C"
+        ],
+        [
+          "B",
+          "C"
+        ]
+      ],
+      "robust_best": [],
+      "regret": {
+        "A": 1.5499999999999998,
+        "B": 0.5500000000000007,
+        "C": 3.5999999999999996
+      },
+      "minimax_regret": "B"
+    },
+    "D02": {
+      "kind": "published_summary_arithmetic",
+      "source": "S01",
+      "version": "1997_working_paper",
+      "n": 407,
+      "top_agree": 281,
+      "rank_agree": 227
+    },
+    "D03": {
+      "kind": "published_summary_arithmetic",
+      "source": "S04",
+      "placebo_difference": 0.403,
+      "active_difference": 0.266,
+      "placebo_mean": 1.48,
+      "weeks": 4,
+      "randomized": 62746,
+      "excluded": [
+        123,
+        355,
+        975
+      ],
+      "active_conditions": 53,
+      "significant": 24
+    },
+    "D04": {
+      "kind": "constructed_known_potential_outcomes",
+      "types": [
+        {
+          "name": "always",
+          "n": 50,
+          "standard_complete": 1,
+          "enhanced_complete": 1,
+          "standard_y": 4,
+          "enhanced_y": 4
+        },
+        {
+          "name": "induced",
+          "n": 30,
+          "standard_complete": 0,
+          "enhanced_complete": 1,
+          "standard_y": 0,
+          "enhanced_y": 1
+        },
+        {
+          "name": "never",
+          "n": 20,
+          "standard_complete": 0,
+          "enhanced_complete": 0,
+          "standard_y": 0,
+          "enhanced_y": 0
+        }
+      ],
+      "noncompletion_y_assumption": 0,
+      "standard": {
+        "n": 100,
+        "n_complete": 50,
+        "total": 200,
+        "mean_all": 2.0,
+        "mean_complete": 4.0
+      },
+      "enhanced": {
+        "n": 100,
+        "n_complete": 80,
+        "total": 230,
+        "mean_all": 2.3,
+        "mean_complete": 2.875
+      }
+    }
+  },
+  "studies": [
+    {
+      "source": "S01",
+      "version": "1997_working_paper",
+      "locator": "PDF pp3-13; Exhibits 1,13",
+      "design": "within_person_weighting_methods_with_random_order",
+      "population": "mostly_male_students_job_choice",
+      "denominator": "407 people; not a count of method pairs",
+      "reference": "other weighting methods",
+      "measurement": "elicited weights and rankings",
+      "duration": "single elicitation experiment",
+      "support": "method agreement and response scale sensitivity",
+      "limits": "not correctness; 2001 formal version numerics not_verified; H5 range display not_supported"
+    },
+    {
+      "source": "S02",
+      "version": "published_2015_online_2014",
+      "locator": "journal pp281-284",
+      "design": "randomized_pilot",
+      "population": "low_active_overweight_or_obese_adults",
+      "denominator": "59 randomized 30/29; 50 at six months",
+      "reference": "prescribed intensity with common promotion materials",
+      "measurement": "exercise diary; participant_transcribed_HR; estimated fitness",
+      "duration": "six months",
+      "support": "greater reported exercise minutes in self_paced arm",
+      "limits": "not equivalent fitness; not trained cyclists; not unrestricted choice; small selected sample"
+    },
+    {
+      "source": "S03",
+      "version": "published_2017_online_2016",
+      "locator": "journal pp241-247; flow and Table1-2",
+      "design": "stratified_randomized_school_trial",
+      "population": "sixth_grade_noncompetitive_students",
+      "denominator": "144 randomized; 134 completed; conflicting arm and activity-analysis denominators excluded",
+      "reference": "moderate_HR_prescription",
+      "measurement": "accelerometer_MVPA; intrinsic_motivation; sampled_HR_sessions",
+      "duration": "eight weeks of manipulation",
+      "support": "no detected MVPA or motivation effect under implemented delivery",
+      "limits": "insufficient intended-intensity exposure; short followup; not adult cyclists"
+    },
+    {
+      "source": "S04",
+      "version": "author_hosted_early_typeset_2021",
+      "locator": "main text and Methods randomization/statistics",
+      "design": "weighted_time_varying_randomized_54_conditions",
+      "population": "volunteering_commercial_gym_members",
+      "denominator": "62746 randomized; 61293 analyzed; 53 active plus placebo",
+      "reference": "placebo or active_baseline explicitly separated",
+      "measurement": "days_with_gym_checkin_per_week",
+      "duration": "four-week intervention; four-week and longer followup reported",
+      "support": "some intervention packages improve short-term attendance",
+      "limits": "not fitness; combined megastudy not preregistered; assignment glitch; winner selection; no raw-data rerun"
+    }
+  ],
+  "empirical_status": "UNKNOWN",
+  "independent_review": false,
+  "scope": "bounded literature extraction and descriptive arithmetic; two explicitly constructed examples"
+}

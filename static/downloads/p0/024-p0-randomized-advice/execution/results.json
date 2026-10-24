@@ -1,0 +1,88 @@
+{
+  "run_utc": "2026-10-24T01:43:29.168249+00:00",
+  "python": "3.14.7",
+  "planned": 4,
+  "executed": 4,
+  "failed": 0,
+  "deviations": [],
+  "cases": {
+    "D01": {
+      "population_effect": 0.0,
+      "periods": [
+        {
+          "period": 1,
+          "availability": 0.5,
+          "effect": 1.6000000000000014
+        },
+        {
+          "period": 2,
+          "availability": 0.5,
+          "effect": -1.5999999999999996
+        }
+      ]
+    },
+    "D02": {
+      "first_immediate_effect": 2,
+      "excursion_p02": 1.4000000000000001,
+      "excursion_p08": -0.4,
+      "totals": {
+        "00": 20,
+        "01": 22,
+        "10": 17,
+        "11": 16
+      }
+    },
+    "D03": {
+      "complier_fraction": 0.5,
+      "direct_effect": 0,
+      "itt": 2.0,
+      "first_stage": 0.5,
+      "wald": 4.0,
+      "population_ate": 2.0,
+      "as_treated_difference": 7.0
+    },
+    "D04": {
+      "scenarios": [
+        {
+          "complier_fraction": 0.5,
+          "direct_effect": 0,
+          "itt": 2.0,
+          "first_stage": 0.5,
+          "wald": 4.0,
+          "population_ate": 2.0,
+          "as_treated_difference": 7.0
+        },
+        {
+          "complier_fraction": 0.5,
+          "direct_effect": 0.5,
+          "itt": 2.5,
+          "first_stage": 0.5,
+          "wald": 5.0,
+          "population_ate": 2.0,
+          "as_treated_difference": 7.25
+        },
+        {
+          "complier_fraction": 0.1,
+          "direct_effect": 0,
+          "itt": 0.3999999999999999,
+          "first_stage": 0.09999999999999998,
+          "wald": 4.0,
+          "population_ate": -0.4,
+          "as_treated_difference": 9.190476190476192
+        },
+        {
+          "complier_fraction": 0.1,
+          "direct_effect": 0.5,
+          "itt": 0.8999999999999999,
+          "first_stage": 0.09999999999999998,
+          "wald": 9.000000000000002,
+          "population_ate": -0.4,
+          "as_treated_difference": 9.250000000000002
+        }
+      ]
+    }
+  },
+  "empirical_status": "UNKNOWN",
+  "independent_review": false,
+  "random_sampling": false
+}

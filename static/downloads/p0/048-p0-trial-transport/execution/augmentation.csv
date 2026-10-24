@@ -1,0 +1,5 @@
+outcome_model,selection_model,mean0,mean1,effect
+correct,correct,0.44,0.4,-0.04
+correct,wrong,0.44,0.4,-0.04
+wrong,correct,0.44,0.4,-0.04
+wrong,wrong,0.26,0.4,0.14

@@ -1,0 +1,353 @@
+{
+  "started_utc": "2026-10-23T23:35:35.563491+00:00",
+  "python": "3.14.7",
+  "planned": 7,
+  "completed": 7,
+  "failed": 0,
+  "deviations": [],
+  "cases": {
+    "F01": {
+      "actual_plan": "B",
+      "cells": [
+        {
+          "forecast_plan": "A",
+          "outcome_plan": "A",
+          "point_forecast": 10.0,
+          "outcome": 10.0,
+          "crps_loss": 0.0,
+          "actual_observation": false
+        },
+        {
+          "forecast_plan": "A",
+          "outcome_plan": "B",
+          "point_forecast": 10.0,
+          "outcome": 0.0,
+          "crps_loss": 10.0,
+          "actual_observation": true
+        },
+        {
+          "forecast_plan": "B",
+          "outcome_plan": "A",
+          "point_forecast": 0.0,
+          "outcome": 10.0,
+          "crps_loss": 10.0,
+          "actual_observation": false
+        },
+        {
+          "forecast_plan": "B",
+          "outcome_plan": "B",
+          "point_forecast": 0.0,
+          "outcome": 0.0,
+          "crps_loss": 0.0,
+          "actual_observation": true
+        }
+      ],
+      "counterfactual_A_observed": false
+    },
+    "F02": {
+      "cells": 4,
+      "summaries": {
+        "A": {
+          "logged": 0.226,
+          "common": 0.13
+        },
+        "B": {
+          "logged": 0.062,
+          "common": 0.15
+        }
+      }
+    },
+    "F03": {
+      "grid_points": 71,
+      "true_success": 0.6,
+      "ordinary_optimum": 0.6,
+      "weighted_optimum": 0.8571428571428571,
+      "weight_denominator": 2.8,
+      "raw_at_truth": 0.528,
+      "raw_at_weighted_optimum": 0.34285714285714286,
+      "normalized_at_truth": 0.18857142857142858,
+      "normalized_at_weighted_optimum": 0.12244897959183673,
+      "ordinary_at_truth": 0.24,
+      "ordinary_at_weighted_optimum": 0.30612244897959184,
+      "all_quadratic_identities_exact": true
+    },
+    "F04": {
+      "records": 36,
+      "prediction_rows": 54,
+      "summaries": {
+        "interleaved/all": {
+          "mse": 22.22222222222222,
+          "exact_mse": "200/9",
+          "train_n": 18,
+          "test_n": 18,
+          "train_users": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "test_users": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "train_times": [
+            1,
+            3,
+            5
+          ],
+          "test_times": [
+            2,
+            4,
+            6
+          ]
+        },
+        "time/all": {
+          "mse": 100.0,
+          "exact_mse": "100",
+          "train_n": 24,
+          "test_n": 12,
+          "train_users": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "test_users": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "train_times": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "test_times": [
+            5,
+            6
+          ]
+        },
+        "user/all": {
+          "mse": 59.22222222222222,
+          "exact_mse": "533/9",
+          "train_n": 24,
+          "test_n": 12,
+          "train_users": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "test_users": [
+            4,
+            5
+          ],
+          "train_times": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "test_times": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "combined/all": {
+          "mse": 152.33333333333334,
+          "exact_mse": "457/3",
+          "train_n": 16,
+          "test_n": 12,
+          "train_users": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "test_users": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "train_times": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "test_times": [
+            5,
+            6
+          ]
+        },
+        "combined/seen": {
+          "mse": 100.0,
+          "exact_mse": "100",
+          "train_n": 16,
+          "test_n": 8,
+          "train_users": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "test_users": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "train_times": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "test_times": [
+            5,
+            6
+          ]
+        },
+        "combined/unseen": {
+          "mse": 257.0,
+          "exact_mse": "257",
+          "train_n": 16,
+          "test_n": 4,
+          "train_users": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "test_users": [
+            4,
+            5
+          ],
+          "train_times": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "test_times": [
+            5,
+            6
+          ]
+        }
+      }
+    },
+    "F05": {
+      "origins": 8,
+      "included_origins": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "excluded_origins": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "correct_mean": 4.5,
+      "correct_perturbed": 4.5,
+      "naive_mean": 6.5,
+      "naive_perturbed": 31.5,
+      "late_boundary": {
+        "origin": 5,
+        "target_end": 8,
+        "available": 9,
+        "eligible_at_8": false,
+        "target": 7.0,
+        "perturbed_target": 7.0
+      }
+    },
+    "F06": {
+      "records": [
+        {
+          "name": "race_distance",
+          "target": 15,
+          "available": 3,
+          "version": 1,
+          "value": 50
+        },
+        {
+          "name": "race_distance",
+          "target": 15,
+          "available": 10,
+          "version": 2,
+          "value": 100
+        },
+        {
+          "name": "temperature_forecast",
+          "target": 15,
+          "available": 7,
+          "version": 1,
+          "value": 20
+        },
+        {
+          "name": "temperature_forecast",
+          "target": 15,
+          "available": 10,
+          "version": 2,
+          "value": 30
+        },
+        {
+          "name": "temperature_observed",
+          "target": 15,
+          "available": 16,
+          "version": 1,
+          "value": 25
+        },
+        {
+          "name": "rpe_observed",
+          "target": 5,
+          "available": 10,
+          "version": 1,
+          "value": 9
+        }
+      ],
+      "retained_names": [
+        "race_distance",
+        "temperature_forecast"
+      ],
+      "asof_sum": 70,
+      "latest_sum": 130,
+      "asof_perturbed": 70,
+      "latest_perturbed": 4500,
+      "blanket_event_records": [],
+      "blanket_prediction": null
+    },
+    "F07": {
+      "worlds": 16,
+      "selection_mean": 0.0,
+      "future_mean": 0.5,
+      "baseline_mean": 0.25
+    }
+  },
+  "failures": [],
+  "status": "PASS",
+  "finished_utc": "2026-10-23T23:35:35.567154+00:00"
+}

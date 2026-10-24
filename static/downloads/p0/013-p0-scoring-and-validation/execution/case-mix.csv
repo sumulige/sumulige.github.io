@@ -1,0 +1,5 @@
+model,stratum,forecast,true_success,brier,logged_weight,common_weight
+A,easy,0.1,0.0,0.01,0.1,0.5
+A,hard,0.5,0.5,0.25,0.9,0.5
+B,easy,0.2,0.0,0.04,0.9,0.5
+B,hard,0.6,0.5,0.26,0.1,0.5

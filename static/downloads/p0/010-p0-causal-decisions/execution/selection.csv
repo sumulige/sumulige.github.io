@@ -1,0 +1,5 @@
+state,action,n,successes,action_probability,inverse_probability_weight,clipped_weight
+good,override,90,81,0.9,1.1111111111111112,1.1111111111111112
+good,follow,10,9,0.1,10.0,2.0
+bad,override,10,1,0.1,10.0,2.0
+bad,follow,90,9,0.9,1.1111111111111112,1.1111111111111112

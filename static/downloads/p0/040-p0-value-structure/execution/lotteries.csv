@@ -1,0 +1,10 @@
+utility,option,outcome,probability,u,weighted_u
+linear,S,4,1,4,4
+linear,R,0,0.5,0,0.0
+linear,R,10,0.5,10,5.0
+sqrt,S,4,1,2.0,2.0
+sqrt,R,0,0.5,0.0,0.0
+sqrt,R,10,0.5,3.1622776601683795,1.5811388300841898
+affine_sqrt,S,4,1,11.0,11.0
+affine_sqrt,R,0,0.5,7.0,3.5
+affine_sqrt,R,10,0.5,13.32455532033676,6.66227766016838

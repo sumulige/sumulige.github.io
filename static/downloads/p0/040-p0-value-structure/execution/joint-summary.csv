@@ -1,0 +1,6 @@
+t,mean_x,mean_y,correlation,eu_add,at_mean_add,eu_int,at_mean_int,winner_vs_certain
+0.0,0.5,0.5,-1.0,0.5,0.5,0.3,0.4,certain
+0.125,0.5,0.5,-0.5,0.5,0.5,0.35,0.4,certain
+0.25,0.5,0.5,0.0,0.5,0.5,0.4,0.4,tie
+0.375,0.5,0.5,0.5,0.5,0.5,0.45,0.4,lottery
+0.5,0.5,0.5,1.0,0.5,0.5,0.5,0.4,lottery

@@ -1,0 +1,100 @@
+{
+  "planned": 4,
+  "executed": 4,
+  "failed": 0,
+  "deviations": [],
+  "cases": {
+    "D01": {
+      "rows": 4,
+      "maximum_midpoint_rounding": 0.0050000000000000044,
+      "meaning": "descriptive limits of agreement, not bias confidence intervals"
+    },
+    "D02": {
+      "designs": [
+        {
+          "people": 10,
+          "repeats": 1,
+          "single_halfwidth": 9.8,
+          "mean_halfwidth": 9.8,
+          "bias_ci_halfwidth": 3.0990321069650117,
+          "naive_ci_halfwidth": 3.0990321069650117
+        },
+        {
+          "people": 10,
+          "repeats": 4,
+          "single_halfwidth": 9.8,
+          "mean_halfwidth": 7.066880499909418,
+          "bias_ci_halfwidth": 2.2347438331943104,
+          "naive_ci_halfwidth": 1.5495160534825059
+        },
+        {
+          "people": 10,
+          "repeats": 100,
+          "single_halfwidth": 9.8,
+          "mean_halfwidth": 5.93203641256525,
+          "bias_ci_halfwidth": 1.8758746226760465,
+          "naive_ci_halfwidth": 0.3099032106965012
+        },
+        {
+          "people": 100,
+          "repeats": 1,
+          "single_halfwidth": 9.8,
+          "mean_halfwidth": 9.8,
+          "bias_ci_halfwidth": 0.98,
+          "naive_ci_halfwidth": 0.98
+        },
+        {
+          "people": 100,
+          "repeats": 4,
+          "single_halfwidth": 9.8,
+          "mean_halfwidth": 7.066880499909418,
+          "bias_ci_halfwidth": 0.7066880499909419,
+          "naive_ci_halfwidth": 0.49
+        },
+        {
+          "people": 100,
+          "repeats": 100,
+          "single_halfwidth": 9.8,
+          "mean_halfwidth": 5.93203641256525,
+          "bias_ci_halfwidth": 0.5932036412565249,
+          "naive_ci_halfwidth": 0.098
+        }
+      ],
+      "record_weighted_bias": -1.6,
+      "person_weighted_bias": 0.0,
+      "known_person_halfwidth": 7.84,
+      "average_limit_as_m_increases": 5.88
+    },
+    "D03": {
+      "equal": {
+        "cov_D_S": -4.0,
+        "cov_D_M": 0.0,
+        "corr_D_S": -0.3922322702763681,
+        "corr_D_M": 0.0,
+        "mean_difference": 0.0
+      },
+      "unequal": {
+        "cov_D_S": -4.0,
+        "cov_D_M": 6.0,
+        "corr_D_S": -0.24806946917841693,
+        "corr_D_M": 0.35856858280031806,
+        "mean_difference": 0.0
+      }
+    },
+    "D04": {
+      "log_mean": 0.09531017980432493,
+      "log_sd": 0.1823215567939546,
+      "ratio_lower": 0.7694801888552927,
+      "ratio_upper": 1.5724901271338005,
+      "median_ratio": 1.1,
+      "geometric_mean_ratio": 1.1,
+      "arithmetic_mean_ratio": 1.1184354117247957,
+      "divided_ratio_lower": 0.6995274444139024,
+      "divided_ratio_upper": 1.4295364792125458
+    }
+  },
+  "empirical_status": "UNKNOWN",
+  "independent_review": false,
+  "run_utc": "2026-10-24T02:57:14.327616+00:00",
+  "python": "3.14.7"
+}

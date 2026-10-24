@@ -1,0 +1,7 @@
+role,condition,work_delta_kj,power_delta,assumed_baseline,additive_total,multiplicative_total
+reported,SLTN,0,0.0,,,
+reported,SLH,-15.4,-17.11111111111111,,,
+reported,HTN,-24.1,-26.77777777777778,,,
+reported,HH,-33.1,-36.77777777777778,,,
+constructed,assumed_base,,,100,60.49999999999999,64.2114
+constructed,assumed_base,,,200,160.5,162.35569999999998

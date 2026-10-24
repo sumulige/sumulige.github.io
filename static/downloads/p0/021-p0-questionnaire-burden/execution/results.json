@@ -1,0 +1,115 @@
+{
+  "run_utc": "2026-10-24T01:10:59.784201+00:00",
+  "python": "3.14.7",
+  "planned": 4,
+  "executed": 4,
+  "failed": 0,
+  "deviations": [],
+  "cases": {
+    "D01": {
+      "seven": {
+        "days": 7,
+        "prompts": 30,
+        "rate": 0.3852,
+        "count": 11.556,
+        "count_per_day": 1.6508571428571428,
+        "prompts_per_day": 4.285714285714286
+      },
+      "fourteen": {
+        "days": 14,
+        "prompts": 42,
+        "rate": 0.4834,
+        "count": 20.3028,
+        "count_per_day": 1.4502000000000002,
+        "prompts_per_day": 3.0
+      },
+      "rate_difference_pp": 9.82,
+      "included_fraction": 0.8474226804123711,
+      "excluded_fraction": 0.15257731958762888,
+      "rounded_source_inputs": true
+    },
+    "D02": {
+      "unobserved": 262,
+      "conditional_uptake": 0.5343511450381679,
+      "lower": 0.178117048346056,
+      "upper": 0.8447837150127226
+    },
+    "D03": {
+      "A": {
+        "responded": 200,
+        "missing": 0,
+        "response_rate": 1.0,
+        "answered_accuracy": 0.6,
+        "expected_correct": 120.0,
+        "overall_accuracy": 0.6,
+        "gain": 0.09999999999999998
+      },
+      "B": {
+        "responded": 120,
+        "missing": 80,
+        "response_rate": 0.6,
+        "answered_accuracy": 0.9,
+        "expected_correct": 148.0,
+        "overall_accuracy": 0.74,
+        "gain": 0.24
+      },
+      "constructed": true,
+      "loss": "symmetric_binary",
+      "unanswered": "fair_random_decision_expectation"
+    },
+    "D04": {
+      "I": {
+        "prevalence": 0.2,
+        "completion": 1,
+        "positive_reports": 40,
+        "sensitivity": 1.0,
+        "specificity": 1.0
+      },
+      "II": {
+        "prevalence": 0.4,
+        "completion": 1,
+        "positive_reports": 40,
+        "sensitivity": 0.5,
+        "specificity": 1.0
+      },
+      "same_observed": true,
+      "constructed": true
+    }
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "author_year": "Businelle2024",
+      "design": "factorial_randomized_selected_analysis",
+      "n": "485_randomized_411_analyzed",
+      "individual_data": "not_obtained",
+      "url": "https://www.jmir.org/2024/1/e50275/"
+    },
+    {
+      "id": "S02",
+      "author_year": "Edney2023",
+      "design": "randomized_schedule_bundle",
+      "n": "384",
+      "individual_data": "not_obtained",
+      "url": "https://www.jmir.org/2023/1/e45764/"
+    },
+    {
+      "id": "S03",
+      "author_year": "Saw2015",
+      "design": "naturalistic_selected_followup",
+      "n": "393_enrolled_131_followup_70_initiated",
+      "individual_data": "not_obtained",
+      "url": "https://jssm.org/volume14/iss4/cap/jssm-14-732.pdf"
+    },
+    {
+      "id": "S04",
+      "author_year": "McCall2023",
+      "design": "purposive_qualitative",
+      "n": "11",
+      "individual_data": "not_obtained",
+      "url": "https://link.springer.com/article/10.1007/s40279-023-01814-3"
+    }
+  ],
+  "empirical_status": "UNKNOWN",
+  "independent_review": false
+}

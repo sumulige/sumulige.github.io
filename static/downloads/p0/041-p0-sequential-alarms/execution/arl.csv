@@ -1,0 +1,9 @@
+method,horizon,ever_probability,arl,eventual_probability
+geometric,1,0.01,100,1
+geometric,10,0.09561792499119551,100,1
+geometric,100,0.6339676587267705,100,1
+geometric,1000,0.9999568287525893,100,1
+two_point,1,0.5,100,1
+two_point,10,0.5,100,1
+two_point,100,0.5,100,1
+two_point,1000,1.0,100,1

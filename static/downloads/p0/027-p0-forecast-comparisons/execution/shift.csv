@@ -1,0 +1,5 @@
+forecast,outcome,outcome_probability,marginal_crps,energy,variogram,event_probability,event_brier
+G,0:0,0.5,0.5,0.3535533905932738,0.0,0.5,0.25
+G,1:1,0.5,0.5,0.3535533905932738,0.0,0.5,0.25
+S,0:0,0.5,20.5,14.495689014324224,0.0,0,0
+S,1:1,0.5,18.5,13.08147545195113,0.0,0,1

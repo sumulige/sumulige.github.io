@@ -1,0 +1,5 @@
+selection,forecast,n,successes,brier
+all,0.6,20,12,0.24
+all,0.9,20,12,0.33
+success_only,0.6,12,12,0.16
+success_only,0.9,12,12,0.01

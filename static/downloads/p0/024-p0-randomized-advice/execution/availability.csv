@@ -1,0 +1,13 @@
+period,kind,effect,available,action,probability,outcome
+1,positive,2,0,0,0.04999999999999999,10
+1,positive,2,1,0,0.225,10
+1,positive,2,1,1,0.225,12
+1,negative,-2,0,0,0.45,10
+1,negative,-2,1,0,0.025,10
+1,negative,-2,1,1,0.025,8
+2,positive,2,0,0,0.45,10
+2,positive,2,1,0,0.025,10
+2,positive,2,1,1,0.025,12
+2,negative,-2,0,0,0.04999999999999999,10
+2,negative,-2,1,0,0.225,10
+2,negative,-2,1,1,0.225,8

@@ -1,0 +1,10 @@
+environment,mu,latent_variance,rule,intercept,slope,reading,prediction,bias,mse
+source,0,25,inverse,0,0.5,2,1.0,0.0,1.0
+source,0,25,source_conditional,0,0.4807692307692308,2,0.9615384615384616,0.0,0.9615384615384615
+source,0,25,target_conditional,0.0,0.4807692307692308,2,0.9615384615384616,0.0,0.9615384615384615
+narrow,0,1,inverse,0,0.5,2,1.0,0.0,1.0
+narrow,0,1,source_conditional,0,0.4807692307692308,2,0.9615384615384616,0.0,0.9260355029585798
+narrow,0,1,target_conditional,0.0,0.25,2,0.5,0.0,0.5
+shifted,10,1,inverse,0,0.5,22,11.0,0.0,1.0
+shifted,10,1,source_conditional,0,0.4807692307692308,22,10.576923076923077,-0.38461538461538436,1.07396449704142
+shifted,10,1,target_conditional,5.0,0.25,22,10.5,0.0,0.5

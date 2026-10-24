@@ -1,0 +1,349 @@
+{
+  "run_utc": "2026-10-24T05:04:26.508611+00:00",
+  "python": "3.14.7",
+  "planned": 2,
+  "executed": 2,
+  "failed": 0,
+  "deviations": [],
+  "csv_rows": 36,
+  "empirical_status": "UNKNOWN",
+  "independent_review": false,
+  "cases": {
+    "D01": {
+      "status": "PASS",
+      "bounds": [
+        {
+          "scope": "pooled",
+          "p0": 0.4,
+          "p1": 0.6,
+          "ate": 0.2,
+          "benefit_low": 0.2,
+          "benefit_high": 0.6,
+          "harm_low": 0.0,
+          "harm_high": 0.4,
+          "pn_low": 0.3333333333333333,
+          "pn_high": 1.0
+        },
+        {
+          "scope": "stratum_a",
+          "p0": 0.1,
+          "p1": 0.8,
+          "ate": 0.7,
+          "benefit_low": 0.7,
+          "benefit_high": 0.8,
+          "harm_low": 0.0,
+          "harm_high": 0.1,
+          "pn_low": 0.875,
+          "pn_high": 1.0
+        },
+        {
+          "scope": "stratum_b",
+          "p0": 0.7,
+          "p1": 0.4,
+          "ate": -0.3,
+          "benefit_low": 0.0,
+          "benefit_high": 0.3,
+          "harm_low": 0.3,
+          "harm_high": 0.6,
+          "pn_low": 0.0,
+          "pn_high": 0.75
+        },
+        {
+          "scope": "stratified",
+          "p0": 0.4,
+          "p1": 0.6,
+          "ate": 0.2,
+          "benefit_low": 0.35,
+          "benefit_high": 0.55,
+          "harm_low": 0.15,
+          "harm_high": 0.35,
+          "pn_low": 0.5833333333333334,
+          "pn_high": 0.9166666666666666
+        }
+      ],
+      "success_stratum_weights": [
+        "2/3",
+        "1/3"
+      ]
+    },
+    "D02": {
+      "status": "PASS",
+      "caps": [
+        {
+          "information": "pooled",
+          "epsilon": 0.0,
+          "epsilon_exact": "0",
+          "status": "FEASIBLE",
+          "benefit_low": 0.2,
+          "benefit_high": 0.2,
+          "pn_low": 0.3333333333333333,
+          "pn_high": 0.3333333333333333
+        },
+        {
+          "information": "pooled",
+          "epsilon": 0.1,
+          "epsilon_exact": "1/10",
+          "status": "FEASIBLE",
+          "benefit_low": 0.2,
+          "benefit_high": 0.3,
+          "pn_low": 0.3333333333333333,
+          "pn_high": 0.5
+        },
+        {
+          "information": "pooled",
+          "epsilon": 0.2,
+          "epsilon_exact": "1/5",
+          "status": "FEASIBLE",
+          "benefit_low": 0.2,
+          "benefit_high": 0.4,
+          "pn_low": 0.3333333333333333,
+          "pn_high": 0.6666666666666666
+        },
+        {
+          "information": "pooled",
+          "epsilon": 0.4,
+          "epsilon_exact": "2/5",
+          "status": "FEASIBLE",
+          "benefit_low": 0.2,
+          "benefit_high": 0.6,
+          "pn_low": 0.3333333333333333,
+          "pn_high": 1.0
+        },
+        {
+          "information": "stratified",
+          "epsilon": 0.0,
+          "epsilon_exact": "0",
+          "status": "INCOMPATIBLE",
+          "benefit_low": "",
+          "benefit_high": "",
+          "pn_low": "",
+          "pn_high": ""
+        },
+        {
+          "information": "stratified",
+          "epsilon": 0.1,
+          "epsilon_exact": "1/10",
+          "status": "INCOMPATIBLE",
+          "benefit_low": "",
+          "benefit_high": "",
+          "pn_low": "",
+          "pn_high": ""
+        },
+        {
+          "information": "stratified",
+          "epsilon": 0.2,
+          "epsilon_exact": "1/5",
+          "status": "FEASIBLE",
+          "benefit_low": 0.35,
+          "benefit_high": 0.4,
+          "pn_low": 0.5833333333333334,
+          "pn_high": 0.6666666666666666
+        },
+        {
+          "information": "stratified",
+          "epsilon": 0.4,
+          "epsilon_exact": "2/5",
+          "status": "FEASIBLE",
+          "benefit_low": 0.35,
+          "benefit_high": 0.55,
+          "pn_low": 0.5833333333333334,
+          "pn_high": 0.9166666666666666
+        }
+      ],
+      "witnesses": [
+        {
+          "information": "pooled",
+          "epsilon": "0",
+          "endpoint": "low",
+          "benefit": "1/5",
+          "cells": [
+            [
+              "2/5",
+              "1/5",
+              "0",
+              "2/5"
+            ]
+          ]
+        },
+        {
+          "information": "pooled",
+          "epsilon": "0",
+          "endpoint": "high",
+          "benefit": "1/5",
+          "cells": [
+            [
+              "2/5",
+              "1/5",
+              "0",
+              "2/5"
+            ]
+          ]
+        },
+        {
+          "information": "pooled",
+          "epsilon": "1/10",
+          "endpoint": "low",
+          "benefit": "1/5",
+          "cells": [
+            [
+              "2/5",
+              "1/5",
+              "0",
+              "2/5"
+            ]
+          ]
+        },
+        {
+          "information": "pooled",
+          "epsilon": "1/10",
+          "endpoint": "high",
+          "benefit": "3/10",
+          "cells": [
+            [
+              "3/10",
+              "3/10",
+              "1/10",
+              "3/10"
+            ]
+          ]
+        },
+        {
+          "information": "pooled",
+          "epsilon": "1/5",
+          "endpoint": "low",
+          "benefit": "1/5",
+          "cells": [
+            [
+              "2/5",
+              "1/5",
+              "0",
+              "2/5"
+            ]
+          ]
+        },
+        {
+          "information": "pooled",
+          "epsilon": "1/5",
+          "endpoint": "high",
+          "benefit": "2/5",
+          "cells": [
+            [
+              "1/5",
+              "2/5",
+              "1/5",
+              "1/5"
+            ]
+          ]
+        },
+        {
+          "information": "pooled",
+          "epsilon": "2/5",
+          "endpoint": "low",
+          "benefit": "1/5",
+          "cells": [
+            [
+              "2/5",
+              "1/5",
+              "0",
+              "2/5"
+            ]
+          ]
+        },
+        {
+          "information": "pooled",
+          "epsilon": "2/5",
+          "endpoint": "high",
+          "benefit": "3/5",
+          "cells": [
+            [
+              "0",
+              "3/5",
+              "2/5",
+              "0"
+            ]
+          ]
+        },
+        {
+          "information": "stratified",
+          "epsilon": "1/5",
+          "endpoint": "low",
+          "benefit": "7/20",
+          "cells": [
+            [
+              "1/5",
+              "7/10",
+              "0",
+              "1/10"
+            ],
+            [
+              "3/10",
+              "0",
+              "3/10",
+              "2/5"
+            ]
+          ]
+        },
+        {
+          "information": "stratified",
+          "epsilon": "1/5",
+          "endpoint": "high",
+          "benefit": "2/5",
+          "cells": [
+            [
+              "1/5",
+              "7/10",
+              "0",
+              "1/10"
+            ],
+            [
+              "1/5",
+              "1/10",
+              "2/5",
+              "3/10"
+            ]
+          ]
+        },
+        {
+          "information": "stratified",
+          "epsilon": "2/5",
+          "endpoint": "low",
+          "benefit": "7/20",
+          "cells": [
+            [
+              "1/5",
+              "7/10",
+              "0",
+              "1/10"
+            ],
+            [
+              "3/10",
+              "0",
+              "3/10",
+              "2/5"
+            ]
+          ]
+        },
+        {
+          "information": "stratified",
+          "epsilon": "2/5",
+          "endpoint": "high",
+          "benefit": "11/20",
+          "cells": [
+            [
+              "1/10",
+              "4/5",
+              "1/10",
+              "0"
+            ],
+            [
+              "0",
+              "3/10",
+              "3/5",
+              "1/10"
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

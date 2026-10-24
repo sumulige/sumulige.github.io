@@ -1,0 +1,386 @@
+{
+  "status": "PASS",
+  "started_utc": "2026-10-23T23:15:23.685553+00:00",
+  "python": "3.14.7",
+  "dependencies": "standard library",
+  "study_type": "finite constructed examples; exact rational probabilities",
+  "planned": 7,
+  "completed": 7,
+  "failed": 0,
+  "cases": {
+    "D01": {
+      "worlds": {
+        "same": {
+          "observed_distribution": {
+            "00": 0.25,
+            "10": 0.25,
+            "01": 0.25,
+            "11": 0.25
+          },
+          "effect_distribution": {
+            "0": 1.0
+          },
+          "ate": 0.0,
+          "observed_evidence_probability": 0.25,
+          "y0_mean_given_a1_y1": 1.0
+        },
+        "flipped": {
+          "observed_distribution": {
+            "00": 0.25,
+            "11": 0.25,
+            "01": 0.25,
+            "10": 0.25
+          },
+          "effect_distribution": {
+            "1": 0.5,
+            "-1": 0.5
+          },
+          "ate": 0.0,
+          "observed_evidence_probability": 0.25,
+          "y0_mean_given_a1_y1": 0.0
+        }
+      },
+      "checks": [
+        "all four observed probabilities match",
+        "both ATEs zero, but individual pairing and retrospective counterfactual differ"
+      ]
+    },
+    "D02": {
+      "rows": [
+        {
+          "x": 0,
+          "y": 0,
+          "probability": 0.8,
+          "lower": 0,
+          "upper": 0,
+          "covered": 1
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "probability": 0.2,
+          "lower": 0,
+          "upper": 0,
+          "covered": 0
+        }
+      ],
+      "marginal_coverage": 0.8,
+      "conditional_coverage": {
+        "x0": 1,
+        "x1": 0
+      },
+      "method": "hand-constructed interval, not a conformal implementation",
+      "checks": [
+        "probability-weighted coverage differs from each subgroup coverage"
+      ]
+    },
+    "D03": {
+      "summaries": [
+        {
+          "horizon": 1,
+          "count_categories": 2,
+          "probability_sum": 1.0,
+          "weight_mean": 1.0,
+          "weight_second_moment": 1.64,
+          "weight_variance": 0.64,
+          "trajectory_is_mean": 0.9,
+          "trajectory_is_variance": 0.81,
+          "single_trajectory_wis_mean": 0.5,
+          "step_is_mean": 0.9,
+          "step_is_variance": 0.81
+        },
+        {
+          "horizon": 2,
+          "count_categories": 3,
+          "probability_sum": 1.0,
+          "weight_mean": 1.0,
+          "weight_second_moment": 2.6896,
+          "weight_variance": 1.6896,
+          "trajectory_is_mean": 0.9,
+          "trajectory_is_variance": 1.8306,
+          "single_trajectory_wis_mean": 0.5,
+          "step_is_mean": 0.9,
+          "step_is_variance": 0.405
+        },
+        {
+          "horizon": 5,
+          "count_categories": 6,
+          "probability_sum": 1.0,
+          "weight_mean": 1.0,
+          "weight_second_moment": 11.8636749824,
+          "weight_variance": 10.8636749824,
+          "trajectory_is_mean": 0.9,
+          "trajectory_is_variance": 10.79466435072,
+          "single_trajectory_wis_mean": 0.5,
+          "step_is_mean": 0.9,
+          "step_is_variance": 0.162
+        },
+        {
+          "horizon": 10,
+          "count_categories": 11,
+          "probability_sum": 1.0,
+          "weight_mean": 1.0,
+          "weight_second_moment": 140.74678408802365,
+          "weight_variance": 139.74678408802365,
+          "trajectory_is_mean": 0.9,
+          "trajectory_is_variance": 136.69441691740573,
+          "single_trajectory_wis_mean": 0.5,
+          "step_is_mean": 0.9,
+          "step_is_variance": 0.081
+        },
+        {
+          "horizon": 20,
+          "count_categories": 21,
+          "probability_sum": 1.0,
+          "weight_mean": 1.0,
+          "weight_second_moment": 19809.657231120746,
+          "weight_variance": 19808.657231120746,
+          "trajectory_is_mean": 0.9,
+          "trajectory_is_variance": 19340.562725337484,
+          "single_trajectory_wis_mean": 0.5,
+          "step_is_mean": 0.9,
+          "step_is_variance": 0.0405
+        },
+        {
+          "horizon": 50,
+          "count_categories": 51,
+          "probability_sum": 1.0,
+          "weight_mean": 1.0,
+          "weight_second_moment": 55232207639.459465,
+          "weight_variance": 55232207638.459465,
+          "trajectory_is_mean": 0.9,
+          "trajectory_is_variance": 53906601798.54596,
+          "single_trajectory_wis_mean": 0.5,
+          "step_is_mean": 0.9,
+          "step_is_variance": 0.0162
+        }
+      ],
+      "same_policy_weight_mean": 1,
+      "same_policy_weight_variance": 0,
+      "checks": [
+        "94 binomial categories include their combinatorial multiplicities",
+        "exact weight second moment (41/25)^H; all finite horizons",
+        "single-trajectory normalized value cancels its only weight"
+      ]
+    },
+    "D04": {
+      "target_value": 0.75,
+      "settings": {
+        "q_correct_b_correct": {
+          "values": {
+            "dm": 0.75,
+            "ips": 0.75,
+            "dr": 0.75
+          },
+          "bias": {
+            "dm": 0.0,
+            "ips": 0.0,
+            "dr": 0.0
+          }
+        },
+        "q_correct_b_wrong": {
+          "values": {
+            "dm": 0.75,
+            "ips": 0.648,
+            "dr": 0.75
+          },
+          "bias": {
+            "dm": 0.0,
+            "ips": -0.102,
+            "dr": 0.0
+          }
+        },
+        "q_wrong_b_correct": {
+          "values": {
+            "dm": 0.5,
+            "ips": 0.75,
+            "dr": 0.75
+          },
+          "bias": {
+            "dm": -0.25,
+            "ips": 0.0,
+            "dr": 0.0
+          }
+        },
+        "q_wrong_b_wrong": {
+          "values": {
+            "dm": 0.5,
+            "ips": 0.648,
+            "dr": 0.648
+          },
+          "bias": {
+            "dm": -0.25,
+            "ips": -0.102,
+            "dr": -0.102
+          }
+        }
+      },
+      "checks": [
+        "four fixed nuisance settings and sixteen state-action rows",
+        "correct q or correct behavior gives correct DR expectation in constructed law"
+      ]
+    },
+    "D05": {
+      "cutoff": 10,
+      "selected": {
+        "sensor": {
+          "name": "sensor",
+          "event": 9,
+          "available": 9,
+          "version": 1,
+          "value": 8
+        },
+        "baseline": {
+          "name": "baseline",
+          "event": 7,
+          "available": 7,
+          "version": 1,
+          "value": 2
+        },
+        "boundary": {
+          "name": "boundary",
+          "event": 10,
+          "available": 10,
+          "version": 1,
+          "value": 3
+        }
+      },
+      "as_of_sum": 13,
+      "event_only_sum": 130,
+      "strict_before_sum": 10,
+      "models": [
+        {
+          "coefficient": 1,
+          "fit_max_available": 9,
+          "eligible": true,
+          "prediction": 13
+        },
+        {
+          "coefficient": 2,
+          "fit_max_available": 12,
+          "eligible": false,
+          "prediction": 26
+        }
+      ],
+      "future_changes_by_zero_based_row": {
+        "1": -10000,
+        "3": -888,
+        "4": 30000
+      },
+      "future_perturbation_as_of_sum": 13,
+      "future_perturbation_event_only_sum": -10877,
+      "checks": [
+        "event and availability both limited; latest available version selected",
+        "future-only value changes leave this as-of calculation invariant",
+        "new coefficient has future fitting information despite legal feature values"
+      ]
+    },
+    "D06": {
+      "rows": [
+        {
+          "u": 0,
+          "action": 0,
+          "observed": 0,
+          "y0": 0,
+          "probability": 0.25
+        },
+        {
+          "u": 0,
+          "action": 1,
+          "observed": 1,
+          "y0": 0,
+          "probability": 0.25
+        },
+        {
+          "u": 1,
+          "action": 0,
+          "observed": 1,
+          "y0": 1,
+          "probability": 0.25
+        },
+        {
+          "u": 1,
+          "action": 1,
+          "observed": 2,
+          "y0": 1,
+          "probability": 0.25
+        }
+      ],
+      "prospective_y0_mean": 0.5,
+      "retrospective_y0_mean_given_a1_y1": 0.0,
+      "checks": [
+        "four cells preserve stipulated Y=A+U",
+        "prospective and retrospective conditions differ"
+      ]
+    },
+    "D07": {
+      "worlds": {
+        "action_causal": {
+          "rows": [
+            {
+              "u": 0,
+              "action": 0,
+              "observed": 0,
+              "probability": 0.5,
+              "y0": 0,
+              "y1": 1
+            },
+            {
+              "u": 1,
+              "action": 1,
+              "observed": 1,
+              "probability": 0.5,
+              "y0": 0,
+              "y1": 1
+            }
+          ],
+          "observed_distribution": {
+            "00": 0.5,
+            "11": 0.5
+          },
+          "do_a0_mean": 0.0,
+          "do_a1_mean": 1.0,
+          "ate": 1.0,
+          "factual_error": 0,
+          "y0_given_a1_y1": 0
+        },
+        "latent_only": {
+          "rows": [
+            {
+              "u": 0,
+              "action": 0,
+              "observed": 0,
+              "probability": 0.5,
+              "y0": 0,
+              "y1": 0
+            },
+            {
+              "u": 1,
+              "action": 1,
+              "observed": 1,
+              "probability": 0.5,
+              "y0": 1,
+              "y1": 1
+            }
+          ],
+          "observed_distribution": {
+            "00": 0.5,
+            "11": 0.5
+          },
+          "do_a0_mean": 0.5,
+          "do_a1_mean": 0.5,
+          "ate": 0.0,
+          "factual_error": 0,
+          "y0_given_a1_y1": 1
+        }
+      },
+      "checks": [
+        "identical factual laws and perfect factual fit",
+        "intervention and retrospective predictions differ across compatible models"
+      ]
+    }
+  },
+  "failures": [],
+  "deviations": [],
+  "finished_utc": "2026-10-23T23:15:23.688849+00:00"
+}

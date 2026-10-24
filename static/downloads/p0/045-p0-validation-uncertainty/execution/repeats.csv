@@ -1,0 +1,6 @@
+repeats,mean,dataset_variance,partition_variance,variance,variance_exact
+1,1.5,0.375,0.75,1.125,9/8
+2,1.5,0.375,0.75,0.75,3/4
+10,1.5,0.375,0.75,0.45,9/20
+100,1.5,0.375,0.75,0.3825,153/400
+infinity,1.5,0.375,0.75,0.375,3/8

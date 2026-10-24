@@ -1,0 +1,3 @@
+outcome,intercept,A_coefficient,X_coefficient,SSE
+Y,3.55,1.8,1.45,16.9
+Y_minus_X,3.55,1.8,0.45,16.9

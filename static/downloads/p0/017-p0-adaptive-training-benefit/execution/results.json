@@ -1,0 +1,344 @@
+{
+  "run_utc": "2026-10-24T00:31:49.995656+00:00",
+  "python": "3.14.7",
+  "planned": 4,
+  "executed": 4,
+  "failed": 0,
+  "deviations": [],
+  "empirical_status": "UNKNOWN",
+  "independent_review": false,
+  "studies": [
+    {
+      "source": "S01",
+      "year": "2007",
+      "randomized": "30",
+      "analyzed": "26:8_TRAD_9_HRV_9_control",
+      "comparator": "fixed_training_and_no_training",
+      "endpoint": "vmax_and_VO2peak",
+      "between_group": "vmax_p_.048_VO2peak_p_.321",
+      "component": "whole_HRV_rule_package",
+      "doi": "10.1007/s00421-007-0552-2"
+    },
+    {
+      "source": "S02",
+      "year": "2016",
+      "randomized": "40",
+      "analyzed": "31:13_HRV_18_TRAD",
+      "comparator": "predefined_training",
+      "endpoint": "3000m_speed",
+      "between_group": "not_significant_not_equivalence",
+      "component": "smoothed_HRV_plus_training_structure",
+      "doi": "10.1249/MSS.0000000000000910"
+    },
+    {
+      "source": "S03",
+      "year": "2019",
+      "randomized": "17",
+      "analyzed": "17:9_HRV_8_TRAD",
+      "comparator": "traditional_periodization",
+      "endpoint": "40min_TT_mean_power",
+      "between_group": "not_significant_MBI_reported_separately",
+      "component": "whole_guided_training",
+      "doi": "10.1123/ijspp.2018-0122"
+    },
+    {
+      "source": "S04",
+      "year": "2022",
+      "randomized": "40",
+      "analyzed": "30_overall_29_10km",
+      "comparator": "predefined_scaled_to_individual_baseline",
+      "endpoint": "10km_time_and_treadmill_speed",
+      "between_group": "10km_p_.002_vmax_p_.322",
+      "component": "HRV_perceived_recovery_HR_speed_combination",
+      "doi": "10.1249/MSS.0000000000002968"
+    },
+    {
+      "source": "S05",
+      "year": "2025",
+      "randomized": "60_active_only_control_nonrandom",
+      "analyzed": "70:18_app_23_trainer_29_control",
+      "comparator": "both_active_HRV_control_nonrandom",
+      "endpoint": "fitness_retention_sessions_intensity",
+      "between_group": "strength_favors_trainer_VO2_CI_crosses_zero",
+      "component": "delivery_with_human_followup_not_HRV_ablation",
+      "doi": "10.3389/fspor.2025.1578478"
+    }
+  ],
+  "cases": {
+    "D01": {
+      "kind": "published_summary_arithmetic"
+    },
+    "D02": {
+      "kind": "published_percentage_with_explicit_example",
+      "overall_n": 30,
+      "ten_km_n": 29
+    },
+    "D03": {
+      "vo2_interval": [
+        -2.82,
+        0.31
+      ],
+      "includes_zero": true,
+      "equivalence": "not_tested",
+      "dropout_sessions": "UNKNOWN"
+    },
+    "D04": {
+      "constructed": true,
+      "states": [
+        "good",
+        "poor",
+        "good",
+        "poor"
+      ],
+      "payoff": {
+        "good": {
+          "H": 3,
+          "L": 1
+        },
+        "poor": {
+          "H": -1,
+          "L": 1
+        }
+      },
+      "schedules": [
+        {
+          "schedule": "HHLL",
+          "gains": [
+            3,
+            -1,
+            1,
+            1
+          ],
+          "total": 4
+        },
+        {
+          "schedule": "HLHL",
+          "gains": [
+            3,
+            1,
+            3,
+            1
+          ],
+          "total": 8
+        },
+        {
+          "schedule": "HLLH",
+          "gains": [
+            3,
+            1,
+            1,
+            -1
+          ],
+          "total": 4
+        },
+        {
+          "schedule": "LHHL",
+          "gains": [
+            1,
+            -1,
+            3,
+            1
+          ],
+          "total": 4
+        },
+        {
+          "schedule": "LHLH",
+          "gains": [
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "total": 0
+        },
+        {
+          "schedule": "LLHH",
+          "gains": [
+            1,
+            1,
+            3,
+            -1
+          ],
+          "total": 4
+        }
+      ],
+      "matched": 8,
+      "opposite": 0,
+      "uniform_mean": 4.0,
+      "signal_validity": "not_established"
+    }
+  },
+  "arithmetic": [
+    {
+      "case": "D01",
+      "metric": "vmax_change_difference",
+      "value": 0.4,
+      "unit": "km_per_hour",
+      "denominator": "group_mean_changes",
+      "source": "S01",
+      "interpretation": "unadjusted_summary_difference_not_new_test"
+    },
+    {
+      "case": "D01",
+      "metric": "mod_high_session_difference",
+      "value": 4.5,
+      "unit": "sessions",
+      "denominator": "eight_week_period",
+      "source": "S02",
+      "interpretation": "not_equivalent_performance"
+    },
+    {
+      "case": "D01",
+      "metric": "mod_high_session_reduction_percent",
+      "value": 25.423728813559322,
+      "unit": "percent",
+      "denominator": "17.7_traditional_sessions",
+      "source": "S02",
+      "interpretation": "dose_reduction_not_efficiency"
+    },
+    {
+      "case": "D01",
+      "metric": "cycling_week_minutes_difference",
+      "value": 32,
+      "unit": "minutes_per_week",
+      "denominator": "group_means",
+      "source": "S03",
+      "interpretation": "descriptive_not_equal_load"
+    },
+    {
+      "case": "D02",
+      "metric": "time_change_difference_pp",
+      "value": -3.3000000000000003,
+      "unit": "percentage_points",
+      "denominator": "own_baseline_time",
+      "source": "S04",
+      "interpretation": "not_percent_of_people"
+    },
+    {
+      "case": "D02",
+      "metric": "improvement_magnitude_ratio",
+      "value": 2.137931034482759,
+      "unit": "ratio",
+      "denominator": "2.9_percent_improvement",
+      "source": "S04",
+      "interpretation": "not_two_times_final_speed"
+    },
+    {
+      "case": "D02",
+      "metric": "illustrative_ind_seconds",
+      "value": 2251.2,
+      "unit": "seconds",
+      "denominator": "constructed_2400_second_baseline",
+      "source": "constructed_baseline_S04_percentages",
+      "interpretation": "not_observed_trial_time"
+    },
+    {
+      "case": "D02",
+      "metric": "illustrative_pd_seconds",
+      "value": 2330.4,
+      "unit": "seconds",
+      "denominator": "constructed_2400_second_baseline",
+      "source": "constructed_baseline_S04_percentages",
+      "interpretation": "not_observed_trial_time"
+    },
+    {
+      "case": "D02",
+      "metric": "illustrative_seconds_saved",
+      "value": 79.2,
+      "unit": "seconds",
+      "denominator": "constructed_2400_second_baseline",
+      "source": "constructed_baseline_S04_percentages",
+      "interpretation": "not_observed_trial_time"
+    },
+    {
+      "case": "D03",
+      "metric": "app_retention_percent",
+      "value": 58.064516129032256,
+      "unit": "percent_of_randomized",
+      "denominator": "31_randomized",
+      "source": "S05",
+      "interpretation": "endpoint_retention_not_session_adherence"
+    },
+    {
+      "case": "D03",
+      "metric": "app_missing_endpoint_percent",
+      "value": 41.935483870967744,
+      "unit": "percent_of_randomized",
+      "denominator": "31_randomized",
+      "source": "S05",
+      "interpretation": "includes_nonstarters_dropout_missing_final"
+    },
+    {
+      "case": "D03",
+      "metric": "app_completer_sessions_percent",
+      "value": 70.54545454545455,
+      "unit": "percent_of_planned_sessions",
+      "denominator": "33_planned_sessions_among_completers",
+      "source": "S05",
+      "interpretation": "does_not_impute_dropout_sessions"
+    },
+    {
+      "case": "D03",
+      "metric": "trainer_retention_percent",
+      "value": 79.3103448275862,
+      "unit": "percent_of_randomized",
+      "denominator": "29_randomized",
+      "source": "S05",
+      "interpretation": "endpoint_retention_not_session_adherence"
+    },
+    {
+      "case": "D03",
+      "metric": "trainer_missing_endpoint_percent",
+      "value": 20.689655172413794,
+      "unit": "percent_of_randomized",
+      "denominator": "29_randomized",
+      "source": "S05",
+      "interpretation": "includes_nonstarters_dropout_missing_final"
+    },
+    {
+      "case": "D03",
+      "metric": "trainer_completer_sessions_percent",
+      "value": 74.3030303030303,
+      "unit": "percent_of_planned_sessions",
+      "denominator": "33_planned_sessions_among_completers",
+      "source": "S05",
+      "interpretation": "does_not_impute_dropout_sessions"
+    },
+    {
+      "case": "D03",
+      "metric": "high_zone_difference_pp",
+      "value": -35.08,
+      "unit": "percentage_points",
+      "denominator": "high_intensity_session_time",
+      "source": "S05",
+      "interpretation": "app_minus_trainer_not_session_count"
+    },
+    {
+      "case": "D04",
+      "metric": "matched",
+      "value": 8,
+      "unit": "constructed_benefit_units",
+      "denominator": "four_opportunities_two_hard_sessions",
+      "source": "constructed",
+      "interpretation": "does_not_identify_real_HRV_component"
+    },
+    {
+      "case": "D04",
+      "metric": "opposite",
+      "value": 0,
+      "unit": "constructed_benefit_units",
+      "denominator": "four_opportunities_two_hard_sessions",
+      "source": "constructed",
+      "interpretation": "does_not_identify_real_HRV_component"
+    },
+    {
+      "case": "D04",
+      "metric": "uniform_mean",
+      "value": 4.0,
+      "unit": "constructed_benefit_units",
+      "denominator": "four_opportunities_two_hard_sessions",
+      "source": "constructed",
+      "interpretation": "does_not_identify_real_HRV_component"
+    }
+  ]
+}
