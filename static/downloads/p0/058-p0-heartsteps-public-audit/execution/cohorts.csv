@@ -1,0 +1,6 @@
+cohort,n,participants,avail_true,connect_true,send_true,send_false,send_na,randomized_true,randomized_false,randomized_na,duplicate_keys
+raw_all,8274,37,6590,7539,3918,3621,735,4469,3070,735,0
+public_available,6590,37,6590,6590,3915,2675,0,3908,2682,0,0
+capped_all,7592,37,6108,6986,3627,3359,606,4137,2849,606,0
+capped_available,6108,37,6108,6108,3624,2484,0,3617,2491,0,0
+capped_connected_available,6108,37,6108,6108,3624,2484,0,3617,2491,0,0

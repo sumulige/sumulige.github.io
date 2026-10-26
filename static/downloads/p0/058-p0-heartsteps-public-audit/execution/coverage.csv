@@ -1,0 +1,11 @@
+cohort,label,n,jbsteps_missing,jbsteps_explicit_zero,gfsteps_present,jb_missing_gf_present
+public_available,all,6590,789,1904,3784,366
+public_available,none,2675,311,799,1528,148
+public_available,walking,2187,245,614,1294,110
+public_available,sedentary,1727,233,491,962,108
+public_available,inconsistent,1,0,0,0,0
+capped_available,all,6108,565,1817,3531,273
+capped_available,none,2484,225,757,1429,112
+capped_available,walking,2028,175,586,1204,79
+capped_available,sedentary,1595,165,474,898,82
+capped_available,inconsistent,1,0,0,0,0

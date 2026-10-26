@@ -143,7 +143,7 @@ def render_article(entry, manifest):
 def build_articles():
     manifest = json.loads((SOURCE/'manifest.json').read_text())
     articles = [render_article(a, manifest) for a in manifest['articles']]
-    html = '<section class="publication-note"><h2 id="publication" tabindex="-1">公开范围与阅读边界</h2><p>这里收录53组、162篇已完成的研究文章。正文解释数学构造、文献依据与适用限制；计算通过不等于真实训练效果已经验证。未完成的第057组不在本次发布范围。</p><p>文内引用的计算结果、数据表和配图可下载。内部聊天、来源审计、阶段记录、过程验收与历史原答未公开，对应链接返回本说明。公开副本移除了本机路径，数值与研究结论保留。</p><p>以下按研究顺序组织。同组文章可连续阅读，跨组引用用于补充已有论证，并不表示162个独立问题已全部解决。</p></section>'
+    html = '<section class="publication-note"><h2 id="publication" tabindex="-1">公开范围与阅读边界</h2><p>截至2026-10-26，这里收录56组、169篇研究阅读文章，包括004—058批及065的最新公开证据汇总。正文区分数学构造、公开数据审计、候选重建与来源缺口；HeartSteps原论文计算复现仍未完成，真实训练适用性未知。058保留历史规则，并回链后续结果。</p><p>文内引用的计算结果、数据表和配图可下载。内部聊天、来源审计、阶段记录、过程验收与历史原答未公开，对应链接返回本说明。公开副本移除了本机路径，数值与研究结论保留。</p><p>以下按研究顺序组织。同组文章可连续阅读，跨组引用用于补充已有论证，并不表示169个独立问题或900题已经解决。</p></section>'
     toc = [{'id': 'publication', 'text': '公开范围与阅读边界', 'level': 2}]
     for study in dict.fromkeys(a['study'] for a in manifest['articles']):
         entries = [a for a in manifest['articles'] if a['study'] == study]

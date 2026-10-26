@@ -1133,6 +1133,55 @@
       "title": "数据很多，也可能没有覆盖你想评价的行动",
       "study": "056-p0-continuous-actions",
       "math_count": 0
+    },
+    {
+      "id": "p0-057-01-marginal-conditional",
+      "path": "057-p0-effect-scale-and-choice/articles/01-marginal-conditional.md",
+      "title": "条件效应与总体效应：调整前后不同，是否就是混杂？",
+      "study": "057-p0-effect-scale-and-choice",
+      "math_count": 23
+    },
+    {
+      "id": "p0-057-02-effect-scale",
+      "path": "057-p0-effect-scale-and-choice/articles/02-effect-scale.md",
+      "title": "效应尺度：有无交互，取决于比较什么",
+      "study": "057-p0-effect-scale-and-choice",
+      "math_count": 22
+    },
+    {
+      "id": "p0-057-03-personalization-value",
+      "path": "057-p0-effect-scale-and-choice/articles/03-personalization-value.md",
+      "title": "已知概率下的个体化价值：必须超过最佳固定策略",
+      "study": "057-p0-effect-scale-and-choice",
+      "math_count": 17
+    },
+    {
+      "id": "p0-058-01-sample-denominators",
+      "path": "058-p0-heartsteps-public-audit/articles/01-sample-denominators.md",
+      "title": "公开数据的8274行，为什么不能直接当作论文的6061个分析点",
+      "study": "058-p0-heartsteps-public-audit",
+      "math_count": 0
+    },
+    {
+      "id": "p0-058-02-missing-is-not-zero",
+      "path": "058-p0-heartsteps-public-audit/articles/02-missing-is-not-zero.md",
+      "title": "没有步数记录，不等于已经观测到零步",
+      "study": "058-p0-heartsteps-public-audit",
+      "math_count": 14
+    },
+    {
+      "id": "p0-058-03-replication-boundaries",
+      "path": "058-p0-heartsteps-public-audit/articles/03-replication-boundaries.md",
+      "title": "公开数据审计、组件效果与整个系统，分别需要什么证据",
+      "study": "058-p0-heartsteps-public-audit",
+      "math_count": 0
+    },
+    {
+      "id": "p0-065-01-heartsteps-evidence-update",
+      "path": "065-p0-heartsteps-remaining-public-evidence/articles/01-heartsteps-evidence-update.md",
+      "title": "P0研究更新：哪些结论可以保留，HeartSteps还缺什么",
+      "study": "065-p0-heartsteps-remaining-public-evidence",
+      "math_count": 0
     }
   ],
   "public_files": {
@@ -1328,7 +1377,14 @@
     "056-p0-continuous-actions/execution/point.csv": "downloads/p0/056-p0-continuous-actions/execution/point.csv",
     "056-p0-continuous-actions/execution/bandwidth.csv": "downloads/p0/056-p0-continuous-actions/execution/bandwidth.csv",
     "056-p0-continuous-actions/execution/dimension.csv": "downloads/p0/056-p0-continuous-actions/execution/dimension.csv",
-    "056-p0-continuous-actions/execution/support.csv": "downloads/p0/056-p0-continuous-actions/execution/support.csv"
+    "056-p0-continuous-actions/execution/support.csv": "downloads/p0/056-p0-continuous-actions/execution/support.csv",
+    "057-p0-effect-scale-and-choice/execution/groups.csv": "downloads/p0/057-p0-effect-scale-and-choice/execution/groups.csv",
+    "057-p0-effect-scale-and-choice/execution/marginal.csv": "downloads/p0/057-p0-effect-scale-and-choice/execution/marginal.csv",
+    "057-p0-effect-scale-and-choice/execution/policy.csv": "downloads/p0/057-p0-effect-scale-and-choice/execution/policy.csv",
+    "057-p0-effect-scale-and-choice/execution/source-table.csv": "downloads/p0/057-p0-effect-scale-and-choice/execution/source-table.csv",
+    "058-p0-heartsteps-public-audit/execution/cohorts.csv": "downloads/p0/058-p0-heartsteps-public-audit/execution/cohorts.csv",
+    "058-p0-heartsteps-public-audit/execution/coverage.csv": "downloads/p0/058-p0-heartsteps-public-audit/execution/coverage.csv",
+    "058-p0-heartsteps-public-audit/execution/summaries.csv": "downloads/p0/058-p0-heartsteps-public-audit/execution/summaries.csv"
   },
-  "scope": "P0 batches 004–056; 057 excluded"
+  "scope": "P0 batches 004–058 reading articles plus 065 bounded evidence update; original HeartSteps replication incomplete"
 }
